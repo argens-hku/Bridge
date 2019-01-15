@@ -4,14 +4,15 @@
 import os
 from Helper import getData
 
-Trainingfilename = "../data/HandRecords/Small HandRecords/HandRecord_100_0"
-Networkfilename = "../data/Networks/NT_by_N/Network"
+_trainingFilename = "../data/HandRecords/Shared/HandRecord_20000_0"
+# Trainingfilename = "../data/HandRecords/Small HandRecords/HandRecord_100_0"
+_networkFilename = "../data/Networks/NT_by_N/Network"
 
-_dataSize = 2000		#	Training + Validation Data Size
+_dataSize = 20000		#	Training + Validation Data Size
 _inputMode = "Full"
 _outputMode = "NT_by_N"
 
-(hand, res) = getData (filename = Trainingfilename, dataSize = _dataSize, inputMode = _inputMode, outputMode = _outputMode)
+(hand, res) = getData (filename = _trainingFilename, dataSize = _dataSize, inputMode = _inputMode, outputMode = _outputMode)
 
 # --------------------------------       Training        -------------------------------------------
 
@@ -31,11 +32,11 @@ seed = 6
 np.random.seed (seed)
 
 # ----- hyperparameter ----- #
-epoch_ = 10
-lr_ = 0.001
-momentum_ = 0.9
-decay_ = lr_/epoch_
-batch_size_ = 5
+_epoch = 10
+_lr = 0.001
+_momentum = 0.9
+_decay = _lr/_epoch
+_batch_size = 5
 
 # ----- Training ----- #
 
@@ -54,21 +55,23 @@ model.add (Dense (512, activation = 'relu', W_constraint = maxnorm(2)))
 model.add (Dense (512, activation = 'relu', W_constraint = maxnorm(2)))
 # model.add (Dropout(0.3))
 model.add (Dense (512, activation = 'relu', W_constraint = maxnorm(2)))
+model.add (Dense (512, activation = 'relu', W_constraint = maxnorm(2)))
+model.add (Dense (512, activation = 'relu', W_constraint = maxnorm(2)))
 # model.add (Dropout(0.3))
 model.add (Dense (64))
 model.add (Dense (1))
-sgd = SGD(lr=lr_, momentum=momentum_, decay=decay_, nesterov=False)
+sgd = SGD(lr=_lr, momentum=_momentum, decay=_decay, nesterov=False)
 model.compile(loss='mse', optimizer=sgd)
 
 from keras.callbacks import EarlyStopping
 
 early_stopping = EarlyStopping (monitor = "val_loss", patience = 5, min_delta = 0)
-model.fit(X, Y, epochs = epoch_, batch_size=batch_size_, verbose = True, validation_split = 0.1, callbacks = [early_stopping])
+model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1, callbacks = [early_stopping])
 
-from Helpler import unclash
+from Helper import unclash
 
-Networkfilename = unclash (Networkfilename, ".h5")
-print (Networkfilename)
-model.save (Networkfilename)
+networkfn = unclash (_networkFilename, ".h5")
+print (networkfn)
+model.save (networkfn)
 
 K.clear_session ()

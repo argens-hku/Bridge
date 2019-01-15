@@ -63,3 +63,30 @@ def unclash (name, extension):
 		filepath = Path (name + "_" + str (counter) + extension)
 
 	return (name + "_" + str (counter) + extension)
+
+
+#-------------------------------------------
+
+# Description: Helps calculate the mean squared error between testing set and prediction
+# Input:
+#	[(*, )FLOAT] Y_pred: a list of floats indidcating the prediction of the network
+#	[(*, )INT] Y: a list of integers indicating the winner of the game in the end (1 if it is the current player, -1 if it is not, 0 if it is a draw)
+# Output:
+#	[FLOAT] the mean squared error
+
+# from keras.objectives import mean_squared_error
+import numpy
+
+def mse (Y_pred, Y):
+
+	Y_pred = Y_pred.reshape (Y_pred.shape [0],)
+
+	s = 0
+	c = 0
+
+	for (y, y_pred) in zip (Y_pred, Y):
+		c += 1
+		t = y - y_pred
+		s += t * t
+
+	return s/c
