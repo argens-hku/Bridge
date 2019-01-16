@@ -79,9 +79,9 @@ sgd = SGD(lr=_lr, momentum=_momentum, decay=_decay, nesterov=False)
 model.compile(loss=_loss, optimizer=sgd)
 
 
-# early_stopping = EarlyStopping (monitor = "val_loss", patience = 5, min_delta = 0)
-# history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1, callbacks = [early_stopping])
-history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1)
+early_stopping = EarlyStopping (monitor = "val_loss", patience = 5, min_delta = 0)
+history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1, callbacks = [early_stopping])
+# history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1)
 
 # -------------------------------- End of Architecture -------------------------------------------
 
