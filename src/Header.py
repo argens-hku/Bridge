@@ -1,6 +1,7 @@
 DDS_STRAIN = 5
 DDS_HAND = 4
 DDS_SUIT = 4
+DDS_RANK = 13
 
 dcardRank  = ['2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'A']
 

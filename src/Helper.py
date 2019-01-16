@@ -1,4 +1,7 @@
-from Header import dbitMapRank
+# N - SHDC; E - SHDC; S - SHDC; W - SHDC
+# S - NESW; H - NESW; D - NESW; C - NESW; NT - NESW;
+
+from Header import dbitMapRank, DDS_RANK
 
 def decodeGameRecord (line, inputMode, outputMode):
 	temp_arr = line.split ("|")
@@ -14,15 +17,46 @@ def decodeGameRecord (line, inputMode, outputMode):
 					hand_ret.append (1)
 				else:
 					hand_ret.append (0)
-	else:
+
+	if inputMode == "Compact":
+		for i in range (52):
+			hand_ret.append (-1)
+
+		player = 0
+		suit = 0
+		rank = 0
+
+		for cards in hand_list:
+			for bits in dbitMapRank:
+				if bits & cards:
+					if player == 0:
+						hand_ret [suit * DDS_RANK + rank] = 1
+					if player == 1:
+						hand_ret [suit * DDS_RANK + rank] = -1
+					if player == 2:
+						hand_ret [suit * DDS_RANK + rank] = 0.5
+					if player == 3:
+						hand_ret [suit * DDS_RANK + rank] = -0.5
+
+				rank += 1
+			rank = 0
+			suit += 1
+			if suit >= 4:
+				suit = 0
+				player += 1
+
+
+	if inputMode != "Full" and inputMode != "Compact":
 		print ("Input Mode Error.")
 		return ([], -1)
 	# =======================================
 	if outputMode == "NT_by_N":
 		res_ret = result_list [16]
-	else:
+
+	if outputMode != "NT_by_N":
 		print ("Output Mode Error.")
 		return ([], -1)
+		
 	return (hand_ret, res_ret)
 
 
@@ -75,7 +109,7 @@ def unclash (name, extension):
 #	[FLOAT] the mean squared error
 
 # from keras.objectives import mean_squared_error
-import numpy
+import numpy as np
 
 def mse (Y_pred, Y):
 
@@ -88,5 +122,31 @@ def mse (Y_pred, Y):
 		c += 1
 		t = y - y_pred
 		s += t * t
+
+	return s/c
+
+def accuracy (Y_pred, Y, margin = 0):
+
+	if type (Y_pred) != type (Y):
+		print ("Different data type in Accuracy Test!!!!")
+		return -1
+
+	if margin < 0:
+		print ("Margin cannot be zero!")
+		return -1
+
+	Y_pred = Y_pred.reshape (Y_pred.shape [0],)
+
+	s = 0
+	c = 0
+
+	for (y, y_pred) in zip (Y_pred, Y):
+		c += 1
+		if margin == 0:
+			if y_pred == y:
+				s += 1
+		else:
+			if abs (y_pred - y) <= margin:
+				s += 1
 
 	return s/c
