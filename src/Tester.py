@@ -10,7 +10,7 @@ _testingFilename = _handRecordsDirectory + "/Shared/HandRecord_20000_0"
 # _testingFilename = _handRecordsDirectory + "/Small/HandRecord_100_0"
 
 _networkDirectory = "../data/Networks/NT_by_N"
-_networkFilename = _networkDirectory + "/Network_2.h5"
+_networkFilename = _networkDirectory + "/Network_3.h5"
 # _networkFilename = _networkDirectory + "/NT_by_N/Network_0.h5"
 
 # Description: Clears the standard output screen
@@ -22,7 +22,7 @@ from Helper import getData, mse, accuracy
 import numpy as np
 
 _dataSize = -1		#	Training + Validation Data Size
-_inputMode = "Full"
+_inputMode = "Compact"
 _outputMode = "NT_by_N"
 
 

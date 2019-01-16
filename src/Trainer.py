@@ -4,7 +4,7 @@
 import os
 from Helper import getData
 
-_trainingFilename = "../data/HandRecords/Shared/HandRecord_25000_0"
+_trainingFilename = "../data/HandRecords/Large/HandRecord_700000_0"
 # Trainingfilename = "../data/HandRecords/Small HandRecords/HandRecord_100_0"
 _networkFilename = "../data/Networks/NT_by_N/Network"
 _historyFilename = "../data/Networks/NT_by_N/History/Result"
@@ -25,8 +25,8 @@ Y = np.asarray (res)
 print ("X_shape", X.shape)
 print ("Y_shape", Y.shape)
 
-from sklearn.model_selection import train_test_split
-X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=1)
+# from sklearn.model_selection import train_test_split
+# X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=1)
 
 # ----- Imports ----- #
 

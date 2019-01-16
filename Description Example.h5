@@ -1,0 +1,21 @@
+Network_X.h5
+
+	Architecture
+
+		
+
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+
+		../data/Networks/NT_by_N/Network_2.h5
+		../data/HandRecords/Shared/HandRecord_20000_0
+		10.5265855469 0.12985 0.32895 0.55145
+
+		../data/Networks/NT_by_N/Network_2.h5
+		../data/HandRecords/Shared/HandRecord_25000_0
+		0.681010556895 0.32716 0.92732 1.0
