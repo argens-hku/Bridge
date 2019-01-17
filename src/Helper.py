@@ -45,8 +45,32 @@ def decodeGameRecord (line, inputMode, outputMode):
 				suit = 0
 				player += 1
 
+	if inputMode == "2D":
 
-	if inputMode != "Full" and inputMode != "Compact":
+		counter = 0
+		temp = []
+		for cards in hand_list:
+			for bits in dbitMapRank:
+				if bits & cards:
+					temp.append ([1])
+				else:
+					temp.append ([0])
+			
+			counter +=1
+
+			if counter == 4:
+				counter = 0
+				hand_ret.append (temp)
+				temp = []
+
+		hand_ret = list (reversed (hand_ret))
+
+		for i in range (3):
+			hand_ret.append (hand_ret [i])
+
+		# hand_ret.append (hand_ret [3])
+
+	if inputMode != "Full" and inputMode != "Compact" and inputMode != "2D":
 		print ("Input Mode Error.")
 		return ([], -1)
 	# =======================================
@@ -56,9 +80,8 @@ def decodeGameRecord (line, inputMode, outputMode):
 	if outputMode != "NT_by_N":
 		print ("Output Mode Error.")
 		return ([], -1)
-		
-	return (hand_ret, res_ret)
 
+	return (hand_ret, res_ret)
 
 def getData (filename, dataSize, inputMode, outputMode):
 

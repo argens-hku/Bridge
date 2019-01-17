@@ -10,7 +10,7 @@ _networkFilename = "../data/Networks/NT_by_N/Network"
 _historyFilename = "../data/Networks/NT_by_N/History/Result"
 
 _dataSize = -1		#	Training + Validation Data Size
-_inputMode = "Compact"
+_inputMode = "2D"
 _outputMode = "NT_by_N"
 
 (hand, res) = getData (filename = _trainingFilename, dataSize = _dataSize, inputMode = _inputMode, outputMode = _outputMode)
@@ -32,7 +32,8 @@ print ("Y_shape", Y.shape)
 
 from keras import backend as K
 from keras.models import Sequential
-from keras.layers import Dense, Dropout
+from keras.layers import Dense, Dropout, Activation, Flatten, GaussianNoise
+from keras.layers import Convolution2D
 from keras.optimizers import SGD
 from sklearn.metrics import mean_squared_error
 from keras.constraints import maxnorm
@@ -58,22 +59,35 @@ _loss = "mse"
 # ----- Training ----- #
 
 model = Sequential ()
-model.add (Dense (512, input_shape = (52, )))
+model.add (Convolution2D (32, (3, 3), input_shape = (7, 52, 1), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+# model.add (Dropout(0.2))
+model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+# model.add (Dropout(0.2))
+model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+# model.add (Dropout(0.2))
+model.add (Flatten())
 # model.add (Dropout(0.3))
-model.add (Dense (512, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+# model.add (Dense (512, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+model.add (Dense (64, activation = 'relu', kernel_constraint = maxnorm (3)))
+model.add (Dropout(0.4))
+# model.add (GaussianNoise (0.5))
+# model.add (Dense (64, activation = 'relu', kernel_constraint = maxnorm (3)))
+# model.add (Dropout(0.4))
+# model.add (GaussianNoise (0.5))
 # model.add (Dropout(0.3))
 
-model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
-model.add (Dropout(0.1))
-model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
-model.add (Dropout(0.1))
-model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
-model.add (Dropout(0.1))
-model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
-model.add (Dropout(0.1))
-model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
 # model.add (Dropout(0.3))
-model.add (Dense (64))
+# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+# model.add (Dropout(0.3))
+# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+# model.add (Dropout(0.3))
+# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+# model.add (Dropout(0.3))
+# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+# model.add (Dropout(0.3))
+
+model.add (Dense (16))
 model.add (Dense (1))
 sgd = SGD(lr=_lr, momentum=_momentum, decay=_decay, nesterov=False)
 model.compile(loss=_loss, optimizer=sgd)
