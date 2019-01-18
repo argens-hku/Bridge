@@ -1,7 +1,7 @@
 # N - SHDC; E - SHDC; S - SHDC; W - SHDC
 # S - NESW; H - NESW; D - NESW; C - NESW; NT - NESW;
 
-from Header import dbitMapRank, DDS_RANK
+from Header import dbitMapRank, DDS_RANK, DDS_SUIT
 
 def decodeGameRecord (line, inputMode, outputMode):
 	temp_arr = line.split ("|")
@@ -106,14 +106,38 @@ def decodeGameRecord (line, inputMode, outputMode):
 
 		# hand_ret.append (hand_ret [3])
 
-	if inputMode != "Full" and inputMode != "Compact" and inputMode != "2D" and inputMode != "3D":
+	if inputMode == "3D_Suit_Endian":
+
+		hand_counter = 0
+		suit_counter = 0
+
+		temp = [[],[],[],[]]
+
+		for cards in hand_list:
+			for bits in dbitMapRank:
+				if bits & cards:
+					temp [suit_counter].append (1)
+				else:
+					temp [suit_counter].append (0)
+			
+			suit_counter += 1
+			if suit_counter == 4:
+				hand_counter += 1
+				suit_counter = 0
+				hand_ret.append (temp)
+				temp = [[],[],[],[]]
+
+	if inputMode != "Full" and inputMode != "Compact" and inputMode != "2D" and inputMode != "3D" and inputMode != "3D_Suit_Endian":
 		print ("Input Mode Error.")
 		return ([], -1)
 	# =======================================
 	if outputMode == "NT_by_N":
 		res_ret = result_list [16]
 
-	if outputMode != "NT_by_N":
+	if outputMode == "None":
+		res_ret == -1
+
+	if outputMode != "NT_by_N" and outputMode != "None":
 		print ("Output Mode Error.")
 		return ([], -1)
 
