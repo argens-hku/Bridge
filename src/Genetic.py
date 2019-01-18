@@ -318,6 +318,9 @@ def cross_breed (var_list, subfoldername, breed_size, resultfilename, mutation_c
 
 		for i in range (len (var_list)):
 			for j in range (len (var_list)):
+				if i == j:
+					continue
+					
 				var = dict (var_list [0])
 				for key in var.keys ():
 
