@@ -68,9 +68,45 @@ def decodeGameRecord (line, inputMode, outputMode):
 		for i in range (3):
 			hand_ret.append (hand_ret [i])
 
+	if inputMode == "3D":
+
+		suit_counter = 0
+		card_counter = 0
+
+		temp = []
+
+		for cards in hand_list:
+			for bits in dbitMapRank:
+			
+				if bits & cards:
+					if suit_counter == 0:
+						temp.append ([1])
+					else:
+						temp [card_counter].append (1)
+				else:
+					if suit_counter == 0:
+						temp.append ([0])
+					else:
+						temp [card_counter].append (0)
+			
+				card_counter +=1
+				if card_counter == 13:
+					card_counter = 0
+					suit_counter += 1
+
+			if suit_counter == 4:
+				suit_counter = 0
+				hand_ret.append (temp)
+				temp = []
+
+		hand_ret = list (reversed (hand_ret))
+
+		for i in range (3):
+			hand_ret.append (hand_ret [i])
+
 		# hand_ret.append (hand_ret [3])
 
-	if inputMode != "Full" and inputMode != "Compact" and inputMode != "2D":
+	if inputMode != "Full" and inputMode != "Compact" and inputMode != "2D" and inputMode != "3D":
 		print ("Input Mode Error.")
 		return ([], -1)
 	# =======================================

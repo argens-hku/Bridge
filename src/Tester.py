@@ -7,10 +7,12 @@ result = []
 
 _handRecordsDirectory = "../data/HandRecords"
 _testingFilename = _handRecordsDirectory + "/Shared/HandRecord_20000_0"
+
 # _testingFilename = _handRecordsDirectory + "/Small/HandRecord_100_0"
 
-_networkDirectory = "../data/Networks/NT_by_N"
-_networkFilename = _networkDirectory + "/Network_11.h5"
+# _networkDirectory = "../data/Networks/NT_by_N"
+# _networkFilename = _networkDirectory + "/Network_23.h5"
+_networkFilename = "../data/Networks/Genetic/NT_by_N/Network/Network_2.h5"
 # _networkFilename = _networkDirectory + "/NT_by_N/Network_0.h5"
 
 # Description: Clears the standard output screen
@@ -22,7 +24,7 @@ from Helper import getData, mse, accuracy
 import numpy as np
 
 _dataSize = -1		#	Training + Validation Data Size
-_inputMode = "2D"
+_inputMode = "3D"
 _outputMode = "NT_by_N"
 
 
@@ -53,7 +55,8 @@ def testing (hand, res, networkFilename, testingFilename):
 	acc_2 = accuracy (Y_pred_int, Y, 2)
 
 	print ("Y_pred_int:	", end = '')
-	print (Y_pred_int.reshape (Y_pred_int.shape [0],))
+	print (Y_pred_int.reshape (Y_pred_int.shape [0]))
+	# print (Y_pred.reshape (Y_pred.shape [0]))
 	print ("Y:		", end = '')
 	print (Y)
 	print ("")

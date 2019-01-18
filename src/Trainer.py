@@ -5,12 +5,13 @@ import os
 from Helper import getData
 
 _trainingFilename = "../data/HandRecords/Large/HandRecord_700000_0"
-# Trainingfilename = "../data/HandRecords/Small HandRecords/HandRecord_100_0"
+# _trainingFilename = "../data/HandRecords/Shared/HandRecord_20000_0"
+
 _networkFilename = "../data/Networks/NT_by_N/Network"
 _historyFilename = "../data/Networks/NT_by_N/History/Result"
 
 _dataSize = -1		#	Training + Validation Data Size
-_inputMode = "2D"
+_inputMode = "3D"
 _outputMode = "NT_by_N"
 
 (hand, res) = getData (filename = _trainingFilename, dataSize = _dataSize, inputMode = _inputMode, outputMode = _outputMode)
@@ -49,7 +50,7 @@ np.random.seed (seed)
 
 # ----- hyperparameter ----- #
 
-_epoch = 250
+_epoch = 1
 _lr = 0.001
 _momentum = 0.9
 _decay = _lr/_epoch
@@ -59,18 +60,18 @@ _loss = "mse"
 # ----- Training ----- #
 
 model = Sequential ()
-model.add (Convolution2D (32, (3, 3), input_shape = (7, 52, 1), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
-# model.add (Dropout(0.2))
-model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
-# model.add (Dropout(0.2))
-model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+model.add (Convolution2D (4, (3, 3), input_shape = (7, 13, 4), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+model.add (Dropout(0.5))
+# model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+# model.add (Dropout(0.5))
+# model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
 # model.add (Dropout(0.2))
 model.add (Flatten())
 # model.add (Dropout(0.3))
 # model.add (Dense (512, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
-model.add (Dense (64, activation = 'relu', kernel_constraint = maxnorm (3)))
+model.add (Dense (16, activation = 'relu', kernel_constraint = maxnorm (3)))
 model.add (Dropout(0.4))
-# model.add (GaussianNoise (0.5))
+model.add (GaussianNoise (0.5))
 # model.add (Dense (64, activation = 'relu', kernel_constraint = maxnorm (3)))
 # model.add (Dropout(0.4))
 # model.add (GaussianNoise (0.5))
@@ -87,13 +88,13 @@ model.add (Dropout(0.4))
 # model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
 # model.add (Dropout(0.3))
 
-model.add (Dense (16))
+# model.add (Dense (16))
 model.add (Dense (1))
 sgd = SGD(lr=_lr, momentum=_momentum, decay=_decay, nesterov=False)
 model.compile(loss=_loss, optimizer=sgd)
 
 
-early_stopping = EarlyStopping (monitor = "val_loss", patience = 5, min_delta = 0)
+early_stopping = EarlyStopping (monitor = "val_loss", patience = 5, min_delta = 0, restore_best_weights=True)
 history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1, callbacks = [early_stopping])
 # history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1)
 
@@ -106,6 +107,8 @@ import json
 networkfn = unclash (_networkFilename, ".h5")
 print (networkfn)
 model.save (networkfn)
+
+K.clear_session ()
 
 resFn = unclash (_historyFilename, ".txt")
 print (resFn)
@@ -131,4 +134,3 @@ plt.xlabel('Epoch')
 plt.legend(['Train', 'Test'], loc='upper left')
 plt.show()
 
-K.clear_session ()
