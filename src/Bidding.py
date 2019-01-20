@@ -26,8 +26,8 @@ def checkKey (sequence):
 
 	prev_level = -1
 	prev_suit = -1
-	suit_conv = {'C': 0, "D": 1, "H": 2, "S": 3}
-	rev_suit_conv = ['C', 'D', 'H', 'S']
+	suit_conv = {'C': 0, "D": 1, "H": 2, "S": 3, "N": 4}
+	rev_suit_conv = ['C', 'D', 'H', 'S', 'N']
 
 	illegal = False
 	pass_count = 0
@@ -39,6 +39,8 @@ def checkKey (sequence):
 	for i in temp_arr:
 
 		side *= -1
+		level = -1
+		suit = -1
 		
 		try:
 			if len (i) == 1:
@@ -63,6 +65,9 @@ def checkKey (sequence):
 				return False
 
 			if i == 'XX':
+				if double == 0:
+					print ("Cannot Redouble Undoubled Contract")
+					return False
 				if double * side != -1:
 					print ("Cannot Redouble Own Side")
 					return False
@@ -96,4 +101,10 @@ def checkKey (sequence):
 
 			return False
 
+		prev_suit = suit
+		prev_level = level
+		bid = side
+		double = 0
+
 	return True
+
