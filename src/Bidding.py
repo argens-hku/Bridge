@@ -4,7 +4,10 @@ def getBiddingSystem (filename):
 
 	system = {}
 	file = open (filename, "r")
-	system = dict (json.loads (file.read ()))
+	try:
+		system = dict (json.loads (file.read ()))
+	except:
+		print ("Parsing Error")
 	return system
 
 def writeBiddingSystem (filename, system, overwrite = False):
