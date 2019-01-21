@@ -25,6 +25,7 @@ _networkFoldername = "../data/Networks/Genetic/NT_by_N/Network"
 _familyTree = "../data/Networks/Genetic/NT_by_N/Network/Result"
 _firstGenResult = "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Result"
 _secondGenResult = "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Result"
+_thirdGenResult = "../data/Networks/Genetic/NT_by_N/Network/Third_Gen/Result"
 
 _dataSize = -1
 _inputMode = "3D"
@@ -377,7 +378,7 @@ def combine_result (inputFilenames, outputFilename):
 		for var in var_list:
 			li.append (var)
 
-	li.sort (key = lambda x: s["score"])
+	li.sort (key = lambda x: x["score"])
 
 	f = open (outputFilename, "w")
 	for x in li:
@@ -385,14 +386,21 @@ def combine_result (inputFilenames, outputFilename):
 		f.write ("\n")
 		f.write (str (x ["score"]))
 		f.write ("\n\n")
+		try:
+			f.write (x ["parent_1"])
+			f.write ("\n")
+			f.write (x ["parent_2"])
+			f.write ("\n\n")
+		except:
+			print ("First_Gen")
 		f.write (json.dumps (x))
 		f.write ("\n\n")
 
 	f.close ()
 
-var_list = get_var_list (_firstGenResult)
+var_list = get_var_list (_secondGenResult)
 var_list = selection (var_list = var_list, elitism = 0.1)
-cross_breed (var_list = var_list, subfoldername = "/Second_Gen", breed_size = -1, resultfilename = _secondGenResult, mutation_chance = 0.05)
-
+cross_breed (var_list = var_list, subfoldername = "/Third_Gen", breed_size = -1, resultfilename = _thirdGenResult, mutation_chance = 0.05)
+# combine_result ([_familyTree, _secondGenResult], _familyTree)
 
 # init_Population (var_list = var_list, subfoldername = "/First_Gen", no_of_network = 5, resultfilename = _familyTree, mutation_chance = 0.01)
