@@ -1,0 +1,800 @@
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_11.h5
+4.1218007067595615
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5
+
+{"noise_2": -29.521137395327056, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5", "dense_1": -70.40767239279094, "l2_reg_2": -87.69925095407943, "l2_reg_1": -36.43308147316904, "maxnorm_3": -24.694188849531294, "noise_4": -9.833181022734628, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5", "maxnorm_2": -142.85141536840513, "dropout_3": -97.85192504112898, "noise_3": -83.70764751354102, "option_2": false, "conv_window_2": -55.9996998017777, "noise_1": -34.96059744897754, "lr": -11.942331537451423, "dense_2": -28.294737476897215, "conv_window_1": -60.301297267845854, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_11.h5", "dropout_4": -8.014899405872256, "filter_layer_2": -13.842559917523289, "filter_layer_1": -93.46483367553749, "maxnorm_1": -39.06859926472611, "maxnorm_4": -7.51567637874615, "option_1": false, "dropout_1": -0.14011393325670252, "dropout_2": -40.158187697118905, "score": 4.1218007067595615, "l1_reg_2": -64.81538813045921, "momentum": -57.61164592210687, "l1_reg_1": -41.38701184272078}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_80.h5
+4.318978765637989
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5
+
+{"noise_2": -76.49845055340757, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5", "dense_1": -2.0, "l2_reg_2": -44.927544667093144, "l2_reg_1": 0.0, "maxnorm_3": -82.599327013237, "noise_4": 0.0, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5", "maxnorm_2": -51.158548476497224, "dropout_3": -43.41906622749864, "noise_3": -162.29227755799428, "option_2": false, "conv_window_2": 3.0, "noise_1": 0.0, "lr": -7.0, "dense_2": -25.57952077193556, "conv_window_1": -48.67503447501457, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_80.h5", "dropout_4": -87.62121405625265, "filter_layer_2": -52.9504202589101, "filter_layer_1": 4.0, "maxnorm_1": -42.43444627108792, "maxnorm_4": -12.081018024516599, "option_1": false, "dropout_1": 0.0, "dropout_2": 0.0, "score": 4.318978765637989, "l1_reg_2": -74.91367220524731, "momentum": 2.2, "l1_reg_1": 0.0}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_8.h5
+4.476055327045459
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5
+
+{"noise_2": -76.49845055340757, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5", "dense_1": -93.30533515544911, "l2_reg_2": 0.0, "l2_reg_1": -39.5390403106627, "maxnorm_3": -82.599327013237, "noise_4": -81.95744715191265, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5", "maxnorm_2": -51.158548476497224, "dropout_3": -43.41906622749864, "noise_3": 0.0, "option_2": -122.14969999718797, "conv_window_2": 3.0, "noise_1": -72.71433268144196, "lr": -7.0, "dense_2": -2.0, "conv_window_1": -48.67503447501457, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_8.h5", "dropout_4": 0.0, "filter_layer_2": -52.9504202589101, "filter_layer_1": 4.0, "maxnorm_1": -62.47231717448967, "maxnorm_4": 3.0, "option_1": false, "dropout_1": -92.89383314066377, "dropout_2": -44.77255143160126, "score": 4.476055327045459, "l1_reg_2": 0.0, "momentum": 2.2, "l1_reg_1": 0.0}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_14.h5
+4.713121159207445
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5
+
+{"noise_2": -29.521137395327056, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5", "dense_1": -70.40767239279094, "l2_reg_2": -45.483529538105785, "l2_reg_1": -94.307078748494, "maxnorm_3": -4.85867468858231, "noise_4": -9.833181022734628, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5", "maxnorm_2": -33.13262141706921, "dropout_3": -67.50977182034525, "noise_3": -88.66311715649607, "option_2": true, "conv_window_2": -55.9996998017777, "noise_1": -34.96059744897754, "lr": -7.63851352916568, "dense_2": -28.294737476897215, "conv_window_1": -60.301297267845854, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_14.h5", "dropout_4": -34.42290124515981, "filter_layer_2": -87.17821846437278, "filter_layer_1": -93.46483367553749, "maxnorm_1": -84.9083622104863, "maxnorm_4": -95.8364131277113, "option_1": false, "dropout_1": -0.14011393325670252, "dropout_2": -56.786258466767784, "score": 4.713121159207445, "l1_reg_2": -64.81538813045921, "momentum": -57.61164592210687, "l1_reg_1": -41.38701184272078}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_0.h5
+5.046368028029045
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5
+
+{"noise_2": 0.0, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5", "dense_1": -2.0, "l2_reg_2": 0.0, "l2_reg_1": 0.0, "maxnorm_3": 3.0, "noise_4": 0.0, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5", "maxnorm_2": 2.0, "dropout_3": 0.0, "noise_3": 0.0, "option_2": false, "conv_window_2": 3.0, "noise_1": 0.0, "lr": -7.0, "dense_2": -2.0, "conv_window_1": -116.24918981063897, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_0.h5", "dropout_4": 0.0, "filter_layer_2": 4.0, "filter_layer_1": 4.0, "maxnorm_1": 1.0, "maxnorm_4": 3.0, "option_1": false, "dropout_1": 0.0, "dropout_2": 0.0, "score": 5.046368028029045, "l1_reg_2": 0.0, "momentum": 2.2, "l1_reg_1": 0.0}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_5.h5
+5.057783157564812
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5
+
+{"noise_2": 0.0, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5", "dense_1": -2.0, "l2_reg_2": -67.43486892951825, "l2_reg_1": -31.76107718313532, "maxnorm_3": -42.32617065796973, "noise_4": -39.33931280836178, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5", "maxnorm_2": 2.0, "dropout_3": 0.0, "noise_3": -46.85281119752429, "option_2": -80.68062854889774, "conv_window_2": 3.0, "noise_1": -98.72503190429155, "lr": -11.222041491435608, "dense_2": -2.0, "conv_window_1": -57.91836545922583, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_5.h5", "dropout_4": -26.90552484131713, "filter_layer_2": -11.139076162696327, "filter_layer_1": -87.3983468247409, "maxnorm_1": -7.970701731579477, "maxnorm_4": 3.0, "option_1": false, "dropout_1": 0.0, "dropout_2": 0.0, "score": 5.057783157564812, "l1_reg_2": 0.0, "momentum": -159.25496222196875, "l1_reg_1": -31.583902255772635}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_40.h5
+5.157530293186741
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5
+
+{"noise_2": 0.0, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5", "dense_1": -2.0, "l2_reg_2": -45.483529538105785, "l2_reg_1": 0.0, "maxnorm_3": -4.85867468858231, "noise_4": -78.72035287496047, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5", "maxnorm_2": -63.55786504467965, "dropout_3": -141.6880963562707, "noise_3": 0.0, "option_2": true, "conv_window_2": -38.314043034491164, "noise_1": 0.0, "lr": -7.0, "dense_2": -89.7113802792239, "conv_window_1": -65.88127169046082, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_40.h5", "dropout_4": 0.0, "filter_layer_2": 4.0, "filter_layer_1": 4.0, "maxnorm_1": -128.78591037597323, "maxnorm_4": -105.61639183538807, "option_1": false, "dropout_1": 0.0, "dropout_2": 0.0, "score": 5.157530293186741, "l1_reg_2": -58.74368219438294, "momentum": 2.2, "l1_reg_1": -13.369343750707795}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_70.h5
+5.209112174146654
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5
+
+{"noise_2": -55.25041185073828, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5", "dense_1": -17.727772412073584, "l2_reg_2": 0.0, "l2_reg_1": 0.0, "maxnorm_3": 3.0, "noise_4": 0.0, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5", "maxnorm_2": 2.0, "dropout_3": 0.0, "noise_3": -62.694459475124056, "option_2": false, "conv_window_2": -70.51211353357665, "noise_1": 0.0, "lr": -7.709633936683902, "dense_2": -2.0, "conv_window_1": 3.0, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_70.h5", "dropout_4": -78.7000154180029, "filter_layer_2": 4.0, "filter_layer_1": -19.102125804288484, "maxnorm_1": -38.47983565873949, "maxnorm_4": -50.61986920106136, "option_1": true, "dropout_1": 0.0, "dropout_2": -19.91436088370362, "score": 5.209112174146654, "l1_reg_2": -50.64559479136835, "momentum": -21.537090727592513, "l1_reg_1": 0.0}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_10.h5
+5.312591615445244
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5
+
+{"noise_2": 0.0, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5", "dense_1": -70.40767239279094, "l2_reg_2": -87.69925095407943, "l2_reg_1": 0.0, "maxnorm_3": 3.0, "noise_4": 0.0, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5", "maxnorm_2": 2.0, "dropout_3": 0.0, "noise_3": -83.70764751354102, "option_2": false, "conv_window_2": -55.9996998017777, "noise_1": 0.0, "lr": -7.0, "dense_2": -2.0, "conv_window_1": 3.0, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_10.h5", "dropout_4": -8.014899405872256, "filter_layer_2": -13.842559917523289, "filter_layer_1": -93.46483367553749, "maxnorm_1": 1.0, "maxnorm_4": -7.51567637874615, "option_1": false, "dropout_1": -0.14011393325670252, "dropout_2": -40.158187697118905, "score": 5.312591615445244, "l1_reg_2": -64.81538813045921, "momentum": 2.2, "l1_reg_1": 0.0}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_7.h5
+5.474370729405844
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5
+
+{"noise_2": -184.84639176713685, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5", "dense_1": -2.0, "l2_reg_2": -10.884895714959796, "l2_reg_1": -16.995309278798864, "maxnorm_3": 3.0, "noise_4": -49.472776608343935, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5", "maxnorm_2": -35.88150199876683, "dropout_3": -58.08576090256592, "noise_3": -62.694459475124056, "option_2": true, "conv_window_2": 3.0, "noise_1": 0.0, "lr": -7.0, "dense_2": -3.0511372634513534, "conv_window_1": -31.685337802463497, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_7.h5", "dropout_4": -78.7000154180029, "filter_layer_2": 4.0, "filter_layer_1": 4.0, "maxnorm_1": 1.0, "maxnorm_4": 3.0, "option_1": true, "dropout_1": 0.0, "dropout_2": -19.91436088370362, "score": 5.474370729405844, "l1_reg_2": -50.64559479136835, "momentum": -21.537090727592513, "l1_reg_1": 0.0}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_50.h5
+5.479512816215332
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5
+
+{"noise_2": -41.646567137875, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5", "dense_1": -98.97068301075822, "l2_reg_2": -67.43486892951825, "l2_reg_1": 0.0, "maxnorm_3": -228.9309715476955, "noise_4": -39.33931280836178, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5", "maxnorm_2": -81.45488256658301, "dropout_3": 0.0, "noise_3": -46.85281119752429, "option_2": false, "conv_window_2": -78.3740221939814, "noise_1": 0.0, "lr": -11.222041491435608, "dense_2": -73.76695734030598, "conv_window_1": -57.91836545922583, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_50.h5", "dropout_4": 0.0, "filter_layer_2": -11.139076162696327, "filter_layer_1": 4.0, "maxnorm_1": 1.0, "maxnorm_4": -14.346777882919815, "option_1": true, "dropout_1": -75.58308029492112, "dropout_2": -91.40173460445408, "score": 5.479512816215332, "l1_reg_2": -92.15372495790992, "momentum": 2.2, "l1_reg_1": -31.583902255772635}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_65.h5
+5.493378669994868
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5
+
+{"noise_2": -41.646567137875, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5", "dense_1": -98.97068301075822, "l2_reg_2": -67.43486892951825, "l2_reg_1": -31.76107718313532, "maxnorm_3": -42.32617065796973, "noise_4": -14.300143274625722, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5", "maxnorm_2": -71.8887297745355, "dropout_3": -15.583418307656272, "noise_3": -6.148377383339321, "option_2": true, "conv_window_2": -16.918797677093988, "noise_1": -33.611573920079444, "lr": -11.222041491435608, "dense_2": -73.76695734030598, "conv_window_1": -50.91641387884726, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_65.h5", "dropout_4": -26.90552484131713, "filter_layer_2": -58.240807050208346, "filter_layer_1": -68.02055696834765, "maxnorm_1": -7.970701731579477, "maxnorm_4": -14.346777882919815, "option_1": true, "dropout_1": -75.58308029492112, "dropout_2": -36.110904012755995, "score": 5.493378669994868, "l1_reg_2": -3.476417016370803, "momentum": -1.9037569013480748, "l1_reg_1": -31.583902255772635}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_3.h5
+5.623924013125139
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5
+
+{"noise_2": -29.734704177625026, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5", "dense_1": -31.984745931136338, "l2_reg_2": -91.93437841329924, "l2_reg_1": 0.0, "maxnorm_3": -74.57569664891359, "noise_4": 0.0, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5", "maxnorm_2": 2.0, "dropout_3": 0.0, "noise_3": -51.693913115135445, "option_2": false, "conv_window_2": -7.987081493489423, "noise_1": -50.918309568246265, "lr": -2.207693985177961, "dense_2": -41.93475867776096, "conv_window_1": 3.0, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_3.h5", "dropout_4": 0.0, "filter_layer_2": 4.0, "filter_layer_1": -24.87522029197533, "maxnorm_1": -35.06869335300507, "maxnorm_4": 3.0, "option_1": false, "dropout_1": 0.0, "dropout_2": -96.96723986201064, "score": 5.623924013125139, "l1_reg_2": -0.22027494427804273, "momentum": -83.65405619487768, "l1_reg_1": -29.065103965759253}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_9.h5
+5.627789488591455
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5
+
+{"noise_2": 0.0, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5", "dense_1": -2.0, "l2_reg_2": -20.829729834194254, "l2_reg_1": 0.0, "maxnorm_3": -71.07215309653367, "noise_4": -17.077196546232255, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5", "maxnorm_2": 2.0, "dropout_3": 0.0, "noise_3": 0.0, "option_2": true, "conv_window_2": -26.352775673867, "noise_1": -28.03986628905172, "lr": -7.0, "dense_2": -2.0, "conv_window_1": 3.0, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_9.h5", "dropout_4": -64.55434763981255, "filter_layer_2": 4.0, "filter_layer_1": -64.81422237485025, "maxnorm_1": 1.0, "maxnorm_4": -52.02988188667301, "option_1": false, "dropout_1": 0.0, "dropout_2": -96.16149711016814, "score": 5.627789488591455, "l1_reg_2": -50.63851933997824, "momentum": -4.326232528194385, "l1_reg_1": -86.12079311039292}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_2.h5
+5.901190049721532
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5
+
+{"noise_2": -7.286977011112128, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5", "dense_1": -25.69638539083583, "l2_reg_2": 0.0, "l2_reg_1": -63.87278682974659, "maxnorm_3": -7.797074362683465, "noise_4": -16.800116021322843, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5", "maxnorm_2": 2.0, "dropout_3": 0.0, "noise_3": 0.0, "option_2": false, "conv_window_2": 3.0, "noise_1": 0.0, "lr": -11.716993670213228, "dense_2": -2.0, "conv_window_1": -59.18377397664942, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_2.h5", "dropout_4": -80.69753146897172, "filter_layer_2": 4.0, "filter_layer_1": -60.93792158032926, "maxnorm_1": -14.929604212144943, "maxnorm_4": -82.94214573594051, "option_1": false, "dropout_1": 0.0, "dropout_2": -51.55968399375867, "score": 5.901190049721532, "l1_reg_2": 0.0, "momentum": 2.2, "l1_reg_1": -75.39821111023413}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_41.h5
+6.095125406720041
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5
+
+{"noise_2": -29.521137395327056, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5", "dense_1": -75.46368804035379, "l2_reg_2": -45.483529538105785, "l2_reg_1": -36.43308147316904, "maxnorm_3": -24.694188849531294, "noise_4": -9.833181022734628, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5", "maxnorm_2": -33.13262141706921, "dropout_3": -97.85192504112898, "noise_3": -88.66311715649607, "option_2": false, "conv_window_2": -55.9996998017777, "noise_1": -77.89180470583266, "lr": -11.942331537451423, "dense_2": -89.7113802792239, "conv_window_1": -60.301297267845854, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_41.h5", "dropout_4": -8.014899405872256, "filter_layer_2": -87.17821846437278, "filter_layer_1": -78.60890346659461, "maxnorm_1": -80.9173049661445, "maxnorm_4": -95.8364131277113, "option_1": false, "dropout_1": -0.14011393325670252, "dropout_2": -56.786258466767784, "score": 6.095125406720041, "l1_reg_2": -64.81538813045921, "momentum": -89.31179194480436, "l1_reg_1": -41.38701184272078}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_99.h5
+6.603224804967785
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5
+
+{"noise_2": -13.9834379198142, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5", "dense_1": -34.36116200072461, "l2_reg_2": -20.829729834194254, "l2_reg_1": -95.676379304178, "maxnorm_3": -71.07215309653367, "noise_4": -17.077196546232255, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5", "maxnorm_2": -43.47979951534875, "dropout_3": -40.85031285809065, "noise_3": -49.11938916799241, "option_2": true, "conv_window_2": -26.352775673867, "noise_1": -28.03986628905172, "lr": -13.962099318915378, "dense_2": -261.0911625760988, "conv_window_1": -4.325274886070895, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_99.h5", "dropout_4": -64.55434763981255, "filter_layer_2": -88.43509509141747, "filter_layer_1": -64.81422237485025, "maxnorm_1": -26.993011016932435, "maxnorm_4": -52.02988188667301, "option_1": false, "dropout_1": -63.4629797713271, "dropout_2": -96.16149711016814, "score": 6.603224804967785, "l1_reg_2": -50.63851933997824, "momentum": -4.326232528194385, "l1_reg_1": -86.12079311039292}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_1.h5
+6.6340009078230695
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5
+
+{"noise_2": 0.0, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5", "dense_1": -260.1788976538957, "l2_reg_2": -214.53850454459348, "l2_reg_1": -36.43308147316904, "maxnorm_3": -24.694188849531294, "noise_4": -9.833181022734628, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5", "maxnorm_2": -33.13262141706921, "dropout_3": -97.85192504112898, "noise_3": -83.70764751354102, "option_2": false, "conv_window_2": -55.9996998017777, "noise_1": -34.96059744897754, "lr": -7.0, "dense_2": -2.0, "conv_window_1": -60.301297267845854, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_1.h5", "dropout_4": -8.014899405872256, "filter_layer_2": -173.51566133559024, "filter_layer_1": -93.46483367553749, "maxnorm_1": 1.0, "maxnorm_4": 3.0, "option_1": false, "dropout_1": -0.14011393325670252, "dropout_2": 0.0, "score": 6.6340009078230695, "l1_reg_2": 0.0, "momentum": -57.61164592210687, "l1_reg_1": -41.38701184272078}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_81.h5
+6.644599279761079
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5
+
+{"noise_2": -29.521137395327056, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5", "dense_1": -93.30533515544911, "l2_reg_2": -87.69925095407943, "l2_reg_1": -125.81303240162165, "maxnorm_3": -82.599327013237, "noise_4": -9.833181022734628, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5", "maxnorm_2": -51.158548476497224, "dropout_3": -97.85192504112898, "noise_3": -83.70764751354102, "option_2": true, "conv_window_2": -46.565515967854395, "noise_1": -34.96059744897754, "lr": -11.417375489015713, "dense_2": -25.57952077193556, "conv_window_1": -48.67503447501457, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_81.h5", "dropout_4": -87.62121405625265, "filter_layer_2": -52.9504202589101, "filter_layer_1": -19.889356386288714, "maxnorm_1": -42.43444627108792, "maxnorm_4": -7.51567637874615, "option_1": false, "dropout_1": -92.89383314066377, "dropout_2": -40.158187697118905, "score": 6.644599279761079, "l1_reg_2": -223.54827414146408, "momentum": -57.61164592210687, "l1_reg_1": -5.2403276844044}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_35.h5
+6.6589168291054115
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5
+
+{"noise_2": -5.071626173465149, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5", "dense_1": -31.984745931136338, "l2_reg_2": -91.93437841329924, "l2_reg_1": -31.76107718313532, "maxnorm_3": -74.57569664891359, "noise_4": -69.62752521979704, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5", "maxnorm_2": -81.45488256658301, "dropout_3": -15.583418307656272, "noise_3": -46.85281119752429, "option_2": true, "conv_window_2": -7.987081493489423, "noise_1": -98.72503190429155, "lr": -11.222041491435608, "dense_2": -111.41055058545831, "conv_window_1": -89.89572582143992, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_35.h5", "dropout_4": -76.00123002141707, "filter_layer_2": -13.713033652796103, "filter_layer_1": -87.3983468247409, "maxnorm_1": -7.970701731579477, "maxnorm_4": -61.082322312158574, "option_1": false, "dropout_1": -40.015829875718076, "dropout_2": -96.96723986201064, "score": 6.6589168291054115, "l1_reg_2": -0.22027494427804273, "momentum": -241.96235447004747, "l1_reg_1": -29.065103965759253}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_17.h5
+6.705942581381586
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5
+
+{"noise_2": -55.25041185073828, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5", "dense_1": -17.727772412073584, "l2_reg_2": -87.69925095407943, "l2_reg_1": -36.43308147316904, "maxnorm_3": -42.249038893031745, "noise_4": -49.472776608343935, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5", "maxnorm_2": -33.13262141706921, "dropout_3": -58.08576090256592, "noise_3": -62.694459475124056, "option_2": false, "conv_window_2": -70.51211353357665, "noise_1": -66.8259628581751, "lr": -7.709633936683902, "dense_2": -3.0511372634513534, "conv_window_1": -60.301297267845854, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_17.h5", "dropout_4": -78.7000154180029, "filter_layer_2": -77.33343053598715, "filter_layer_1": -19.102125804288484, "maxnorm_1": -2.098009758876518, "maxnorm_4": -50.61986920106136, "option_1": -78.41817328742687, "dropout_1": -0.14011393325670252, "dropout_2": -19.91436088370362, "score": 6.705942581381586, "l1_reg_2": -64.81538813045921, "momentum": -57.61164592210687, "l1_reg_1": -41.38701184272078}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_91.h5
+6.732164193761576
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5
+
+{"noise_2": -13.9834379198142, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5", "dense_1": -34.36116200072461, "l2_reg_2": -20.829729834194254, "l2_reg_1": -95.676379304178, "maxnorm_3": -24.694188849531294, "noise_4": -9.833181022734628, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5", "maxnorm_2": -43.47979951534875, "dropout_3": -21.447660669459967, "noise_3": -49.11938916799241, "option_2": false, "conv_window_2": -55.9996998017777, "noise_1": -34.96059744897754, "lr": -11.942331537451423, "dense_2": -28.294737476897215, "conv_window_1": -4.325274886070895, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_91.h5", "dropout_4": -64.55434763981255, "filter_layer_2": -88.43509509141747, "filter_layer_1": -93.46483367553749, "maxnorm_1": -39.06859926472611, "maxnorm_4": -7.51567637874615, "option_1": false, "dropout_1": -0.14011393325670252, "dropout_2": -96.16149711016814, "score": 6.732164193761576, "l1_reg_2": -64.81538813045921, "momentum": -57.61164592210687, "l1_reg_1": -86.12079311039292}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_26.h5
+6.827801932752878
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5
+
+{"noise_2": -7.286977011112128, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5", "dense_1": -25.69638539083583, "l2_reg_2": -23.756726883933865, "l2_reg_1": -112.50708091478376, "maxnorm_3": -7.797074362683465, "noise_4": -16.800116021322843, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5", "maxnorm_2": -35.13293609618962, "dropout_3": -77.52730717238158, "noise_3": -0.1743374782682494, "option_2": true, "conv_window_2": -48.97479744040461, "noise_1": -33.611573920079444, "lr": -11.716993670213228, "dense_2": -14.361019913624496, "conv_window_1": -59.18377397664942, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_26.h5", "dropout_4": -2.065248290205901, "filter_layer_2": -67.08436681392158, "filter_layer_1": -60.93792158032926, "maxnorm_1": -56.98870836427743, "maxnorm_4": -12.724655238416238, "option_1": true, "dropout_1": -20.14430470917661, "dropout_2": -51.55968399375867, "score": 6.827801932752878, "l1_reg_2": -3.476417016370803, "momentum": -73.9981831387712, "l1_reg_1": -93.835227245896}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_21.h5
+6.935775653446787
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5
+
+{"noise_2": -7.286977011112128, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5", "dense_1": -25.69638539083583, "l2_reg_2": -72.01069387974628, "l2_reg_1": -36.43308147316904, "maxnorm_3": -24.694188849531294, "noise_4": -9.833181022734628, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5", "maxnorm_2": -35.13293609618962, "dropout_3": -97.85192504112898, "noise_3": -0.1743374782682494, "option_2": true, "conv_window_2": -48.97479744040461, "noise_1": -34.96059744897754, "lr": -11.942331537451423, "dense_2": -80.88574288919766, "conv_window_1": -59.18377397664942, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_21.h5", "dropout_4": -80.69753146897172, "filter_layer_2": -67.08436681392158, "filter_layer_1": -199.18747446779525, "maxnorm_1": -14.929604212144943, "maxnorm_4": -7.51567637874615, "option_1": false, "dropout_1": -60.834432172169585, "dropout_2": -51.55968399375867, "score": 6.935775653446787, "l1_reg_2": -64.81538813045921, "momentum": -73.9981831387712, "l1_reg_1": -41.38701184272078}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_22.h5
+6.958653535247251
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5
+
+{"noise_2": -7.286977011112128, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5", "dense_1": -25.69638539083583, "l2_reg_2": -72.01069387974628, "l2_reg_1": -63.87278682974659, "maxnorm_3": -7.797074362683465, "noise_4": -16.800116021322843, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5", "maxnorm_2": -35.13293609618962, "dropout_3": -77.52730717238158, "noise_3": -0.1743374782682494, "option_2": true, "conv_window_2": -48.97479744040461, "noise_1": -59.53862314039372, "lr": -11.716993670213228, "dense_2": -80.88574288919766, "conv_window_1": -59.18377397664942, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_22.h5", "dropout_4": -80.69753146897172, "filter_layer_2": -67.08436681392158, "filter_layer_1": -60.93792158032926, "maxnorm_1": -14.929604212144943, "maxnorm_4": -229.53374912644313, "option_1": true, "dropout_1": -60.834432172169585, "dropout_2": -51.55968399375867, "score": 6.958653535247251, "l1_reg_2": -37.87650677461944, "momentum": -73.9981831387712, "l1_reg_1": -134.64360995100594}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_48.h5
+7.077094001125179
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5
+
+{"noise_2": -39.17805228525357, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5", "dense_1": -75.46368804035379, "l2_reg_2": -45.483529538105785, "l2_reg_1": -184.07528864003058, "maxnorm_3": -82.599327013237, "noise_4": -81.95744715191265, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5", "maxnorm_2": -63.55786504467965, "dropout_3": -67.50977182034525, "noise_3": -39.149977736257604, "option_2": true, "conv_window_2": -46.565515967854395, "noise_1": -72.71433268144196, "lr": -11.417375489015713, "dense_2": -89.7113802792239, "conv_window_1": -48.67503447501457, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_48.h5", "dropout_4": -83.43650452565925, "filter_layer_2": -87.17821846437278, "filter_layer_1": -19.889356386288714, "maxnorm_1": -42.43444627108792, "maxnorm_4": -12.081018024516599, "option_1": false, "dropout_1": -72.01031174230245, "dropout_2": -44.77255143160126, "score": 7.077094001125179, "l1_reg_2": -58.74368219438294, "momentum": -89.31179194480436, "l1_reg_1": -5.2403276844044}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_71.h5
+7.094436288697238
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5
+
+{"noise_2": -29.521137395327056, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5", "dense_1": -17.727772412073584, "l2_reg_2": -214.9692409365349, "l2_reg_1": -36.43308147316904, "maxnorm_3": -42.249038893031745, "noise_4": -49.472776608343935, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5", "maxnorm_2": -35.88150199876683, "dropout_3": -97.85192504112898, "noise_3": -83.70764751354102, "option_2": true, "conv_window_2": -70.51211353357665, "noise_1": -66.8259628581751, "lr": -11.942331537451423, "dense_2": -28.294737476897215, "conv_window_1": -31.685337802463497, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_71.h5", "dropout_4": -78.7000154180029, "filter_layer_2": -77.33343053598715, "filter_layer_1": -93.46483367553749, "maxnorm_1": -39.06859926472611, "maxnorm_4": -7.51567637874615, "option_1": false, "dropout_1": -68.13419039265828, "dropout_2": -40.158187697118905, "score": 7.094436288697238, "l1_reg_2": -118.28156770723999, "momentum": -21.537090727592513, "l1_reg_1": -1.2186977042732638}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_37.h5
+7.111581424324728
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5
+
+{"noise_2": -5.071626173465149, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5", "dense_1": -17.727772412073584, "l2_reg_2": -91.93437841329924, "l2_reg_1": -16.995309278798864, "maxnorm_3": -74.57569664891359, "noise_4": -49.472776608343935, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5", "maxnorm_2": -68.98154926337547, "dropout_3": -95.3616654172421, "noise_3": -62.694459475124056, "option_2": true, "conv_window_2": -84.90713391375866, "noise_1": -66.8259628581751, "lr": -2.207693985177961, "dense_2": -41.93475867776096, "conv_window_1": -31.685337802463497, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_37.h5", "dropout_4": -76.00123002141707, "filter_layer_2": -77.33343053598715, "filter_layer_1": -19.102125804288484, "maxnorm_1": -2.098009758876518, "maxnorm_4": -50.61986920106136, "option_1": false, "dropout_1": -68.13419039265828, "dropout_2": -19.91436088370362, "score": 7.111581424324728, "l1_reg_2": -50.64559479136835, "momentum": -83.65405619487768, "l1_reg_1": -1.2186977042732638}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_53.h5
+7.114766638770605
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5
+
+{"noise_2": -179.52249512050332, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5", "dense_1": -31.984745931136338, "l2_reg_2": -91.93437841329924, "l2_reg_1": -31.76107718313532, "maxnorm_3": -74.57569664891359, "noise_4": -69.62752521979704, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5", "maxnorm_2": -68.98154926337547, "dropout_3": -15.583418307656272, "noise_3": -164.46059065341666, "option_2": true, "conv_window_2": -7.987081493489423, "noise_1": -50.918309568246265, "lr": -11.222041491435608, "dense_2": -73.76695734030598, "conv_window_1": -57.91836545922583, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_53.h5", "dropout_4": -76.00123002141707, "filter_layer_2": -13.713033652796103, "filter_layer_1": -24.87522029197533, "maxnorm_1": -7.970701731579477, "maxnorm_4": -61.082322312158574, "option_1": false, "dropout_1": -40.015829875718076, "dropout_2": -91.40173460445408, "score": 7.114766638770605, "l1_reg_2": -92.15372495790992, "momentum": -70.95613733635318, "l1_reg_1": -31.583902255772635}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_90.h5
+7.1158640139560285
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5
+
+{"noise_2": 0.0, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5", "dense_1": -34.36116200072461, "l2_reg_2": 0.0, "l2_reg_1": 0.0, "maxnorm_3": -71.07215309653367, "noise_4": -17.077196546232255, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5", "maxnorm_2": 2.0, "dropout_3": 0.0, "noise_3": 0.0, "option_2": true, "conv_window_2": -26.352775673867, "noise_1": 0.0, "lr": -7.0, "dense_2": -83.3881817079288, "conv_window_1": 3.0, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_90.h5", "dropout_4": 0.0, "filter_layer_2": -88.43509509141747, "filter_layer_1": 4.0, "maxnorm_1": 1.0, "maxnorm_4": -52.02988188667301, "option_1": false, "dropout_1": -63.4629797713271, "dropout_2": -96.16149711016814, "score": 7.1158640139560285, "l1_reg_2": 0.0, "momentum": -4.326232528194385, "l1_reg_1": 0.0}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_73.h5
+7.116630619505142
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5
+
+{"noise_2": -5.071626173465149, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5", "dense_1": -17.727772412073584, "l2_reg_2": -10.884895714959796, "l2_reg_1": -48.69947434169482, "maxnorm_3": -42.249038893031745, "noise_4": -49.472776608343935, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5", "maxnorm_2": -35.88150199876683, "dropout_3": -58.08576090256592, "noise_3": -62.694459475124056, "option_2": true, "conv_window_2": -7.987081493489423, "noise_1": -66.8259628581751, "lr": -2.207693985177961, "dense_2": -41.93475867776096, "conv_window_1": -31.685337802463497, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_73.h5", "dropout_4": -78.7000154180029, "filter_layer_2": -13.713033652796103, "filter_layer_1": -19.102125804288484, "maxnorm_1": -2.098009758876518, "maxnorm_4": -50.61986920106136, "option_1": false, "dropout_1": -40.015829875718076, "dropout_2": -96.96723986201064, "score": 7.116630619505142, "l1_reg_2": -0.22027494427804273, "momentum": -21.537090727592513, "l1_reg_1": -29.065103965759253}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_30.h5
+7.116869450310711
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5
+
+{"noise_2": -5.071626173465149, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5", "dense_1": -31.984745931136338, "l2_reg_2": -91.93437841329924, "l2_reg_1": -48.69947434169482, "maxnorm_3": 3.0, "noise_4": 0.0, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5", "maxnorm_2": 2.0, "dropout_3": 0.0, "noise_3": 0.0, "option_2": false, "conv_window_2": -7.987081493489423, "noise_1": -50.918309568246265, "lr": -2.207693985177961, "dense_2": -41.93475867776096, "conv_window_1": -196.67760989687525, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_30.h5", "dropout_4": -76.00123002141707, "filter_layer_2": -13.713033652796103, "filter_layer_1": 4.0, "maxnorm_1": -35.06869335300507, "maxnorm_4": 3.0, "option_1": false, "dropout_1": 0.0, "dropout_2": 0.0, "score": 7.116869450310711, "l1_reg_2": 0.0, "momentum": -83.65405619487768, "l1_reg_1": 0.0}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_24.h5
+7.1168777313295255
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5
+
+{"noise_2": -39.17805228525357, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5", "dense_1": -25.69638539083583, "l2_reg_2": -45.483529538105785, "l2_reg_1": -221.10542209942375, "maxnorm_3": -7.797074362683465, "noise_4": -78.72035287496047, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5", "maxnorm_2": -63.55786504467965, "dropout_3": -251.66272902890012, "noise_3": -88.66311715649607, "option_2": true, "conv_window_2": -38.314043034491164, "noise_1": -77.89180470583266, "lr": -7.63851352916568, "dense_2": -89.7113802792239, "conv_window_1": -59.18377397664942, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_24.h5", "dropout_4": -35.09873325141683, "filter_layer_2": -87.17821846437278, "filter_layer_1": -60.93792158032926, "maxnorm_1": -14.929604212144943, "maxnorm_4": -95.8364131277113, "option_1": false, "dropout_1": -72.01031174230245, "dropout_2": -51.55968399375867, "score": 7.1168777313295255, "l1_reg_2": -37.87650677461944, "momentum": -73.9981831387712, "l1_reg_1": -75.39821111023413}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_87.h5
+7.116934871881552
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5
+
+{"noise_2": -55.25041185073828, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5", "dense_1": -161.1125566865075, "l2_reg_2": -44.927544667093144, "l2_reg_1": -39.5390403106627, "maxnorm_3": -82.599327013237, "noise_4": -49.472776608343935, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5", "maxnorm_2": -51.158548476497224, "dropout_3": -43.41906622749864, "noise_3": -39.149977736257604, "option_2": true, "conv_window_2": -46.565515967854395, "noise_1": -66.8259628581751, "lr": -7.709633936683902, "dense_2": -25.57952077193556, "conv_window_1": -48.67503447501457, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_87.h5", "dropout_4": -78.7000154180029, "filter_layer_2": -77.33343053598715, "filter_layer_1": -19.102125804288484, "maxnorm_1": -2.098009758876518, "maxnorm_4": -50.61986920106136, "option_1": -111.5497356204482, "dropout_1": -68.13419039265828, "dropout_2": -19.91436088370362, "score": 7.116934871881552, "l1_reg_2": -74.91367220524731, "momentum": -189.59552256540422, "l1_reg_1": -5.2403276844044}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_93.h5
+7.117308121934152
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5
+
+{"noise_2": -5.071626173465149, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5", "dense_1": -34.36116200072461, "l2_reg_2": -20.829729834194254, "l2_reg_1": -48.69947434169482, "maxnorm_3": -139.93041463341365, "noise_4": -17.077196546232255, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5", "maxnorm_2": -43.47979951534875, "dropout_3": -95.3616654172421, "noise_3": -51.693913115135445, "option_2": true, "conv_window_2": -7.987081493489423, "noise_1": -28.03986628905172, "lr": -2.207693985177961, "dense_2": -41.93475867776096, "conv_window_1": -89.89572582143992, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_93.h5", "dropout_4": -76.00123002141707, "filter_layer_2": -88.43509509141747, "filter_layer_1": -24.87522029197533, "maxnorm_1": -132.56464792854413, "maxnorm_4": -61.082322312158574, "option_1": false, "dropout_1": -63.4629797713271, "dropout_2": -96.16149711016814, "score": 7.117308121934152, "l1_reg_2": -0.22027494427804273, "momentum": -4.326232528194385, "l1_reg_1": -29.065103965759253}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_76.h5
+7.117413498181764
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5
+
+{"noise_2": -158.81106493729155, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5", "dense_1": -34.62737489629467, "l2_reg_2": -23.756726883933865, "l2_reg_1": -16.995309278798864, "maxnorm_3": -2.366651012314691, "noise_4": -14.300143274625722, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5", "maxnorm_2": -71.8887297745355, "dropout_3": -90.02092256172651, "noise_3": -6.148377383339321, "option_2": true, "conv_window_2": -70.51211353357665, "noise_1": -33.611573920079444, "lr": -7.709633936683902, "dense_2": -14.361019913624496, "conv_window_1": -50.91641387884726, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_76.h5", "dropout_4": -78.7000154180029, "filter_layer_2": -40.09093935587353, "filter_layer_1": -68.02055696834765, "maxnorm_1": -2.098009758876518, "maxnorm_4": -50.61986920106136, "option_1": true, "dropout_1": -68.13419039265828, "dropout_2": -36.110904012755995, "score": 7.117413498181764, "l1_reg_2": -50.64559479136835, "momentum": -21.537090727592513, "l1_reg_1": -93.835227245896}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_43.h5
+7.117770946566749
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5
+
+{"noise_2": -39.17805228525357, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5", "dense_1": -31.984745931136338, "l2_reg_2": -91.93437841329924, "l2_reg_1": -94.307078748494, "maxnorm_3": -74.57569664891359, "noise_4": -69.62752521979704, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5", "maxnorm_2": -63.55786504467965, "dropout_3": -236.05827052725346, "noise_3": -51.693913115135445, "option_2": true, "conv_window_2": -49.27945608334163, "noise_1": -77.89180470583266, "lr": -2.207693985177961, "dense_2": -89.7113802792239, "conv_window_1": -65.88127169046082, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_43.h5", "dropout_4": -76.00123002141707, "filter_layer_2": -87.17821846437278, "filter_layer_1": -78.60890346659461, "maxnorm_1": -84.9083622104863, "maxnorm_4": -61.082322312158574, "option_1": false, "dropout_1": -40.015829875718076, "dropout_2": -96.96723986201064, "score": 7.117770946566749, "l1_reg_2": -0.22027494427804273, "momentum": -89.31179194480436, "l1_reg_1": -13.369343750707795}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_27.h5
+7.117948899156171
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5
+
+{"noise_2": -55.25041185073828, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5", "dense_1": -17.727772412073584, "l2_reg_2": -72.01069387974628, "l2_reg_1": -16.995309278798864, "maxnorm_3": -42.249038893031745, "noise_4": -16.800116021322843, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5", "maxnorm_2": -35.13293609618962, "dropout_3": -77.52730717238158, "noise_3": -62.694459475124056, "option_2": true, "conv_window_2": -70.51211353357665, "noise_1": -66.8259628581751, "lr": -7.709633936683902, "dense_2": -3.0511372634513534, "conv_window_1": -31.685337802463497, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_27.h5", "dropout_4": -80.69753146897172, "filter_layer_2": -67.08436681392158, "filter_layer_1": -60.93792158032926, "maxnorm_1": -2.098009758876518, "maxnorm_4": -82.94214573594051, "option_1": true, "dropout_1": -60.834432172169585, "dropout_2": -19.91436088370362, "score": 7.117948899156171, "l1_reg_2": -50.64559479136835, "momentum": -21.537090727592513, "l1_reg_1": -1.2186977042732638}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_46.h5
+7.1180410971920995
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5
+
+{"noise_2": -39.17805228525357, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5", "dense_1": -75.46368804035379, "l2_reg_2": -45.483529538105785, "l2_reg_1": -94.307078748494, "maxnorm_3": -2.366651012314691, "noise_4": -78.72035287496047, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5", "maxnorm_2": -63.55786504467965, "dropout_3": -90.02092256172651, "noise_3": -88.66311715649607, "option_2": true, "conv_window_2": -16.918797677093988, "noise_1": -33.611573920079444, "lr": -7.63851352916568, "dense_2": -14.361019913624496, "conv_window_1": -178.56200757280646, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_46.h5", "dropout_4": -2.065248290205901, "filter_layer_2": -87.17821846437278, "filter_layer_1": -68.02055696834765, "maxnorm_1": -56.98870836427743, "maxnorm_4": -95.8364131277113, "option_1": true, "dropout_1": -72.01031174230245, "dropout_2": -36.110904012755995, "score": 7.1180410971920995, "l1_reg_2": -3.476417016370803, "momentum": -89.31179194480436, "l1_reg_1": -93.835227245896}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_96.h5
+7.118333883947779
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5
+
+{"noise_2": -13.9834379198142, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5", "dense_1": -34.62737489629467, "l2_reg_2": -201.89144514536235, "l2_reg_1": -95.676379304178, "maxnorm_3": -71.07215309653367, "noise_4": -14.300143274625722, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5", "maxnorm_2": -43.47979951534875, "dropout_3": -116.04943937227168, "noise_3": -6.148377383339321, "option_2": true, "conv_window_2": -26.352775673867, "noise_1": -28.03986628905172, "lr": -4.138546578296354, "dense_2": -14.361019913624496, "conv_window_1": -50.91641387884726, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_96.h5", "dropout_4": -2.065248290205901, "filter_layer_2": -88.43509509141747, "filter_layer_1": -64.81422237485025, "maxnorm_1": -26.993011016932435, "maxnorm_4": -52.02988188667301, "option_1": -192.25501594317933, "dropout_1": -20.14430470917661, "dropout_2": -96.16149711016814, "score": 7.118333883947779, "l1_reg_2": -3.476417016370803, "momentum": -1.9037569013480748, "l1_reg_1": -86.12079311039292}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_34.h5
+7.118352128237206
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5
+
+{"noise_2": -5.071626173465149, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5", "dense_1": -75.46368804035379, "l2_reg_2": -91.93437841329924, "l2_reg_1": -94.307078748494, "maxnorm_3": -177.1910939617597, "noise_4": -69.62752521979704, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5", "maxnorm_2": -68.98154926337547, "dropout_3": -95.3616654172421, "noise_3": -51.693913115135445, "option_2": true, "conv_window_2": -7.987081493489423, "noise_1": -50.918309568246265, "lr": -7.63851352916568, "dense_2": -41.93475867776096, "conv_window_1": -89.89572582143992, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_34.h5", "dropout_4": -76.00123002141707, "filter_layer_2": -87.17821846437278, "filter_layer_1": -24.87522029197533, "maxnorm_1": -84.9083622104863, "maxnorm_4": -61.082322312158574, "option_1": false, "dropout_1": -40.015829875718076, "dropout_2": -56.786258466767784, "score": 7.118352128237206, "l1_reg_2": -0.22027494427804273, "momentum": -89.31179194480436, "l1_reg_1": -29.065103965759253}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_36.h5
+7.118516280459241
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5
+
+{"noise_2": -5.071626173465149, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5", "dense_1": -31.984745931136338, "l2_reg_2": -91.93437841329924, "l2_reg_1": -48.69947434169482, "maxnorm_3": -74.57569664891359, "noise_4": -14.300143274625722, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5", "maxnorm_2": -68.98154926337547, "dropout_3": -95.3616654172421, "noise_3": -51.693913115135445, "option_2": true, "conv_window_2": -16.918797677093988, "noise_1": -50.918309568246265, "lr": -2.207693985177961, "dense_2": -14.361019913624496, "conv_window_1": -89.89572582143992, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_36.h5", "dropout_4": -2.065248290205901, "filter_layer_2": -13.713033652796103, "filter_layer_1": -68.02055696834765, "maxnorm_1": -35.06869335300507, "maxnorm_4": -61.082322312158574, "option_1": false, "dropout_1": -20.14430470917661, "dropout_2": -96.96723986201064, "score": 7.118516280459241, "l1_reg_2": -3.476417016370803, "momentum": -1.9037569013480748, "l1_reg_1": -93.835227245896}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_23.h5
+7.118540770131152
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5
+
+{"noise_2": -5.071626173465149, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5", "dense_1": -25.69638539083583, "l2_reg_2": -91.93437841329924, "l2_reg_1": -48.69947434169482, "maxnorm_3": -7.797074362683465, "noise_4": -16.800116021322843, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5", "maxnorm_2": -35.13293609618962, "dropout_3": -95.3616654172421, "noise_3": -51.693913115135445, "option_2": true, "conv_window_2": -7.987081493489423, "noise_1": -59.53862314039372, "lr": -2.207693985177961, "dense_2": -41.93475867776096, "conv_window_1": -89.89572582143992, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_23.h5", "dropout_4": -80.69753146897172, "filter_layer_2": -13.713033652796103, "filter_layer_1": -93.31494453963668, "maxnorm_1": -14.929604212144943, "maxnorm_4": -61.082322312158574, "option_1": true, "dropout_1": -40.015829875718076, "dropout_2": -96.96723986201064, "score": 7.118540770131152, "l1_reg_2": -0.22027494427804273, "momentum": -83.65405619487768, "l1_reg_1": -29.065103965759253}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_67.h5
+7.118593020232569
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5
+
+{"noise_2": -6.805059091836929, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5", "dense_1": -34.62737489629467, "l2_reg_2": -23.756726883933865, "l2_reg_1": -28.354125993816794, "maxnorm_3": -42.249038893031745, "noise_4": -49.472776608343935, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5", "maxnorm_2": -35.88150199876683, "dropout_3": -90.02092256172651, "noise_3": -62.694459475124056, "option_2": true, "conv_window_2": -16.918797677093988, "noise_1": -33.611573920079444, "lr": -4.138546578296354, "dense_2": -14.361019913624496, "conv_window_1": -31.685337802463497, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_67.h5", "dropout_4": -2.065248290205901, "filter_layer_2": -40.09093935587353, "filter_layer_1": -19.102125804288484, "maxnorm_1": -56.98870836427743, "maxnorm_4": -50.61986920106136, "option_1": true, "dropout_1": -68.13419039265828, "dropout_2": -36.110904012755995, "score": 7.118593020232569, "l1_reg_2": -3.476417016370803, "momentum": -1.9037569013480748, "l1_reg_1": -93.835227245896}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_38.h5
+7.118859693349329
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5
+
+{"noise_2": -76.49845055340757, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5", "dense_1": -93.30533515544911, "l2_reg_2": -44.927544667093144, "l2_reg_1": -39.5390403106627, "maxnorm_3": -74.57569664891359, "noise_4": -69.62752521979704, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5", "maxnorm_2": -68.98154926337547, "dropout_3": -95.3616654172421, "noise_3": -39.149977736257604, "option_2": true, "conv_window_2": -7.987081493489423, "noise_1": -50.918309568246265, "lr": -2.207693985177961, "dense_2": -41.93475867776096, "conv_window_1": -89.89572582143992, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_38.h5", "dropout_4": -76.00123002141707, "filter_layer_2": -52.9504202589101, "filter_layer_1": -24.87522029197533, "maxnorm_1": -42.43444627108792, "maxnorm_4": -61.082322312158574, "option_1": false, "dropout_1": -40.015829875718076, "dropout_2": -96.96723986201064, "score": 7.118859693349329, "l1_reg_2": -74.91367220524731, "momentum": -91.67343779045926, "l1_reg_1": -29.065103965759253}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_72.h5
+7.119247202790572
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5
+
+{"noise_2": -55.25041185073828, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5", "dense_1": -17.727772412073584, "l2_reg_2": -72.01069387974628, "l2_reg_1": -63.87278682974659, "maxnorm_3": -7.797074362683465, "noise_4": -16.800116021322843, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5", "maxnorm_2": -35.13293609618962, "dropout_3": -58.08576090256592, "noise_3": -0.1743374782682494, "option_2": true, "conv_window_2": -48.97479744040461, "noise_1": -59.53862314039372, "lr": -7.709633936683902, "dense_2": -3.0511372634513534, "conv_window_1": -31.685337802463497, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_72.h5", "dropout_4": -78.7000154180029, "filter_layer_2": -77.33343053598715, "filter_layer_1": -60.93792158032926, "maxnorm_1": -2.098009758876518, "maxnorm_4": -50.61986920106136, "option_1": true, "dropout_1": -68.13419039265828, "dropout_2": -51.55968399375867, "score": 7.119247202790572, "l1_reg_2": -50.64559479136835, "momentum": -73.9981831387712, "l1_reg_1": -1.2186977042732638}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_33.h5
+7.119416942108038
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5
+
+{"noise_2": -5.071626173465149, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5", "dense_1": -31.984745931136338, "l2_reg_2": -91.93437841329924, "l2_reg_1": -48.69947434169482, "maxnorm_3": -74.57569664891359, "noise_4": -69.62752521979704, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5", "maxnorm_2": -68.98154926337547, "dropout_3": -95.3616654172421, "noise_3": -51.693913115135445, "option_2": true, "conv_window_2": -7.987081493489423, "noise_1": -50.918309568246265, "lr": -2.207693985177961, "dense_2": -41.93475867776096, "conv_window_1": -89.89572582143992, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_33.h5", "dropout_4": -76.00123002141707, "filter_layer_2": -13.713033652796103, "filter_layer_1": -24.87522029197533, "maxnorm_1": -35.06869335300507, "maxnorm_4": -61.082322312158574, "option_1": false, "dropout_1": -40.015829875718076, "dropout_2": -96.96723986201064, "score": 7.119416942108038, "l1_reg_2": -0.22027494427804273, "momentum": -83.65405619487768, "l1_reg_1": -29.065103965759253}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_66.h5
+7.119568767978126
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5
+
+{"noise_2": -39.484523057633375, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5", "dense_1": -34.62737489629467, "l2_reg_2": -23.756726883933865, "l2_reg_1": -28.354125993816794, "maxnorm_3": -2.366651012314691, "noise_4": -14.300143274625722, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5", "maxnorm_2": -71.8887297745355, "dropout_3": -90.02092256172651, "noise_3": -6.148377383339321, "option_2": true, "conv_window_2": -16.918797677093988, "noise_1": -33.611573920079444, "lr": -4.138546578296354, "dense_2": -14.361019913624496, "conv_window_1": -197.6580836147745, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_66.h5", "dropout_4": -2.065248290205901, "filter_layer_2": -40.09093935587353, "filter_layer_1": -68.02055696834765, "maxnorm_1": -56.98870836427743, "maxnorm_4": -12.724655238416238, "option_1": true, "dropout_1": -20.14430470917661, "dropout_2": -36.110904012755995, "score": 7.119568767978126, "l1_reg_2": -3.476417016370803, "momentum": -1.9037569013480748, "l1_reg_1": -93.835227245896}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_60.h5
+7.119608883376251
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5
+
+{"noise_2": 0.0, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5", "dense_1": -34.62737489629467, "l2_reg_2": 0.0, "l2_reg_1": -28.354125993816794, "maxnorm_3": 3.0, "noise_4": -14.300143274625722, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5", "maxnorm_2": 2.0, "dropout_3": 0.0, "noise_3": 0.0, "option_2": true, "conv_window_2": -187.6790525059911, "noise_1": -33.611573920079444, "lr": -4.138546578296354, "dense_2": -2.0, "conv_window_1": 3.0, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_60.h5", "dropout_4": 0.0, "filter_layer_2": -40.09093935587353, "filter_layer_1": -68.02055696834765, "maxnorm_1": -56.98870836427743, "maxnorm_4": -12.724655238416238, "option_1": true, "dropout_1": -93.57932667162787, "dropout_2": 0.0, "score": 7.119608883376251, "l1_reg_2": 0.0, "momentum": 2.2, "l1_reg_1": -115.25401513625904}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_20.h5
+7.121799718693076
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5
+
+{"noise_2": -7.286977011112128, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5", "dense_1": -2.0, "l2_reg_2": 0.0, "l2_reg_1": 0.0, "maxnorm_3": -7.797074362683465, "noise_4": -16.800116021322843, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5", "maxnorm_2": 2.0, "dropout_3": 0.0, "noise_3": 0.0, "option_2": true, "conv_window_2": -48.97479744040461, "noise_1": -59.53862314039372, "lr": -11.716993670213228, "dense_2": -80.88574288919766, "conv_window_1": -59.18377397664942, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_20.h5", "dropout_4": 0.0, "filter_layer_2": -67.08436681392158, "filter_layer_1": -60.93792158032926, "maxnorm_1": -14.929604212144943, "maxnorm_4": 3.0, "option_1": true, "dropout_1": 0.0, "dropout_2": -51.55968399375867, "score": 7.121799718693076, "l1_reg_2": -37.87650677461944, "momentum": 2.2, "l1_reg_1": 0.0}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_59.h5
+7.122268629717035
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5
+
+{"noise_2": -41.646567137875, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5", "dense_1": -34.36116200072461, "l2_reg_2": -20.829729834194254, "l2_reg_1": -31.76107718313532, "maxnorm_3": -42.32617065796973, "noise_4": -39.33931280836178, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5", "maxnorm_2": -81.45488256658301, "dropout_3": -15.583418307656272, "noise_3": -49.11938916799241, "option_2": true, "conv_window_2": -78.3740221939814, "noise_1": -28.03986628905172, "lr": -11.222041491435608, "dense_2": -83.3881817079288, "conv_window_1": -4.325274886070895, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_59.h5", "dropout_4": -26.90552484131713, "filter_layer_2": -88.43509509141747, "filter_layer_1": -64.81422237485025, "maxnorm_1": -7.970701731579477, "maxnorm_4": -52.02988188667301, "option_1": true, "dropout_1": -237.88309224532387, "dropout_2": -96.16149711016814, "score": 7.122268629717035, "l1_reg_2": -92.15372495790992, "momentum": -70.95613733635318, "l1_reg_1": -86.12079311039292}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_68.h5
+7.132041962547651
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5
+
+{"noise_2": -6.805059091836929, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5", "dense_1": -93.30533515544911, "l2_reg_2": -44.927544667093144, "l2_reg_1": -28.354125993816794, "maxnorm_3": -82.599327013237, "noise_4": -81.95744715191265, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5", "maxnorm_2": -71.8887297745355, "dropout_3": -127.3565593792012, "noise_3": -6.148377383339321, "option_2": true, "conv_window_2": -16.918797677093988, "noise_1": -33.611573920079444, "lr": -11.417375489015713, "dense_2": -14.361019913624496, "conv_window_1": -50.91641387884726, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_68.h5", "dropout_4": -2.065248290205901, "filter_layer_2": -52.9504202589101, "filter_layer_1": -68.02055696834765, "maxnorm_1": -56.98870836427743, "maxnorm_4": -12.081018024516599, "option_1": true, "dropout_1": -20.14430470917661, "dropout_2": -36.110904012755995, "score": 7.132041962547651, "l1_reg_2": -74.91367220524731, "momentum": -91.67343779045926, "l1_reg_1": -5.2403276844044}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_47.h5
+7.133733880574105
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5
+
+{"noise_2": -55.25041185073828, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5", "dense_1": -75.46368804035379, "l2_reg_2": -45.483529538105785, "l2_reg_1": -16.995309278798864, "maxnorm_3": -4.85867468858231, "noise_4": -49.472776608343935, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5", "maxnorm_2": -35.88150199876683, "dropout_3": -67.50977182034525, "noise_3": -62.694459475124056, "option_2": true, "conv_window_2": -38.314043034491164, "noise_1": -77.89180470583266, "lr": -7.63851352916568, "dense_2": -3.0511372634513534, "conv_window_1": -31.685337802463497, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_47.h5", "dropout_4": -271.0302040766964, "filter_layer_2": -87.17821846437278, "filter_layer_1": -78.60890346659461, "maxnorm_1": -84.9083622104863, "maxnorm_4": -50.61986920106136, "option_1": false, "dropout_1": -72.01031174230245, "dropout_2": -19.91436088370362, "score": 7.133733880574105, "l1_reg_2": -50.64559479136835, "momentum": -89.31179194480436, "l1_reg_1": -13.369343750707795}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_86.h5
+7.153630718552598
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5
+
+{"noise_2": -6.805059091836929, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5", "dense_1": -34.62737489629467, "l2_reg_2": -23.756726883933865, "l2_reg_1": -188.55234746428079, "maxnorm_3": -2.366651012314691, "noise_4": -81.95744715191265, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5", "maxnorm_2": -71.8887297745355, "dropout_3": -233.05151054732085, "noise_3": -39.149977736257604, "option_2": true, "conv_window_2": -16.918797677093988, "noise_1": -107.9365449104287, "lr": -11.417375489015713, "dense_2": -25.57952077193556, "conv_window_1": -50.91641387884726, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_86.h5", "dropout_4": -87.62121405625265, "filter_layer_2": -40.09093935587353, "filter_layer_1": -68.02055696834765, "maxnorm_1": -56.98870836427743, "maxnorm_4": -12.081018024516599, "option_1": false, "dropout_1": -92.89383314066377, "dropout_2": -44.77255143160126, "score": 7.153630718552598, "l1_reg_2": -83.18138428255904, "momentum": -91.67343779045926, "l1_reg_1": -93.835227245896}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_92.h5
+7.177196494383851
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5
+
+{"noise_2": -7.286977011112128, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5", "dense_1": -34.36116200072461, "l2_reg_2": -72.01069387974628, "l2_reg_1": -95.676379304178, "maxnorm_3": -7.797074362683465, "noise_4": -17.077196546232255, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5", "maxnorm_2": -43.47979951534875, "dropout_3": -21.447660669459967, "noise_3": -0.1743374782682494, "option_2": true, "conv_window_2": -48.97479744040461, "noise_1": -59.53862314039372, "lr": -11.716993670213228, "dense_2": -83.3881817079288, "conv_window_1": -59.18377397664942, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_92.h5", "dropout_4": -80.69753146897172, "filter_layer_2": -106.3136938233122, "filter_layer_1": -60.93792158032926, "maxnorm_1": -26.993011016932435, "maxnorm_4": -82.94214573594051, "option_1": true, "dropout_1": -60.834432172169585, "dropout_2": -51.55968399375867, "score": 7.177196494383851, "l1_reg_2": -50.63851933997824, "momentum": -4.326232528194385, "l1_reg_1": -75.39821111023413}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_19.h5
+7.266671915378823
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5
+
+{"noise_2": -13.9834379198142, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5", "dense_1": -70.40767239279094, "l2_reg_2": -20.829729834194254, "l2_reg_1": -36.43308147316904, "maxnorm_3": -71.07215309653367, "noise_4": -17.077196546232255, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5", "maxnorm_2": -33.13262141706921, "dropout_3": -97.85192504112898, "noise_3": -49.11938916799241, "option_2": true, "conv_window_2": -26.352775673867, "noise_1": -34.96059744897754, "lr": -11.942331537451423, "dense_2": -28.294737476897215, "conv_window_1": -4.325274886070895, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_19.h5", "dropout_4": -8.014899405872256, "filter_layer_2": -88.43509509141747, "filter_layer_1": -93.46483367553749, "maxnorm_1": -26.993011016932435, "maxnorm_4": -52.02988188667301, "option_1": false, "dropout_1": -63.4629797713271, "dropout_2": -96.16149711016814, "score": 7.266671915378823, "l1_reg_2": -50.63851933997824, "momentum": -4.326232528194385, "l1_reg_1": -41.38701184272078}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_31.h5
+7.274762077531896
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5
+
+{"noise_2": -5.071626173465149, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5", "dense_1": -31.984745931136338, "l2_reg_2": -87.69925095407943, "l2_reg_1": -36.43308147316904, "maxnorm_3": -24.694188849531294, "noise_4": -69.62752521979704, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5", "maxnorm_2": -33.13262141706921, "dropout_3": -121.00480312357399, "noise_3": -83.70764751354102, "option_2": true, "conv_window_2": -55.9996998017777, "noise_1": -50.918309568246265, "lr": -11.942331537451423, "dense_2": -41.93475867776096, "conv_window_1": -89.89572582143992, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_31.h5", "dropout_4": -269.8623461166574, "filter_layer_2": -13.842559917523289, "filter_layer_1": -143.3679903731349, "maxnorm_1": -39.06859926472611, "maxnorm_4": -61.082322312158574, "option_1": false, "dropout_1": -40.015829875718076, "dropout_2": -40.158187697118905, "score": 7.274762077531896, "l1_reg_2": -0.22027494427804273, "momentum": -83.65405619487768, "l1_reg_1": -29.065103965759253}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_61.h5
+7.277435892588491
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5
+
+{"noise_2": -29.521137395327056, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5", "dense_1": -70.40767239279094, "l2_reg_2": -23.756726883933865, "l2_reg_1": -28.354125993816794, "maxnorm_3": -24.694188849531294, "noise_4": -14.300143274625722, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5", "maxnorm_2": -71.8887297745355, "dropout_3": -90.02092256172651, "noise_3": -83.70764751354102, "option_2": -178.4331290357854, "conv_window_2": -16.918797677093988, "noise_1": -34.96059744897754, "lr": -11.942331537451423, "dense_2": -28.294737476897215, "conv_window_1": -50.91641387884726, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_61.h5", "dropout_4": -8.014899405872256, "filter_layer_2": -40.09093935587353, "filter_layer_1": -68.02055696834765, "maxnorm_1": -39.06859926472611, "maxnorm_4": -7.51567637874615, "option_1": false, "dropout_1": -0.14011393325670252, "dropout_2": -40.158187697118905, "score": 7.277435892588491, "l1_reg_2": -124.16683810917249, "momentum": -57.61164592210687, "l1_reg_1": -93.835227245896}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_16.h5
+7.3383475507846425
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5
+
+{"noise_2": -6.805059091836929, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5", "dense_1": -34.62737489629467, "l2_reg_2": -23.756726883933865, "l2_reg_1": -28.354125993816794, "maxnorm_3": -24.694188849531294, "noise_4": -14.300143274625722, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5", "maxnorm_2": -33.13262141706921, "dropout_3": -97.85192504112898, "noise_3": -6.148377383339321, "option_2": true, "conv_window_2": -55.9996998017777, "noise_1": -34.96059744897754, "lr": -11.942331537451423, "dense_2": -28.294737476897215, "conv_window_1": -50.91641387884726, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_16.h5", "dropout_4": -2.065248290205901, "filter_layer_2": -40.09093935587353, "filter_layer_1": -93.46483367553749, "maxnorm_1": -56.98870836427743, "maxnorm_4": -7.51567637874615, "option_1": false, "dropout_1": -0.14011393325670252, "dropout_2": -40.158187697118905, "score": 7.3383475507846425, "l1_reg_2": -64.81538813045921, "momentum": -1.9037569013480748, "l1_reg_1": -41.38701184272078}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_15.h5
+7.347999121117668
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5
+
+{"noise_2": -29.521137395327056, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5", "dense_1": -98.97068301075822, "l2_reg_2": -67.43486892951825, "l2_reg_1": -31.76107718313532, "maxnorm_3": -86.25645290984767, "noise_4": -9.833181022734628, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5", "maxnorm_2": -234.94187314612736, "dropout_3": -97.85192504112898, "noise_3": -83.70764751354102, "option_2": true, "conv_window_2": -55.9996998017777, "noise_1": -34.96059744897754, "lr": -11.222041491435608, "dense_2": -28.294737476897215, "conv_window_1": -57.91836545922583, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_15.h5", "dropout_4": -8.014899405872256, "filter_layer_2": -11.139076162696327, "filter_layer_1": -93.46483367553749, "maxnorm_1": -39.06859926472611, "maxnorm_4": -7.51567637874615, "option_1": true, "dropout_1": -0.14011393325670252, "dropout_2": -91.40173460445408, "score": 7.347999121117668, "l1_reg_2": -92.15372495790992, "momentum": -57.61164592210687, "l1_reg_1": -31.583902255772635}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_88.h5
+7.579834682745658
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5
+
+{"noise_2": -76.49845055340757, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5", "dense_1": -93.30533515544911, "l2_reg_2": -44.927544667093144, "l2_reg_1": -39.5390403106627, "maxnorm_3": -82.599327013237, "noise_4": -81.95744715191265, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5", "maxnorm_2": -51.158548476497224, "dropout_3": -43.41906622749864, "noise_3": -39.149977736257604, "option_2": true, "conv_window_2": -46.565515967854395, "noise_1": -72.71433268144196, "lr": -11.417375489015713, "dense_2": -25.57952077193556, "conv_window_1": -48.67503447501457, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_88.h5", "dropout_4": -87.62121405625265, "filter_layer_2": -52.9504202589101, "filter_layer_1": -19.889356386288714, "maxnorm_1": -42.43444627108792, "maxnorm_4": -12.081018024516599, "option_1": false, "dropout_1": -92.89383314066377, "dropout_2": -44.77255143160126, "score": 7.579834682745658, "l1_reg_2": -74.91367220524731, "momentum": -91.67343779045926, "l1_reg_1": -5.2403276844044}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_63.h5
+7.637589855537069
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5
+
+{"noise_2": -5.071626173465149, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5", "dense_1": -34.62737489629467, "l2_reg_2": -91.93437841329924, "l2_reg_1": -48.69947434169482, "maxnorm_3": -2.366651012314691, "noise_4": -69.62752521979704, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5", "maxnorm_2": -68.98154926337547, "dropout_3": -90.02092256172651, "noise_3": -51.693913115135445, "option_2": true, "conv_window_2": -16.918797677093988, "noise_1": -33.611573920079444, "lr": -4.138546578296354, "dense_2": -41.93475867776096, "conv_window_1": -50.91641387884726, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_63.h5", "dropout_4": -2.065248290205901, "filter_layer_2": -40.09093935587353, "filter_layer_1": -68.02055696834765, "maxnorm_1": -172.19520355980802, "maxnorm_4": -12.724655238416238, "option_1": true, "dropout_1": -40.015829875718076, "dropout_2": -36.110904012755995, "score": 7.637589855537069, "l1_reg_2": -3.476417016370803, "momentum": -83.65405619487768, "l1_reg_1": -93.835227245896}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_94.h5
+7.709188735197017
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5
+
+{"noise_2": -13.9834379198142, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5", "dense_1": -34.36116200072461, "l2_reg_2": -45.483529538105785, "l2_reg_1": -95.676379304178, "maxnorm_3": -71.07215309653367, "noise_4": -17.077196546232255, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5", "maxnorm_2": -63.55786504467965, "dropout_3": -67.50977182034525, "noise_3": -88.66311715649607, "option_2": true, "conv_window_2": -38.314043034491164, "noise_1": -77.89180470583266, "lr": -13.962099318915378, "dense_2": -83.3881817079288, "conv_window_1": -65.88127169046082, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_94.h5", "dropout_4": -34.42290124515981, "filter_layer_2": -223.57209241870987, "filter_layer_1": -64.81422237485025, "maxnorm_1": -84.9083622104863, "maxnorm_4": -52.02988188667301, "option_1": false, "dropout_1": -72.01031174230245, "dropout_2": -96.16149711016814, "score": 7.709188735197017, "l1_reg_2": -58.74368219438294, "momentum": -89.31179194480436, "l1_reg_1": -13.369343750707795}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_97.h5
+7.8591158628170055
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5
+
+{"noise_2": -13.9834379198142, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5", "dense_1": -34.36116200072461, "l2_reg_2": -10.884895714959796, "l2_reg_1": -16.995309278798864, "maxnorm_3": -71.07215309653367, "noise_4": -17.077196546232255, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5", "maxnorm_2": -43.47979951534875, "dropout_3": -58.08576090256592, "noise_3": -49.11938916799241, "option_2": true, "conv_window_2": -26.352775673867, "noise_1": -66.8259628581751, "lr": -13.962099318915378, "dense_2": -3.0511372634513534, "conv_window_1": -4.325274886070895, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_97.h5", "dropout_4": -64.55434763981255, "filter_layer_2": -77.33343053598715, "filter_layer_1": -19.102125804288484, "maxnorm_1": -2.098009758876518, "maxnorm_4": -50.61986920106136, "option_1": false, "dropout_1": -68.13419039265828, "dropout_2": -19.91436088370362, "score": 7.8591158628170055, "l1_reg_2": -50.63851933997824, "momentum": -21.537090727592513, "l1_reg_1": -86.12079311039292}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_51.h5
+8.209847208695058
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5
+
+{"noise_2": -29.521137395327056, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5", "dense_1": -98.97068301075822, "l2_reg_2": -67.43486892951825, "l2_reg_1": -31.76107718313532, "maxnorm_3": -42.32617065796973, "noise_4": -39.33931280836178, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5", "maxnorm_2": -81.45488256658301, "dropout_3": -15.583418307656272, "noise_3": -83.70764751354102, "option_2": false, "conv_window_2": -78.3740221939814, "noise_1": -98.72503190429155, "lr": -11.222041491435608, "dense_2": -73.76695734030598, "conv_window_1": -57.91836545922583, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_51.h5", "dropout_4": -26.90552484131713, "filter_layer_2": -11.139076162696327, "filter_layer_1": -87.3983468247409, "maxnorm_1": -7.970701731579477, "maxnorm_4": -14.346777882919815, "option_1": true, "dropout_1": -0.14011393325670252, "dropout_2": -40.158187697118905, "score": 8.209847208695058, "l1_reg_2": -143.36817574278035, "momentum": -57.61164592210687, "l1_reg_1": -31.583902255772635}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_18.h5
+8.501704891853192
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5
+
+{"noise_2": -29.521137395327056, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5", "dense_1": -93.30533515544911, "l2_reg_2": -44.927544667093144, "l2_reg_1": -39.5390403106627, "maxnorm_3": -24.694188849531294, "noise_4": -81.95744715191265, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5", "maxnorm_2": -51.158548476497224, "dropout_3": -43.41906622749864, "noise_3": -39.149977736257604, "option_2": true, "conv_window_2": -55.9996998017777, "noise_1": -34.96059744897754, "lr": -11.942331537451423, "dense_2": -28.294737476897215, "conv_window_1": -60.301297267845854, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_18.h5", "dropout_4": -8.014899405872256, "filter_layer_2": -52.9504202589101, "filter_layer_1": -19.889356386288714, "maxnorm_1": -39.06859926472611, "maxnorm_4": -12.081018024516599, "option_1": false, "dropout_1": -92.89383314066377, "dropout_2": -44.77255143160126, "score": 8.501704891853192, "l1_reg_2": -64.81538813045921, "momentum": -91.67343779045926, "l1_reg_1": -5.2403276844044}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_42.h5
+8.88958765878817
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5
+
+{"noise_2": -39.17805228525357, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5", "dense_1": -75.46368804035379, "l2_reg_2": -72.01069387974628, "l2_reg_1": -94.307078748494, "maxnorm_3": -7.797074362683465, "noise_4": -78.72035287496047, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5", "maxnorm_2": -63.55786504467965, "dropout_3": -77.52730717238158, "noise_3": -0.1743374782682494, "option_2": true, "conv_window_2": -38.314043034491164, "noise_1": -77.89180470583266, "lr": -7.63851352916568, "dense_2": -80.88574288919766, "conv_window_1": -65.88127169046082, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_42.h5", "dropout_4": -80.69753146897172, "filter_layer_2": -67.08436681392158, "filter_layer_1": -78.60890346659461, "maxnorm_1": -14.929604212144943, "maxnorm_4": -95.8364131277113, "option_1": false, "dropout_1": -60.834432172169585, "dropout_2": -51.55968399375867, "score": 8.88958765878817, "l1_reg_2": -229.49765697116487, "momentum": -89.31179194480436, "l1_reg_1": -13.369343750707795}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_62.h5
+8.896839129860371
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5
+
+{"noise_2": -7.286977011112128, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5", "dense_1": -34.62737489629467, "l2_reg_2": -23.756726883933865, "l2_reg_1": -63.87278682974659, "maxnorm_3": -2.366651012314691, "noise_4": -14.300143274625722, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5", "maxnorm_2": -71.8887297745355, "dropout_3": -109.65594533060911, "noise_3": -0.1743374782682494, "option_2": true, "conv_window_2": -16.918797677093988, "noise_1": -59.53862314039372, "lr": -11.716993670213228, "dense_2": -14.361019913624496, "conv_window_1": -59.18377397664942, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_62.h5", "dropout_4": -169.47136345345237, "filter_layer_2": -67.08436681392158, "filter_layer_1": -68.02055696834765, "maxnorm_1": -56.98870836427743, "maxnorm_4": -12.724655238416238, "option_1": true, "dropout_1": -60.834432172169585, "dropout_2": -51.55968399375867, "score": 8.896839129860371, "l1_reg_2": -3.476417016370803, "momentum": -73.9981831387712, "l1_reg_1": -93.835227245896}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_82.h5
+8.958932163660986
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5
+
+{"noise_2": -7.286977011112128, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5", "dense_1": -93.30533515544911, "l2_reg_2": -44.927544667093144, "l2_reg_1": -39.5390403106627, "maxnorm_3": -7.797074362683465, "noise_4": -249.73187499602741, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5", "maxnorm_2": -35.13293609618962, "dropout_3": -77.52730717238158, "noise_3": -39.149977736257604, "option_2": true, "conv_window_2": -48.97479744040461, "noise_1": -72.71433268144196, "lr": -11.716993670213228, "dense_2": -80.88574288919766, "conv_window_1": -59.18377397664942, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_82.h5", "dropout_4": -260.2683899176183, "filter_layer_2": -67.08436681392158, "filter_layer_1": -19.889356386288714, "maxnorm_1": -42.43444627108792, "maxnorm_4": -82.94214573594051, "option_1": false, "dropout_1": -60.834432172169585, "dropout_2": -44.77255143160126, "score": 8.958932163660986, "l1_reg_2": -37.87650677461944, "momentum": -73.9981831387712, "l1_reg_1": -75.39821111023413}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_4.h5
+9.54447985698088
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5
+
+{"noise_2": -39.17805228525357, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5", "dense_1": -2.0, "l2_reg_2": 0.0, "l2_reg_1": -94.307078748494, "maxnorm_3": -4.85867468858231, "noise_4": 0.0, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5", "maxnorm_2": -63.55786504467965, "dropout_3": -67.50977182034525, "noise_3": -88.66311715649607, "option_2": false, "conv_window_2": -38.314043034491164, "noise_1": -77.89180470583266, "lr": -7.63851352916568, "dense_2": -2.0, "conv_window_1": -65.88127169046082, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_4.h5", "dropout_4": -34.42290124515981, "filter_layer_2": -87.17821846437278, "filter_layer_1": 4.0, "maxnorm_1": -84.9083622104863, "maxnorm_4": -95.8364131277113, "option_1": false, "dropout_1": -72.01031174230245, "dropout_2": 0.0, "score": 9.54447985698088, "l1_reg_2": -58.74368219438294, "momentum": -148.9284732279041, "l1_reg_1": -21.65321663378663}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_69.h5
+9.645796865462504
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5
+
+{"noise_2": -6.805059091836929, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5", "dense_1": -34.36116200072461, "l2_reg_2": -23.756726883933865, "l2_reg_1": -95.676379304178, "maxnorm_3": -187.26989412655215, "noise_4": -14.300143274625722, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5", "maxnorm_2": -43.47979951534875, "dropout_3": -21.447660669459967, "noise_3": -49.11938916799241, "option_2": true, "conv_window_2": -26.352775673867, "noise_1": -120.6157745652799, "lr": -4.138546578296354, "dense_2": -14.361019913624496, "conv_window_1": -50.91641387884726, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_69.h5", "dropout_4": -64.55434763981255, "filter_layer_2": -40.09093935587353, "filter_layer_1": -68.02055696834765, "maxnorm_1": -26.993011016932435, "maxnorm_4": -99.35229766574355, "option_1": false, "dropout_1": -20.14430470917661, "dropout_2": -96.16149711016814, "score": 9.645796865462504, "l1_reg_2": -3.476417016370803, "momentum": -1.9037569013480748, "l1_reg_1": -93.835227245896}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_12.h5
+9.903156382765976
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5
+
+{"noise_2": -7.286977011112128, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5", "dense_1": -25.69638539083583, "l2_reg_2": -87.69925095407943, "l2_reg_1": -63.87278682974659, "maxnorm_3": -24.694188849531294, "noise_4": -9.833181022734628, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5", "maxnorm_2": -33.13262141706921, "dropout_3": -97.85192504112898, "noise_3": -0.1743374782682494, "option_2": false, "conv_window_2": -48.97479744040461, "noise_1": -34.96059744897754, "lr": -11.716993670213228, "dense_2": -80.88574288919766, "conv_window_1": -59.18377397664942, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_12.h5", "dropout_4": -80.69753146897172, "filter_layer_2": -67.08436681392158, "filter_layer_1": -93.46483367553749, "maxnorm_1": -39.06859926472611, "maxnorm_4": -82.94214573594051, "option_1": false, "dropout_1": -0.14011393325670252, "dropout_2": -51.55968399375867, "score": 9.903156382765976, "l1_reg_2": -64.81538813045921, "momentum": -73.9981831387712, "l1_reg_1": -75.39821111023413}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_39.h5
+9.992841708331511
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5
+
+{"noise_2": -5.071626173465149, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5", "dense_1": -31.984745931136338, "l2_reg_2": -20.829729834194254, "l2_reg_1": -48.69947434169482, "maxnorm_3": -74.57569664891359, "noise_4": -17.077196546232255, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5", "maxnorm_2": -43.47979951534875, "dropout_3": -95.3616654172421, "noise_3": -51.693913115135445, "option_2": true, "conv_window_2": -26.352775673867, "noise_1": -50.918309568246265, "lr": -13.962099318915378, "dense_2": -83.3881817079288, "conv_window_1": -4.325274886070895, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_39.h5", "dropout_4": -76.00123002141707, "filter_layer_2": -13.713033652796103, "filter_layer_1": -24.87522029197533, "maxnorm_1": -35.06869335300507, "maxnorm_4": -52.02988188667301, "option_1": false, "dropout_1": -40.015829875718076, "dropout_2": -96.16149711016814, "score": 9.992841708331511, "l1_reg_2": -0.22027494427804273, "momentum": -83.65405619487768, "l1_reg_1": -29.065103965759253}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_32.h5
+11.21641360759573
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5
+
+{"noise_2": -5.071626173465149, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5", "dense_1": -25.69638539083583, "l2_reg_2": -72.01069387974628, "l2_reg_1": -63.87278682974659, "maxnorm_3": -74.57569664891359, "noise_4": -16.800116021322843, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5", "maxnorm_2": -68.98154926337547, "dropout_3": -77.52730717238158, "noise_3": -0.1743374782682494, "option_2": true, "conv_window_2": -7.987081493489423, "noise_1": -59.53862314039372, "lr": -11.716993670213228, "dense_2": -80.88574288919766, "conv_window_1": -89.89572582143992, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_32.h5", "dropout_4": -76.00123002141707, "filter_layer_2": -67.08436681392158, "filter_layer_1": -24.87522029197533, "maxnorm_1": -35.06869335300507, "maxnorm_4": -82.94214573594051, "option_1": true, "dropout_1": -40.015829875718076, "dropout_2": -51.55968399375867, "score": 11.21641360759573, "l1_reg_2": -37.87650677461944, "momentum": -73.9981831387712, "l1_reg_1": -75.39821111023413}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_58.h5
+11.32452705196489
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5
+
+{"noise_2": -41.646567137875, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5", "dense_1": -98.97068301075822, "l2_reg_2": -67.43486892951825, "l2_reg_1": -39.5390403106627, "maxnorm_3": -42.32617065796973, "noise_4": -115.17260948027418, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5", "maxnorm_2": -51.158548476497224, "dropout_3": -43.41906622749864, "noise_3": -46.85281119752429, "option_2": true, "conv_window_2": -46.565515967854395, "noise_1": -72.71433268144196, "lr": -11.417375489015713, "dense_2": -73.76695734030598, "conv_window_1": -57.91836545922583, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_58.h5", "dropout_4": -87.62121405625265, "filter_layer_2": -52.9504202589101, "filter_layer_1": -19.889356386288714, "maxnorm_1": -42.43444627108792, "maxnorm_4": -12.081018024516599, "option_1": true, "dropout_1": -75.58308029492112, "dropout_2": -91.40173460445408, "score": 11.32452705196489, "l1_reg_2": -92.15372495790992, "momentum": -70.95613733635318, "l1_reg_1": -31.583902255772635}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_13.h5
+11.813397313176328
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5
+
+{"noise_2": -5.071626173465149, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5", "dense_1": -31.984745931136338, "l2_reg_2": -87.69925095407943, "l2_reg_1": -48.69947434169482, "maxnorm_3": -24.694188849531294, "noise_4": -9.833181022734628, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_2.h5", "maxnorm_2": -68.98154926337547, "dropout_3": -95.3616654172421, "noise_3": -51.693913115135445, "option_2": true, "conv_window_2": -7.987081493489423, "noise_1": -34.96059744897754, "lr": -11.942331537451423, "dense_2": -41.93475867776096, "conv_window_1": -60.301297267845854, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_13.h5", "dropout_4": -8.014899405872256, "filter_layer_2": -13.713033652796103, "filter_layer_1": -93.46483367553749, "maxnorm_1": -35.06869335300507, "maxnorm_4": -61.082322312158574, "option_1": false, "dropout_1": -40.015829875718076, "dropout_2": -40.158187697118905, "score": 11.813397313176328, "l1_reg_2": -64.81538813045921, "momentum": -83.65405619487768, "l1_reg_1": -41.38701184272078}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_64.h5
+12.424162448644978
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5
+
+{"noise_2": -39.17805228525357, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5", "dense_1": -34.62737489629467, "l2_reg_2": -45.483529538105785, "l2_reg_1": -28.354125993816794, "maxnorm_3": -4.85867468858231, "noise_4": -78.72035287496047, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5", "maxnorm_2": -63.55786504467965, "dropout_3": -90.02092256172651, "noise_3": -88.66311715649607, "option_2": true, "conv_window_2": -16.918797677093988, "noise_1": -33.611573920079444, "lr": -7.63851352916568, "dense_2": -89.7113802792239, "conv_window_1": -50.91641387884726, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_64.h5", "dropout_4": -2.065248290205901, "filter_layer_2": -40.09093935587353, "filter_layer_1": -68.02055696834765, "maxnorm_1": -56.98870836427743, "maxnorm_4": -95.8364131277113, "option_1": true, "dropout_1": -20.14430470917661, "dropout_2": -56.786258466767784, "score": 12.424162448644978, "l1_reg_2": -3.476417016370803, "momentum": -1.9037569013480748, "l1_reg_1": -13.369343750707795}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_29.h5
+12.611425155951972
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5
+
+{"noise_2": -13.9834379198142, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5", "dense_1": -34.36116200072461, "l2_reg_2": -20.829729834194254, "l2_reg_1": -95.676379304178, "maxnorm_3": -7.797074362683465, "noise_4": -17.077196546232255, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5", "maxnorm_2": -43.47979951534875, "dropout_3": -77.52730717238158, "noise_3": -0.1743374782682494, "option_2": true, "conv_window_2": -26.352775673867, "noise_1": -28.03986628905172, "lr": -13.962099318915378, "dense_2": -83.3881817079288, "conv_window_1": -59.18377397664942, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_29.h5", "dropout_4": -64.55434763981255, "filter_layer_2": -88.43509509141747, "filter_layer_1": -64.81422237485025, "maxnorm_1": -14.929604212144943, "maxnorm_4": -82.94214573594051, "option_1": true, "dropout_1": -63.4629797713271, "dropout_2": -96.16149711016814, "score": 12.611425155951972, "l1_reg_2": -50.63851933997824, "momentum": -73.9981831387712, "l1_reg_1": -86.12079311039292}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_25.h5
+12.697198574471594
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5
+
+{"noise_2": -7.286977011112128, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5", "dense_1": -25.69638539083583, "l2_reg_2": -67.43486892951825, "l2_reg_1": -63.87278682974659, "maxnorm_3": -42.32617065796973, "noise_4": -16.800116021322843, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5", "maxnorm_2": -81.45488256658301, "dropout_3": -77.52730717238158, "noise_3": -0.1743374782682494, "option_2": true, "conv_window_2": -78.3740221939814, "noise_1": -59.53862314039372, "lr": -11.222041491435608, "dense_2": -73.76695734030598, "conv_window_1": -57.91836545922583, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_25.h5", "dropout_4": -80.69753146897172, "filter_layer_2": -11.139076162696327, "filter_layer_1": -87.3983468247409, "maxnorm_1": -14.929604212144943, "maxnorm_4": -82.94214573594051, "option_1": true, "dropout_1": -75.58308029492112, "dropout_2": -91.40173460445408, "score": 12.697198574471594, "l1_reg_2": -92.15372495790992, "momentum": -73.9981831387712, "l1_reg_1": -31.583902255772635}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_95.h5
+12.90859568151903
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5
+
+{"noise_2": -41.646567137875, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5", "dense_1": -282.3455748970657, "l2_reg_2": -67.43486892951825, "l2_reg_1": -95.676379304178, "maxnorm_3": -42.32617065796973, "noise_4": -39.33931280836178, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5", "maxnorm_2": -43.47979951534875, "dropout_3": -15.583418307656272, "noise_3": -46.85281119752429, "option_2": true, "conv_window_2": -26.352775673867, "noise_1": -28.03986628905172, "lr": -13.962099318915378, "dense_2": -73.76695734030598, "conv_window_1": -57.91836545922583, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_95.h5", "dropout_4": -26.90552484131713, "filter_layer_2": -88.43509509141747, "filter_layer_1": -87.3983468247409, "maxnorm_1": -26.993011016932435, "maxnorm_4": -14.346777882919815, "option_1": -28.377915543884804, "dropout_1": -63.4629797713271, "dropout_2": -91.40173460445408, "score": 12.90859568151903, "l1_reg_2": -92.15372495790992, "momentum": -70.95613733635318, "l1_reg_1": -31.583902255772635}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_45.h5
+13.141226369343556
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5
+
+{"noise_2": -39.17805228525357, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5", "dense_1": -98.97068301075822, "l2_reg_2": -45.483529538105785, "l2_reg_1": -31.76107718313532, "maxnorm_3": -42.32617065796973, "noise_4": -39.33931280836178, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5", "maxnorm_2": -63.55786504467965, "dropout_3": -15.583418307656272, "noise_3": -88.66311715649607, "option_2": true, "conv_window_2": -78.3740221939814, "noise_1": -77.89180470583266, "lr": -7.63851352916568, "dense_2": -73.76695734030598, "conv_window_1": -65.88127169046082, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_45.h5", "dropout_4": -26.90552484131713, "filter_layer_2": -11.139076162696327, "filter_layer_1": -87.3983468247409, "maxnorm_1": -11.111066129912594, "maxnorm_4": -95.8364131277113, "option_1": true, "dropout_1": -75.58308029492112, "dropout_2": -56.786258466767784, "score": 13.141226369343556, "l1_reg_2": -92.15372495790992, "momentum": -70.95613733635318, "l1_reg_1": -31.583902255772635}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_85.h5
+13.808302492664797
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5
+
+{"noise_2": -76.49845055340757, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5", "dense_1": -98.97068301075822, "l2_reg_2": -44.927544667093144, "l2_reg_1": -136.24180752852502, "maxnorm_3": -42.32617065796973, "noise_4": -39.33931280836178, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5", "maxnorm_2": -51.158548476497224, "dropout_3": -15.583418307656272, "noise_3": -39.149977736257604, "option_2": true, "conv_window_2": -46.565515967854395, "noise_1": -72.71433268144196, "lr": -11.222041491435608, "dense_2": -73.76695734030598, "conv_window_1": -48.67503447501457, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_85.h5", "dropout_4": -87.62121405625265, "filter_layer_2": -52.9504202589101, "filter_layer_1": -87.3983468247409, "maxnorm_1": -7.970701731579477, "maxnorm_4": -14.346777882919815, "option_1": true, "dropout_1": -92.89383314066377, "dropout_2": -44.77255143160126, "score": 13.808302492664797, "l1_reg_2": -74.91367220524731, "momentum": -91.67343779045926, "l1_reg_1": -31.583902255772635}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_56.h5
+13.971511406753008
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5
+
+{"noise_2": -41.646567137875, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5", "dense_1": -98.97068301075822, "l2_reg_2": -67.43486892951825, "l2_reg_1": -31.76107718313532, "maxnorm_3": -42.32617065796973, "noise_4": -39.33931280836178, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5", "maxnorm_2": -71.8887297745355, "dropout_3": -90.02092256172651, "noise_3": -6.148377383339321, "option_2": true, "conv_window_2": -78.3740221939814, "noise_1": -33.611573920079444, "lr": -4.138546578296354, "dense_2": -14.361019913624496, "conv_window_1": -57.91836545922583, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_56.h5", "dropout_4": -26.90552484131713, "filter_layer_2": -11.139076162696327, "filter_layer_1": -68.02055696834765, "maxnorm_1": -7.970701731579477, "maxnorm_4": -14.346777882919815, "option_1": true, "dropout_1": -75.58308029492112, "dropout_2": -91.40173460445408, "score": 13.971511406753008, "l1_reg_2": -92.15372495790992, "momentum": -70.95613733635318, "l1_reg_1": -31.583902255772635}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_55.h5
+14.133566795891998
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5
+
+{"noise_2": -41.646567137875, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5", "dense_1": -98.97068301075822, "l2_reg_2": -67.43486892951825, "l2_reg_1": -31.76107718313532, "maxnorm_3": -42.32617065796973, "noise_4": -39.33931280836178, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5", "maxnorm_2": -81.45488256658301, "dropout_3": -15.583418307656272, "noise_3": -46.85281119752429, "option_2": true, "conv_window_2": -78.3740221939814, "noise_1": -98.72503190429155, "lr": -11.222041491435608, "dense_2": -73.76695734030598, "conv_window_1": -57.91836545922583, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_55.h5", "dropout_4": -26.90552484131713, "filter_layer_2": -11.139076162696327, "filter_layer_1": -87.3983468247409, "maxnorm_1": -7.970701731579477, "maxnorm_4": -14.346777882919815, "option_1": true, "dropout_1": -75.58308029492112, "dropout_2": -91.40173460445408, "score": 14.133566795891998, "l1_reg_2": -92.15372495790992, "momentum": -70.95613733635318, "l1_reg_1": -31.583902255772635}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_83.h5
+14.162435062788118
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5
+
+{"noise_2": -5.071626173465149, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_14.h5", "dense_1": -31.984745931136338, "l2_reg_2": -44.927544667093144, "l2_reg_1": -39.5390403106627, "maxnorm_3": -74.57569664891359, "noise_4": -81.95744715191265, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5", "maxnorm_2": -68.98154926337547, "dropout_3": -95.3616654172421, "noise_3": -39.149977736257604, "option_2": true, "conv_window_2": -7.987081493489423, "noise_1": -50.918309568246265, "lr": -11.417375489015713, "dense_2": -25.57952077193556, "conv_window_1": -89.89572582143992, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_83.h5", "dropout_4": -76.00123002141707, "filter_layer_2": -52.9504202589101, "filter_layer_1": -24.87522029197533, "maxnorm_1": -35.06869335300507, "maxnorm_4": -164.40878980572737, "option_1": false, "dropout_1": -92.89383314066377, "dropout_2": -96.96723986201064, "score": 14.162435062788118, "l1_reg_2": -74.91367220524731, "momentum": -91.67343779045926, "l1_reg_1": -187.93967450778698}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_57.h5
+14.263722823040633
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5
+
+{"noise_2": -55.25041185073828, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5", "dense_1": -17.727772412073584, "l2_reg_2": -178.88914287827436, "l2_reg_1": -16.995309278798864, "maxnorm_3": -42.249038893031745, "noise_4": -49.472776608343935, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5", "maxnorm_2": -81.45488256658301, "dropout_3": -58.08576090256592, "noise_3": -62.694459475124056, "option_2": true, "conv_window_2": -78.3740221939814, "noise_1": -98.72503190429155, "lr": -11.222041491435608, "dense_2": -75.0653979672466, "conv_window_1": -31.685337802463497, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_57.h5", "dropout_4": -78.7000154180029, "filter_layer_2": -11.139076162696327, "filter_layer_1": -87.3983468247409, "maxnorm_1": -7.970701731579477, "maxnorm_4": -14.346777882919815, "option_1": true, "dropout_1": -68.13419039265828, "dropout_2": -91.40173460445408, "score": 14.263722823040633, "l1_reg_2": -92.15372495790992, "momentum": -21.537090727592513, "l1_reg_1": -31.583902255772635}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_74.h5
+17.329340205593628
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5
+
+{"noise_2": -39.17805228525357, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5", "dense_1": -75.46368804035379, "l2_reg_2": -10.884895714959796, "l2_reg_1": -94.307078748494, "maxnorm_3": -4.85867468858231, "noise_4": -78.72035287496047, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5", "maxnorm_2": -35.88150199876683, "dropout_3": -67.50977182034525, "noise_3": -88.66311715649607, "option_2": true, "conv_window_2": -70.51211353357665, "noise_1": -66.8259628581751, "lr": -7.709633936683902, "dense_2": -3.0511372634513534, "conv_window_1": -31.685337802463497, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_74.h5", "dropout_4": -78.7000154180029, "filter_layer_2": -77.33343053598715, "filter_layer_1": -78.60890346659461, "maxnorm_1": -2.098009758876518, "maxnorm_4": -95.8364131277113, "option_1": false, "dropout_1": -68.13419039265828, "dropout_2": -56.786258466767784, "score": 17.329340205593628, "l1_reg_2": -58.74368219438294, "momentum": -21.537090727592513, "l1_reg_1": -13.369343750707795}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_54.h5
+17.519046804377616
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5
+
+{"noise_2": -41.646567137875, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5", "dense_1": -234.31770496644492, "l2_reg_2": -45.483529538105785, "l2_reg_1": -31.76107718313532, "maxnorm_3": -4.85867468858231, "noise_4": -39.33931280836178, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5", "maxnorm_2": -81.45488256658301, "dropout_3": -15.583418307656272, "noise_3": -88.66311715649607, "option_2": true, "conv_window_2": -38.314043034491164, "noise_1": -77.89180470583266, "lr": -7.63851352916568, "dense_2": -73.76695734030598, "conv_window_1": -65.88127169046082, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_54.h5", "dropout_4": -34.42290124515981, "filter_layer_2": -11.139076162696327, "filter_layer_1": -78.60890346659461, "maxnorm_1": -84.9083622104863, "maxnorm_4": -95.8364131277113, "option_1": false, "dropout_1": -72.01031174230245, "dropout_2": -251.40903189988168, "score": 17.519046804377616, "l1_reg_2": -58.74368219438294, "momentum": -70.95613733635318, "l1_reg_1": -13.369343750707795}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_49.h5
+19.90187900009704
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5
+
+{"noise_2": -13.9834379198142, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5", "dense_1": -75.46368804035379, "l2_reg_2": -20.829729834194254, "l2_reg_1": -95.676379304178, "maxnorm_3": -71.07215309653367, "noise_4": -78.72035287496047, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5", "maxnorm_2": -43.47979951534875, "dropout_3": -21.447660669459967, "noise_3": -88.66311715649607, "option_2": true, "conv_window_2": -38.314043034491164, "noise_1": -77.89180470583266, "lr": -7.63851352916568, "dense_2": -83.3881817079288, "conv_window_1": -4.325274886070895, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_49.h5", "dropout_4": -34.42290124515981, "filter_layer_2": -141.18524420015524, "filter_layer_1": -78.60890346659461, "maxnorm_1": -26.993011016932435, "maxnorm_4": -95.8364131277113, "option_1": false, "dropout_1": -72.01031174230245, "dropout_2": -96.16149711016814, "score": 19.90187900009704, "l1_reg_2": -58.74368219438294, "momentum": -4.326232528194385, "l1_reg_1": -86.12079311039292}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_98.h5
+20.110500590644033
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5
+
+{"noise_2": -76.49845055340757, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5", "dense_1": -93.30533515544911, "l2_reg_2": -44.927544667093144, "l2_reg_1": -39.5390403106627, "maxnorm_3": -82.599327013237, "noise_4": -17.077196546232255, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5", "maxnorm_2": -43.47979951534875, "dropout_3": -43.41906622749864, "noise_3": -39.149977736257604, "option_2": true, "conv_window_2": -26.352775673867, "noise_1": -28.03986628905172, "lr": -13.962099318915378, "dense_2": -25.57952077193556, "conv_window_1": -48.67503447501457, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_98.h5", "dropout_4": -87.62121405625265, "filter_layer_2": -88.43509509141747, "filter_layer_1": -64.81422237485025, "maxnorm_1": -42.43444627108792, "maxnorm_4": -12.081018024516599, "option_1": false, "dropout_1": -114.05961561789084, "dropout_2": -96.16149711016814, "score": 20.110500590644033, "l1_reg_2": -50.63851933997824, "momentum": -4.326232528194385, "l1_reg_1": -86.12079311039292}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_79.h5
+20.27878725268664
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5
+
+{"noise_2": -13.9834379198142, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5", "dense_1": -34.36116200072461, "l2_reg_2": -20.829729834194254, "l2_reg_1": -16.995309278798864, "maxnorm_3": -71.07215309653367, "noise_4": -17.077196546232255, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5", "maxnorm_2": -43.47979951534875, "dropout_3": -256.92568104170135, "noise_3": -62.694459475124056, "option_2": true, "conv_window_2": -26.352775673867, "noise_1": -28.03986628905172, "lr": -13.962099318915378, "dense_2": -83.3881817079288, "conv_window_1": -31.685337802463497, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_79.h5", "dropout_4": -64.55434763981255, "filter_layer_2": -88.43509509141747, "filter_layer_1": -19.102125804288484, "maxnorm_1": -2.098009758876518, "maxnorm_4": -52.02988188667301, "option_1": false, "dropout_1": -68.13419039265828, "dropout_2": -96.16149711016814, "score": 20.27878725268664, "l1_reg_2": -50.63851933997824, "momentum": -21.537090727592513, "l1_reg_1": -1.2186977042732638}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_84.h5
+20.583945257895017
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5
+
+{"noise_2": -76.49845055340757, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5", "dense_1": -258.514638255111, "l2_reg_2": -44.927544667093144, "l2_reg_1": -94.307078748494, "maxnorm_3": -82.599327013237, "noise_4": -78.72035287496047, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5", "maxnorm_2": -51.158548476497224, "dropout_3": -67.50977182034525, "noise_3": -39.149977736257604, "option_2": true, "conv_window_2": -38.314043034491164, "noise_1": -77.89180470583266, "lr": -7.63851352916568, "dense_2": -25.57952077193556, "conv_window_1": -48.67503447501457, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_84.h5", "dropout_4": -87.62121405625265, "filter_layer_2": -87.17821846437278, "filter_layer_1": -78.60890346659461, "maxnorm_1": -84.9083622104863, "maxnorm_4": -12.081018024516599, "option_1": false, "dropout_1": -72.01031174230245, "dropout_2": -44.77255143160126, "score": 20.583945257895017, "l1_reg_2": -74.91367220524731, "momentum": -89.31179194480436, "l1_reg_1": -5.2403276844044}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_77.h5
+20.70046044556583
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5
+
+{"noise_2": -55.25041185073828, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5", "dense_1": -17.727772412073584, "l2_reg_2": -10.884895714959796, "l2_reg_1": -16.995309278798864, "maxnorm_3": -42.249038893031745, "noise_4": -236.1678165059558, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5", "maxnorm_2": -35.88150199876683, "dropout_3": -58.08576090256592, "noise_3": -62.694459475124056, "option_2": true, "conv_window_2": -70.51211353357665, "noise_1": -66.8259628581751, "lr": -7.709633936683902, "dense_2": -3.0511372634513534, "conv_window_1": -31.685337802463497, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_77.h5", "dropout_4": -78.7000154180029, "filter_layer_2": -77.33343053598715, "filter_layer_1": -19.102125804288484, "maxnorm_1": -2.098009758876518, "maxnorm_4": -50.61986920106136, "option_1": true, "dropout_1": -68.13419039265828, "dropout_2": -19.91436088370362, "score": 20.70046044556583, "l1_reg_2": -50.64559479136835, "momentum": -21.537090727592513, "l1_reg_1": -1.2186977042732638}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_44.h5
+22.251417609053036
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5
+
+{"noise_2": -39.17805228525357, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5", "dense_1": -75.46368804035379, "l2_reg_2": -45.483529538105785, "l2_reg_1": -94.307078748494, "maxnorm_3": -4.85867468858231, "noise_4": -78.72035287496047, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_9.h5", "maxnorm_2": -63.55786504467965, "dropout_3": -67.50977182034525, "noise_3": -88.66311715649607, "option_2": true, "conv_window_2": -38.314043034491164, "noise_1": -77.89180470583266, "lr": -7.63851352916568, "dense_2": -89.7113802792239, "conv_window_1": -65.88127169046082, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_44.h5", "dropout_4": -34.42290124515981, "filter_layer_2": -87.17821846437278, "filter_layer_1": -78.60890346659461, "maxnorm_1": -84.9083622104863, "maxnorm_4": -95.8364131277113, "option_1": false, "dropout_1": -72.01031174230245, "dropout_2": -56.786258466767784, "score": 22.251417609053036, "l1_reg_2": -58.74368219438294, "momentum": -89.31179194480436, "l1_reg_1": -13.369343750707795}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_75.h5
+25.296479766433908
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5
+
+{"noise_2": -55.25041185073828, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5", "dense_1": -98.97068301075822, "l2_reg_2": -10.884895714959796, "l2_reg_1": -31.76107718313532, "maxnorm_3": -42.249038893031745, "noise_4": -39.33931280836178, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5", "maxnorm_2": -81.45488256658301, "dropout_3": -15.583418307656272, "noise_3": -185.13295597323543, "option_2": true, "conv_window_2": -174.40289663082783, "noise_1": -66.8259628581751, "lr": -7.709633936683902, "dense_2": -73.76695734030598, "conv_window_1": -57.91836545922583, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_75.h5", "dropout_4": -78.7000154180029, "filter_layer_2": -77.33343053598715, "filter_layer_1": -87.3983468247409, "maxnorm_1": -7.970701731579477, "maxnorm_4": -14.346777882919815, "option_1": true, "dropout_1": -68.13419039265828, "dropout_2": -19.91436088370362, "score": 25.296479766433908, "l1_reg_2": -50.64559479136835, "momentum": -21.537090727592513, "l1_reg_1": -31.583902255772635}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_6.h5
+37.328593582883194
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5
+
+{"noise_2": -6.805059091836929, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_67.h5", "dense_1": -34.62737489629467, "l2_reg_2": -37.12476333853256, "l2_reg_1": -28.354125993816794, "maxnorm_3": 3.0, "noise_4": 0.0, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_0.h5", "maxnorm_2": -71.8887297745355, "dropout_3": -257.07828129487393, "noise_3": 0.0, "option_2": false, "conv_window_2": 3.0, "noise_1": 0.0, "lr": -36.14213796004709, "dense_2": -14.361019913624496, "conv_window_1": -50.91641387884726, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_6.h5", "dropout_4": -2.065248290205901, "filter_layer_2": 4.0, "filter_layer_1": 4.0, "maxnorm_1": -56.98870836427743, "maxnorm_4": -12.724655238416238, "option_1": false, "dropout_1": 0.0, "dropout_2": 0.0, "score": 37.328593582883194, "l1_reg_2": -3.476417016370803, "momentum": -1.9037569013480748, "l1_reg_1": 0.0}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_89.h5
+38.64369155213443
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5
+
+{"noise_2": -13.9834379198142, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_100.h5", "dense_1": -34.36116200072461, "l2_reg_2": -44.927544667093144, "l2_reg_1": -95.676379304178, "maxnorm_3": -82.599327013237, "noise_4": -81.95744715191265, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5", "maxnorm_2": -51.158548476497224, "dropout_3": -21.447660669459967, "noise_3": -39.149977736257604, "option_2": true, "conv_window_2": -46.565515967854395, "noise_1": -72.71433268144196, "lr": -110.84105530872611, "dense_2": -25.57952077193556, "conv_window_1": -48.67503447501457, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_89.h5", "dropout_4": -64.55434763981255, "filter_layer_2": -52.9504202589101, "filter_layer_1": -64.81422237485025, "maxnorm_1": -26.993011016932435, "maxnorm_4": -145.90751099456904, "option_1": -45.503924312039956, "dropout_1": -92.89383314066377, "dropout_2": -58.91965001501424, "score": 38.64369155213443, "l1_reg_2": -74.91367220524731, "momentum": -4.326232528194385, "l1_reg_1": -86.12079311039292}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_28.h5
+38.87454418638004
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5
+
+{"noise_2": -7.286977011112128, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5", "dense_1": -25.69638539083583, "l2_reg_2": -72.01069387974628, "l2_reg_1": -63.87278682974659, "maxnorm_3": -82.599327013237, "noise_4": -154.57093450958402, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5", "maxnorm_2": -51.158548476497224, "dropout_3": -43.41906622749864, "noise_3": -0.1743374782682494, "option_2": true, "conv_window_2": -46.565515967854395, "noise_1": -59.53862314039372, "lr": -143.30254993865248, "dense_2": -80.88574288919766, "conv_window_1": -48.67503447501457, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_28.h5", "dropout_4": -80.69753146897172, "filter_layer_2": -67.08436681392158, "filter_layer_1": -60.93792158032926, "maxnorm_1": -14.929604212144943, "maxnorm_4": -82.94214573594051, "option_1": false, "dropout_1": -92.89383314066377, "dropout_2": -51.55968399375867, "score": 38.87454418638004, "l1_reg_2": -37.87650677461944, "momentum": -91.67343779045926, "l1_reg_1": -75.39821111023413}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_52.h5
+39.31928931756477
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5
+
+{"noise_2": -41.646567137875, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_65.h5", "dense_1": -25.69638539083583, "l2_reg_2": -67.43486892951825, "l2_reg_1": -63.87278682974659, "maxnorm_3": -42.32617065796973, "noise_4": -39.33931280836178, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_34.h5", "maxnorm_2": -35.13293609618962, "dropout_3": -77.52730717238158, "noise_3": -0.1743374782682494, "option_2": true, "conv_window_2": -48.97479744040461, "noise_1": -98.72503190429155, "lr": -211.20283457247126, "dense_2": -80.88574288919766, "conv_window_1": -59.18377397664942, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_52.h5", "dropout_4": -26.90552484131713, "filter_layer_2": -11.139076162696327, "filter_layer_1": -60.93792158032926, "maxnorm_1": -7.970701731579477, "maxnorm_4": -14.346777882919815, "option_1": true, "dropout_1": -75.58308029492112, "dropout_2": -91.40173460445408, "score": 39.31928931756477, "l1_reg_2": -37.87650677461944, "momentum": -73.9981831387712, "l1_reg_1": -31.583902255772635}
+
+../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_78.h5
+39.880879586824804
+
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5
+../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5
+
+{"noise_2": -211.19817159927086, "parent_2": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_21.h5", "dense_1": -93.30533515544911, "l2_reg_2": -10.884895714959796, "l2_reg_1": -39.5390403106627, "maxnorm_3": -82.599327013237, "noise_4": -49.472776608343935, "parent_1": "../data/Networks/Genetic/NT_by_N/Network/First_Gen/Network_64.h5", "maxnorm_2": -51.158548476497224, "dropout_3": -43.41906622749864, "noise_3": -39.149977736257604, "option_2": true, "conv_window_2": -46.565515967854395, "noise_1": -72.71433268144196, "lr": -135.53268809410835, "dense_2": -25.57952077193556, "conv_window_1": -31.685337802463497, "filename": "../data/Networks/Genetic/NT_by_N/Network/Second_Gen/Network_78.h5", "dropout_4": -87.62121405625265, "filter_layer_2": -77.33343053598715, "filter_layer_1": -19.889356386288714, "maxnorm_1": -42.43444627108792, "maxnorm_4": -12.081018024516599, "option_1": false, "dropout_1": -92.89383314066377, "dropout_2": -44.77255143160126, "score": 39.880879586824804, "l1_reg_2": -74.91367220524731, "momentum": -21.537090727592513, "l1_reg_1": -1.2186977042732638}
+

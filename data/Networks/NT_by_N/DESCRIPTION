@@ -1,0 +1,1933 @@
+Network_0.h5
+
+	Architecture
+
+		seed = 6
+		np.random.seed (seed)
+
+		# ----- hyperparameter ----- #
+
+		_epoch = 100
+		_lr = 0.001
+		_momentum = 0.9
+		_decay = _lr/_epoch
+		_batch_size = 50
+		_loss = "mse"
+
+		# ----- Training ----- #
+
+		model = Sequential ()
+		model.add (Dense (512, input_shape = (208, )))
+		model.add (Dense (512, kernel_regularizer = regularizers.l1_l2 (l1=0.01, l2=0.01)))
+
+		model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.01, l2=0.01)))
+		model.add (Dropout(0.3))
+		model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.01, l2=0.01)))
+		model.add (Dropout(0.3))
+		model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.01, l2=0.01)))
+
+		model.add (Dense (64))
+		model.add (Dense (1))
+		sgd = SGD(lr=_lr, momentum=_momentum, decay=_decay, nesterov=False)
+		model.compile(loss=_loss, optimizer=sgd)
+
+
+		early_stopping = EarlyStopping (monitor = "val_loss", patience = 5, min_delta = 0)
+		history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1, callbacks = [early_stopping])
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+		HandRecord_20000
+			mse = 8.30116027697
+			accuracy (0, 1, 2) = 0.13865 0.39595 0.6255
+
+		HandRecord_25000
+			mse = 0.471849061562
+			accuracy (0, 1, 2) = 0.485 0.96968 1.0
+
+Network_1.h5
+
+	Architecture
+
+		seed = 6
+		np.random.seed (seed)
+
+		# ----- hyperparameter ----- #
+
+		_epoch = 200
+		_lr = 0.001
+		_momentum = 0.9
+		_decay = _lr/_epoch
+		_batch_size = 50
+		_loss = "mse"
+
+		# ----- Training ----- #
+
+		model = Sequential ()
+		model.add (Dense (512, input_shape = (208, )))
+		# model.add (Dropout(0.3))
+		model.add (Dense (512, kernel_regularizer = regularizers.l1_l2 (l1=0.01, l2=0.01)))
+		# model.add (Dropout(0.3))
+
+		model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.01, l2=0.01)))
+		model.add (Dropout(0.3))
+		model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.01, l2=0.01)))
+		model.add (Dropout(0.3))
+		model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.01, l2=0.01)))
+		# model.add (Dropout(0.3))
+		model.add (Dense (64))
+		model.add (Dense (1))
+		sgd = SGD(lr=_lr, momentum=_momentum, decay=_decay, nesterov=False)
+		model.compile(loss=_loss, optimizer=sgd)
+
+
+		# early_stopping = EarlyStopping (monitor = "val_loss", patience = 5, min_delta = 0)
+		# history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1, callbacks = [early_stopping])
+		history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1)
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+
+		../data/Networks/NT_by_N/Network_1.h5
+		../data/HandRecords/Shared/HandRecord_20000_0
+		8.74728218215 0.1384 0.3807 0.61465
+
+		../data/Networks/NT_by_N/Network_1.h5
+		../data/HandRecords/Shared/HandRecord_25000_0
+		0.256391867374 0.67264 0.99396 1.0
+
+Network_2.h5
+
+	Architecture
+
+		seed = 6
+		np.random.seed (seed)
+
+		# ----- hyperparameter ----- #
+
+		_epoch = 250
+		_lr = 0.001
+		_momentum = 0.9
+		_decay = _lr/_epoch
+		_batch_size = 50
+		_loss = "mse"
+
+		# ----- Training ----- #
+
+		model = Sequential ()
+		model.add (Dense (512, input_shape = (208, )))
+		# model.add (Dropout(0.3))
+		model.add (Dense (512, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+
+		model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dropout(0.1))
+		model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dropout(0.1))
+		model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dropout(0.1))
+		model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dropout(0.1))
+		model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		model.add (Dense (64))
+		model.add (Dense (1))
+		sgd = SGD(lr=_lr, momentum=_momentum, decay=_decay, nesterov=False)
+		model.compile(loss=_loss, optimizer=sgd)
+
+
+		# early_stopping = EarlyStopping (monitor = "val_loss", patience = 5, min_delta = 0)
+		# history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1, callbacks = [early_stopping])
+		history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1)
+
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+
+		../data/Networks/NT_by_N/Network_2.h5
+		../data/HandRecords/Shared/HandRecord_20000_0
+		10.5265855469 0.12985 0.32895 0.55145
+
+		../data/Networks/NT_by_N/Network_2.h5
+		../data/HandRecords/Shared/HandRecord_25000_0
+		0.681010556895 0.32716 0.92732 1.0
+
+Network_3.h5
+
+	Architecture
+
+		seed = 6
+		np.random.seed (seed)
+
+		# ----- hyperparameter ----- #
+
+		_epoch = 250
+		_lr = 0.001
+		_momentum = 0.9
+		_decay = _lr/_epoch
+		_batch_size = 50
+		_loss = "mse"
+
+		# ----- Training ----- #
+
+		model = Sequential ()
+		model.add (Dense (512, input_shape = (52, )))
+		# model.add (Dropout(0.3))
+		model.add (Dense (512, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+
+		model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dropout(0.1))
+		model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dropout(0.1))
+		model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dropout(0.1))
+		model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dropout(0.1))
+		model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		model.add (Dense (64))
+		model.add (Dense (1))
+		sgd = SGD(lr=_lr, momentum=_momentum, decay=_decay, nesterov=False)
+		model.compile(loss=_loss, optimizer=sgd)
+
+
+		early_stopping = EarlyStopping (monitor = "val_loss", patience = 5, min_delta = 0)
+		history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1, callbacks = [early_stopping])
+		# history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1)
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+
+		../data/Networks/NT_by_N/Network_3.h5
+		../data/HandRecords/Shared/HandRecord_20000_0
+		8.25014515615 0.14065 0.411 0.61865
+
+		../data/Networks/NT_by_N/Network_3.h5
+		../data/HandRecords/Shared/HandRecord_25000_0
+		0.292272614439 0.8304 0.93948 1.0
+
+Network_4.h5
+
+	Architecture
+
+		seed = 6
+		np.random.seed (seed)
+
+		# ----- hyperparameter ----- #
+
+		_epoch = 250
+		_lr = 0.001
+		_momentum = 0.9
+		_decay = _lr/_epoch
+		_batch_size = 50
+		_loss = "mse"
+
+		# ----- Training ----- #
+
+		model = Sequential ()
+		model.add (Dense (512, input_shape = (52, )))
+		# model.add (Dropout(0.3))
+		model.add (Dense (512, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+
+		model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dropout(0.1))
+		model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dropout(0.1))
+		model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dropout(0.1))
+		model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dropout(0.1))
+		model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		model.add (Dense (64))
+		model.add (Dense (1))
+		sgd = SGD(lr=_lr, momentum=_momentum, decay=_decay, nesterov=False)
+		model.compile(loss=_loss, optimizer=sgd)
+
+
+		early_stopping = EarlyStopping (monitor = "val_loss", patience = 5, min_delta = 0)
+		history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1, callbacks = [early_stopping])
+		# history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1)
+
+	Data Used:
+
+		Train:	HandRecord_70000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+
+		../data/Networks/NT_by_N/Network_4.h5
+		../data/HandRecords/Shared/HandRecord_20000_0
+		6.90475854336 0.1319 0.4334 0.67155
+
+		../data/Networks/NT_by_N/Network_4.h5
+		../data/HandRecords/Shared/HandRecord_25000_0
+		9.1630133279 0.1212 0.40008 0.57584
+
+Network_5.h5
+
+	Architecture
+
+		# ----- setting random seed ----- #
+
+		seed = 6
+		np.random.seed (seed)
+
+		# ----- hyperparameter ----- #
+
+		_epoch = 250
+		_lr = 0.001
+		_momentum = 0.9
+		_decay = _lr/_epoch
+		_batch_size = 50
+		_loss = "mse"
+
+		# ----- Training ----- #
+
+		model = Sequential ()
+		model.add (Convolution1D (32, 2, input_shape = (7, 52), border_mode = "valid", activation = "relu", W_constraint = maxnorm (3)))
+		model.add (Dropout(0.2))
+		model.add (Convolution1D (32, 2, border_mode = "valid", activation = "relu", W_constraint = maxnorm (3)))
+		model.add (Dropout(0.2))
+		model.add (Convolution1D (32, 2, border_mode = "valid", activation = "relu", W_constraint = maxnorm (3)))
+		model.add (Dropout(0.2))
+		model.add (Flatten())
+		# model.add (Dropout(0.3))
+		# model.add (Dense (512, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dense (512, activation = 'relu', W_constraint = maxnorm (3)))
+		model.add (Dropout(0.3))
+		model.add (Dense (512, activation = 'relu', W_constraint = maxnorm (3)))
+		model.add (Dropout(0.3))
+		model.add (Dense (512, activation = 'relu', W_constraint = maxnorm (3)))
+		model.add (Dropout(0.3))
+		# model.add (Dropout(0.3))
+
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+
+		model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dropout(0.3))
+		model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		model.add (Dense (64))
+		model.add (Dense (1))
+		sgd = SGD(lr=_lr, momentum=_momentum, decay=_decay, nesterov=False)
+		model.compile(loss=_loss, optimizer=sgd)
+
+
+		early_stopping = EarlyStopping (monitor = "val_loss", patience = 5, min_delta = 0)
+		history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1, callbacks = [early_stopping])
+		# history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1)
+
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+
+		../data/Networks/NT_by_N/Network_5.h5
+		../data/HandRecords/Shared/HandRecord_20000_0
+		7.05199609278 0.1342 0.407 0.61485
+
+		../data/Networks/NT_by_N/Network_5.h5
+		../data/HandRecords/Shared/HandRecord_25000_0
+		7.30801771552 0.12128 0.43644 0.62432
+
+Network_6.h5
+
+	Architecture
+
+		# ----- setting random seed ----- #
+
+		seed = 6
+		np.random.seed (seed)
+
+		# ----- hyperparameter ----- #
+
+		_epoch = 250
+		_lr = 0.001
+		_momentum = 0.9
+		_decay = _lr/_epoch
+		_batch_size = 50
+		_loss = "mse"
+
+		# ----- Training ----- #
+
+		model = Sequential ()
+		model.add (Convolution2D (32, (3, 3), input_shape = (7, 52, 1), border_mode = "valid", activation = "relu", W_constraint = maxnorm (3)))
+		model.add (Dropout(0.2))
+		model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", W_constraint = maxnorm (3)))
+		model.add (Dropout(0.2))
+		model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", W_constraint = maxnorm (3)))
+		model.add (Dropout(0.2))
+		model.add (Flatten())
+		# model.add (Dropout(0.3))
+		# model.add (Dense (512, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dense (512, activation = 'relu', W_constraint = maxnorm (3)))
+		model.add (Dropout(0.3))
+		model.add (Dense (512, activation = 'relu', W_constraint = maxnorm (3)))
+		model.add (Dropout(0.3))
+		model.add (Dense (512, activation = 'relu', W_constraint = maxnorm (3)))
+		model.add (Dropout(0.3))
+		# model.add (Dropout(0.3))
+
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+
+		model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dropout(0.3))
+		model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		model.add (Dense (64))
+		model.add (Dense (1))
+		sgd = SGD(lr=_lr, momentum=_momentum, decay=_decay, nesterov=False)
+		model.compile(loss=_loss, optimizer=sgd)
+
+
+		early_stopping = EarlyStopping (monitor = "val_loss", patience = 5, min_delta = 0)
+		history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1, callbacks = [early_stopping])
+		# history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1)
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+
+		../data/Networks/NT_by_N/Network_6.h5
+		../data/HandRecords/Shared/HandRecord_20000_0
+		6.91652742662 0.1296 0.41085 0.686
+
+		../data/Networks/NT_by_N/Network_6.h5
+		../data/HandRecords/Shared/HandRecord_25000_0
+		0.112144202547 0.93932 1.0 1.0
+
+Network_7.h5
+
+	Architecture
+
+		seed = 6
+		np.random.seed (seed)
+
+		# ----- hyperparameter ----- #
+
+		_epoch = 250
+		_lr = 0.001
+		_momentum = 0.9
+		_decay = _lr/_epoch
+		_batch_size = 50
+		_loss = "mse"
+
+		# ----- Training ----- #
+
+		model = Sequential ()
+		model.add (Convolution2D (32, (3, 3), input_shape = (7, 52, 1), border_mode = "valid", activation = "relu", W_constraint = maxnorm (3)))
+		model.add (Dropout(0.2))
+		model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", W_constraint = maxnorm (3)))
+		model.add (Dropout(0.2))
+		model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", W_constraint = maxnorm (3)))
+		model.add (Dropout(0.2))
+		model.add (Flatten())
+		# model.add (Dropout(0.3))
+		# model.add (Dense (512, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dense (512, activation = 'relu', W_constraint = maxnorm (3)))
+		model.add (Dropout(0.5))
+		model.add (GaussianNoise (0.5))
+		model.add (Dense (512, activation = 'relu', W_constraint = maxnorm (3)))
+		model.add (Dropout(0.5))
+		model.add (GaussianNoise (0.5))
+		model.add (Dense (512, activation = 'relu', W_constraint = maxnorm (3)))
+		model.add (Dropout(0.5))
+		model.add (GaussianNoise (0.5))
+		# model.add (Dropout(0.3))
+
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+
+
+		model.add (Dense (512, activation = 'relu', W_constraint = maxnorm (3)))
+		model.add (Dropout(0.5))
+		model.add (GaussianNoise (0.5))
+		model.add (Dense (512, activation = 'relu', W_constraint = maxnorm (3)))
+		model.add (Dropout(0.5))
+
+		model.add (Dense (256))
+		model.add (Dense (64))
+		model.add (Dense (1))
+		sgd = SGD(lr=_lr, momentum=_momentum, decay=_decay, nesterov=False)
+		model.compile(loss=_loss, optimizer=sgd)
+
+
+		early_stopping = EarlyStopping (monitor = "val_loss", patience = 5, min_delta = 0)
+		history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1, callbacks = [early_stopping])
+		# history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1)
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+
+		../data/Networks/NT_by_N/Network_7.h5
+		../data/HandRecords/Shared/HandRecord_20000_0
+		6.89466423162 0.1407 0.4178 0.6342
+
+		../data/Networks/NT_by_N/Network_7.h5
+		../data/HandRecords/Shared/HandRecord_25000_0
+		3.54441515397 0.12128 0.50316 0.81208
+
+Network_8.h5
+
+	Architecture
+
+		# ----- setting random seed ----- #
+
+		seed = 6
+		np.random.seed (seed)
+
+		# ----- hyperparameter ----- #
+
+		_epoch = 250
+		_lr = 0.001
+		_momentum = 0.9
+		_decay = _lr/_epoch
+		_batch_size = 50
+		_loss = "mse"
+
+		# ----- Training ----- #
+
+		model = Sequential ()
+		model.add (Convolution2D (32, (3, 3), input_shape = (7, 52, 1), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.2))
+		model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.2))
+		model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.2))
+		model.add (Flatten())
+		# model.add (Dropout(0.3))
+		# model.add (Dense (512, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dense (512, activation = 'relu', kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.5))
+		# model.add (GaussianNoise (0.5))
+		model.add (Dense (512, activation = 'relu', kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.5))
+		# model.add (GaussianNoise (0.5))
+		model.add (Dense (512, activation = 'relu', kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.5))
+		# model.add (GaussianNoise (0.5))
+		# model.add (Dropout(0.3))
+
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+
+		model.add (Dense (256))
+		model.add (Dense (64))
+		model.add (Dense (1))
+		sgd = SGD(lr=_lr, momentum=_momentum, decay=_decay, nesterov=False)
+		model.compile(loss=_loss, optimizer=sgd)
+
+
+		early_stopping = EarlyStopping (monitor = "val_loss", patience = 20, min_delta = 0)
+		history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1, callbacks = [early_stopping])
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+
+		../data/Networks/NT_by_N/Network_8.h5
+		../data/HandRecords/Shared/HandRecord_20000_0
+		9.14393052877 0.14715 0.35485 0.59515
+
+		../data/Networks/NT_by_N/Network_8.h5
+		../data/HandRecords/Shared/HandRecord_25000_0
+		1.28285199779e-09 1.0 1.0 1.0
+
+Network_9.h5
+
+	Architecture
+
+		seed = 6
+		np.random.seed (seed)
+
+		# ----- hyperparameter ----- #
+
+		_epoch = 250
+		_lr = 0.001
+		_momentum = 0.9
+		_decay = _lr/_epoch
+		_batch_size = 50
+		_loss = "mse"
+
+		# ----- Training ----- #
+
+		model = Sequential ()
+		model.add (Convolution2D (32, (3, 3), input_shape = (7, 52, 1), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.2))
+		model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.2))
+		model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.2))
+		model.add (Flatten())
+		# model.add (Dropout(0.3))
+		# model.add (Dense (512, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dense (512, activation = 'relu', kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.5))
+		# model.add (GaussianNoise (0.5))
+		model.add (Dense (512, activation = 'relu', kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.5))
+		# model.add (GaussianNoise (0.5))
+		model.add (Dense (512, activation = 'relu', kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.5))
+		# model.add (GaussianNoise (0.5))
+		# model.add (Dropout(0.3))
+
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+
+		model.add (Dense (256))
+		model.add (Dense (64))
+		model.add (Dense (1))
+		sgd = SGD(lr=_lr, momentum=_momentum, decay=_decay, nesterov=False)
+		model.compile(loss=_loss, optimizer=sgd)
+
+
+		early_stopping = EarlyStopping (monitor = "val_loss", patience = 5, min_delta = 0)
+		history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1, callbacks = [early_stopping])
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+
+		../data/Networks/NT_by_N/Network_9.h5
+		../data/HandRecords/Shared/HandRecord_20000_0
+		9.61981746664 0.11665 0.3548 0.58215
+
+		../data/Networks/NT_by_N/Network_9.h5
+		../data/HandRecords/Shared/HandRecord_25000_0
+		0.0143183719382 1.0 1.0 1.0
+
+Network_10.h5
+
+	Architecture
+
+		seed = 6
+		np.random.seed (seed)
+
+		# ----- hyperparameter ----- #
+
+		_epoch = 250
+		_lr = 0.001
+		_momentum = 0.9
+		_decay = _lr/_epoch
+		_batch_size = 50
+		_loss = "mse"
+
+		# ----- Training ----- #
+
+		model = Sequential ()
+		model.add (Convolution2D (32, (3, 3), input_shape = (7, 52, 1), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.2))
+		model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.2))
+		model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.2))
+		model.add (Flatten())
+		# model.add (Dropout(0.3))
+		# model.add (Dense (512, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dense (256, activation = 'relu', kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.4))
+		# model.add (GaussianNoise (0.5))
+		model.add (Dense (256, activation = 'relu', kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.4))
+		# model.add (GaussianNoise (0.5))
+		model.add (Dense (256, activation = 'relu', kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.4))
+		# model.add (GaussianNoise (0.5))
+		# model.add (Dropout(0.3))
+
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+
+		model.add (Dense (64))
+		model.add (Dense (1))
+		sgd = SGD(lr=_lr, momentum=_momentum, decay=_decay, nesterov=False)
+		model.compile(loss=_loss, optimizer=sgd)
+
+
+		early_stopping = EarlyStopping (monitor = "val_loss", patience = 5, min_delta = 0)
+		history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1, callbacks = [early_stopping])
+		# history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1)
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+
+		../data/Networks/NT_by_N/Network_10.h5
+		../data/HandRecords/Shared/HandRecord_20000_0
+		7.55760374596 0.13175 0.3894 0.66205
+
+		../data/Networks/NT_by_N/Network_10.h5
+		../data/HandRecords/Shared/HandRecord_25000_0
+		0.0621065915901 0.9454 1.0 1.0
+
+Network_11.h5
+
+	Architecture
+
+		seed = 6
+		np.random.seed (seed)
+
+		# ----- hyperparameter ----- #
+
+		_epoch = 250
+		_lr = 0.001
+		_momentum = 0.9
+		_decay = _lr/_epoch
+		_batch_size = 50
+		_loss = "mse"
+
+		# ----- Training ----- #
+
+		model = Sequential ()
+		model.add (Convolution2D (32, (3, 3), input_shape = (7, 52, 1), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.2))
+		model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.2))
+		model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.2))
+		model.add (Flatten())
+		# model.add (Dropout(0.3))
+		# model.add (Dense (512, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dense (64, activation = 'relu', kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.4))
+		# model.add (GaussianNoise (0.5))
+		# model.add (Dense (64, activation = 'relu', kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.4))
+		# model.add (GaussianNoise (0.5))
+		# model.add (Dropout(0.3))
+
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+
+		model.add (Dense (16))
+		model.add (Dense (1))
+		sgd = SGD(lr=_lr, momentum=_momentum, decay=_decay, nesterov=False)
+		model.compile(loss=_loss, optimizer=sgd)
+
+
+		early_stopping = EarlyStopping (monitor = "val_loss", patience = 5, min_delta = 0)
+		history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1, callbacks = [early_stopping])
+		# history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1)
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+
+		../data/Networks/NT_by_N/Network_11.h5
+		../data/HandRecords/Shared/HandRecord_20000_0
+		6.87175915805 0.12335 0.39815 0.65355
+
+		../data/Networks/NT_by_N/Network_11.h5
+		../data/HandRecords/Shared/HandRecord_25000_0
+		0.0342426187994 0.99392 1.0 1.0
+
+Network_12.h5
+
+	Architecture
+
+		seed = 6
+		np.random.seed (seed)
+
+		# ----- hyperparameter ----- #
+
+		_epoch = 250
+		_lr = 0.001
+		_momentum = 0.9
+		_decay = _lr/_epoch
+		_batch_size = 50
+		_loss = "mse"
+
+		# ----- Training ----- #
+
+		model = Sequential ()
+		model.add (Convolution2D (32, (3, 3), input_shape = (7, 52, 1), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.2))
+		model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.2))
+		model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.2))
+		model.add (Flatten())
+		# model.add (Dropout(0.3))
+		# model.add (Dense (512, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dense (64, activation = 'relu', kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.4))
+		# model.add (GaussianNoise (0.5))
+		# model.add (Dense (64, activation = 'relu', kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.4))
+		# model.add (GaussianNoise (0.5))
+		# model.add (Dropout(0.3))
+
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+
+		model.add (Dense (16))
+		model.add (Dense (1))
+		sgd = SGD(lr=_lr, momentum=_momentum, decay=_decay, nesterov=False)
+		model.compile(loss=_loss, optimizer=sgd)
+
+
+		early_stopping = EarlyStopping (monitor = "val_loss", patience = 5, min_delta = 0)
+		history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1, callbacks = [early_stopping])
+		# history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1)
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+
+		../data/Networks/NT_by_N/Network_12.h5
+		../data/HandRecords/Shared/HandRecord_20000_0
+		7.06366596455 0.1408 0.43935 0.69045
+
+		../data/Networks/NT_by_N/Network_12.h5
+		../data/HandRecords/Shared/HandRecord_25000_0
+		7.64218661986 0.16372 0.47896 0.66656
+
+Network_13.h5
+
+	Architecture
+
+		seed = 6
+		np.random.seed (seed)
+
+		# ----- hyperparameter ----- #
+
+		_epoch = 250
+		_lr = 0.001
+		_momentum = 0.9
+		_decay = _lr/_epoch
+		_batch_size = 50
+		_loss = "mse"
+
+		# ----- Training ----- #
+
+		model = Sequential ()
+		model.add (Convolution2D (32, (3, 3), input_shape = (7, 13, 4), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.2))
+		model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.2))
+		model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.2))
+		model.add (Flatten())
+		# model.add (Dropout(0.3))
+		# model.add (Dense (512, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dense (64, activation = 'relu', kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.4))
+		# model.add (GaussianNoise (0.5))
+		# model.add (Dense (64, activation = 'relu', kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.4))
+		# model.add (GaussianNoise (0.5))
+		# model.add (Dropout(0.3))
+
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+
+		model.add (Dense (16))
+		model.add (Dense (1))
+		sgd = SGD(lr=_lr, momentum=_momentum, decay=_decay, nesterov=False)
+		model.compile(loss=_loss, optimizer=sgd)
+
+
+		early_stopping = EarlyStopping (monitor = "val_loss", patience = 5, min_delta = 0)
+		history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1, callbacks = [early_stopping])
+		# history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1)
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+
+		../data/Networks/NT_by_N/Network_13.h5
+		../data/HandRecords/Shared/HandRecord_20000_0
+		7.39181420289 0.1601 0.4285 0.64065
+
+		../data/Networks/NT_by_N/Network_13.h5
+		../data/HandRecords/Shared/HandRecord_25000_0
+		0.0236268500336 0.99396 1.0 1.0
+
+Network_14.h5
+
+	Architecture
+
+		seed = 6
+		np.random.seed (seed)
+
+		# ----- hyperparameter ----- #
+
+		_epoch = 250
+		_lr = 0.001
+		_momentum = 0.9
+		_decay = _lr/_epoch
+		_batch_size = 50
+		_loss = "mse"
+
+		# ----- Training ----- #
+
+		model = Sequential ()
+		model.add (Convolution2D (32, (3, 3), input_shape = (7, 13, 4), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.2))
+		model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.2))
+		# model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.2))
+		model.add (Flatten())
+		# model.add (Dropout(0.3))
+		# model.add (Dense (512, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dense (64, activation = 'relu', kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.4))
+		# model.add (GaussianNoise (0.5))
+		# model.add (Dense (64, activation = 'relu', kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.4))
+		# model.add (GaussianNoise (0.5))
+		# model.add (Dropout(0.3))
+
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+
+		model.add (Dense (16))
+		model.add (Dense (1))
+		sgd = SGD(lr=_lr, momentum=_momentum, decay=_decay, nesterov=False)
+		model.compile(loss=_loss, optimizer=sgd)
+
+
+		early_stopping = EarlyStopping (monitor = "val_loss", patience = 5, min_delta = 0)
+		history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1, callbacks = [early_stopping])
+		# history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1)
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+
+		../data/Networks/NT_by_N/Network_14.h5
+		../data/HandRecords/Shared/HandRecord_20000_0
+		6.87446165652 0.1363 0.4369 0.6493
+
+		../data/Networks/NT_by_N/Network_14.h5
+		../data/HandRecords/Shared/HandRecord_25000_0
+		0.0199928320599 1.0 1.0 1.0
+
+Network_15.h5
+
+	Architecture
+
+		seed = 6
+		np.random.seed (seed)
+
+		# ----- hyperparameter ----- #
+
+		_epoch = 250
+		_lr = 0.001
+		_momentum = 0.9
+		_decay = _lr/_epoch
+		_batch_size = 50
+		_loss = "mse"
+
+		# ----- Training ----- #
+
+		model = Sequential ()
+		model.add (Convolution2D (32, (3, 3), input_shape = (7, 13, 4), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.2))
+		model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.2))
+		maxnorm (3)))
+		model.add (Flatten())
+		model.add (Dense (64, activation = 'relu', kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.4))
+
+		model.add (Dense (16))
+		model.add (Dense (1))
+		sgd = SGD(lr=_lr, momentum=_momentum, decay=_decay, nesterov=False)
+		model.compile(loss=_loss, optimizer=sgd)
+
+
+		early_stopping = EarlyStopping (monitor = "val_loss", patience = 5, min_delta = 0)
+		history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1, callbacks = [early_stopping])
+		# history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1)
+
+	Data Used:
+
+		Train:	HandRecord_700000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+
+		../data/Networks/NT_by_N/Network_15.h5
+		../data/HandRecords/Shared/HandRecord_20000_0
+		5.80859471666 0.17525 0.45435 0.70125
+
+		../data/Networks/NT_by_N/Network_15.h5
+		../data/HandRecords/Shared/HandRecord_25000_0
+		6.88860761191 0.16992 0.41828 0.6968
+
+Network_16.h5
+
+	Architecture
+
+		seed = 6
+		np.random.seed (seed)
+
+		# ----- hyperparameter ----- #
+
+		_epoch = 250
+		_lr = 0.001
+		_momentum = 0.9
+		_decay = _lr/_epoch
+		_batch_size = 50
+		_loss = "mse"
+
+		# ----- Training ----- #
+
+		model = Sequential ()
+		model.add (Convolution2D (32, (3, 3), input_shape = (7, 13, 4), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.5))
+		# model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.5))
+		# model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.2))
+		model.add (Flatten())
+		# model.add (Dropout(0.3))
+		# model.add (Dense (512, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dense (64, activation = 'relu', kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.4))
+
+
+		# model.add (Dense (16))
+		model.add (Dense (1))
+		sgd = SGD(lr=_lr, momentum=_momentum, decay=_decay, nesterov=False)
+		model.compile(loss=_loss, optimizer=sgd)
+
+
+		early_stopping = EarlyStopping (monitor = "val_loss", patience = 5, min_delta = 0)
+		history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1, callbacks = [early_stopping])
+		# history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1)
+
+	Data Used:
+
+		Train:	HandRecord_20000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+
+		../data/Networks/NT_by_N/Network_16.h5
+		../data/HandRecords/Shared/HandRecord_20000_0
+		0.0523437887237 0.97405 1.0 1.0
+
+		../data/Networks/NT_by_N/Network_16.h5
+		../data/HandRecords/Shared/HandRecord_25000_0
+		6.87737561224 0.2122 0.47876 0.67268
+
+Network_17.h5
+
+	Architecture
+
+		seed = 6
+		np.random.seed (seed)
+
+		# ----- hyperparameter ----- #
+
+		_epoch = 250
+		_lr = 0.001
+		_momentum = 0.9
+		_decay = _lr/_epoch
+		_batch_size = 50
+		_loss = "mse"
+
+		# ----- Training ----- #
+
+		model = Sequential ()
+		model.add (Convolution2D (32, (3, 3), input_shape = (7, 13, 4), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.5))
+		# model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.5))
+		# model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.2))
+		model.add (Flatten())
+		# model.add (Dropout(0.3))
+		# model.add (Dense (512, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dense (64, activation = 'relu', kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.4))
+		# model.add (GaussianNoise (0.5))
+		# model.add (Dense (64, activation = 'relu', kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.4))
+		# model.add (GaussianNoise (0.5))
+		# model.add (Dropout(0.3))
+
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+		# model.add (Dense (256, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		# model.add (Dropout(0.3))
+
+		# model.add (Dense (16))
+		model.add (Dense (1))
+		sgd = SGD(lr=_lr, momentum=_momentum, decay=_decay, nesterov=False)
+		model.compile(loss=_loss, optimizer=sgd)
+
+
+		early_stopping = EarlyStopping (monitor = "val_loss", patience = 5, min_delta = 0, restore_best_weights=True)
+		history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1, callbacks = [early_stopping])
+		# history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1)
+
+		# ----
+		
+
+	Data Used:
+
+		Train:	HandRecord_700000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+
+		../data/Networks/NT_by_N/Network_17.h5
+		../data/HandRecords/Shared/HandRecord_20000_0
+		6.09983027072 0.14695 0.4501 0.6689
+
+		../data/Networks/NT_by_N/Network_17.h5
+		../data/HandRecords/Shared/HandRecord_25000_0
+		6.72887461078 0.16976 0.48484 0.6666
+
+Network_18.h5
+
+	Architecture
+
+		seed = 6
+		np.random.seed (seed)
+
+		# ----- hyperparameter ----- #
+
+		_epoch = 250
+		_lr = 0.001
+		_momentum = 0.9
+		_decay = _lr/_epoch
+		_batch_size = 50
+		_loss = "mse"
+
+		# ----- Training ----- #
+
+		model = Sequential ()
+		model.add (Convolution2D (32, (3, 3), input_shape = (7, 13, 4), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.5))
+		# model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.5))
+		# model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.2))
+		model.add (Flatten())
+		# model.add (Dropout(0.3))
+		# model.add (Dense (512, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dense (64, activation = 'relu', kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.4))
+
+		# model.add (Dense (16))
+		model.add (Dense (1))
+		sgd = SGD(lr=_lr, momentum=_momentum, decay=_decay, nesterov=False)
+		model.compile(loss=_loss, optimizer=sgd)
+
+
+		early_stopping = EarlyStopping (monitor = "val_loss", patience = 5, min_delta = 0, restore_best_weights=True)
+		history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1, callbacks = [early_stopping])
+		# history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1)
+				
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+
+		../data/Networks/NT_by_N/Network_18.h5
+		../data/HandRecords/Shared/HandRecord_20000_0
+		6.071273809694505 0.1515 0.45895 0.6602
+
+		../data/Networks/NT_by_N/Network_18.h5
+		../data/HandRecords/Shared/HandRecord_25000_0
+		6.557748770211921 0.1818 0.4788 0.6788
+
+Network_19.h5
+
+	Architecture
+
+		seed = 6
+		np.random.seed (seed)
+
+		# ----- hyperparameter ----- #
+
+		_epoch = 250
+		_lr = 0.001
+		_momentum = 0.9
+		_decay = _lr/_epoch
+		_batch_size = 50
+		_loss = "mse"
+
+		# ----- Training ----- #
+
+		model = Sequential ()
+		model.add (Convolution2D (32, (3, 3), input_shape = (7, 13, 4), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.5))
+		# model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.5))
+		# model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.2))
+		model.add (Flatten())
+		model.add (Dense (64, activation = 'relu', kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.4))
+
+		# model.add (Dense (16))
+		model.add (Dense (1))
+		sgd = SGD(lr=_lr, momentum=_momentum, decay=_decay, nesterov=False)
+		model.compile(loss=_loss, optimizer=sgd)
+
+
+		early_stopping = EarlyStopping (monitor = "val_loss", patience = 5, min_delta = 0, restore_best_weights=True)
+		history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1, callbacks = [early_stopping])
+		# history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1)
+
+	Data Used:
+
+		Train:	HandRecord_20000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+
+		../data/Networks/NT_by_N/Network_19.h5
+		../data/HandRecords/Shared/HandRecord_20000_0
+		0.043508918038036255 0.97845 1.0 1.0
+
+		../data/Networks/NT_by_N/Network_19.h5
+		../data/HandRecords/Shared/HandRecord_25000_0
+		6.809351782005413 0.22428 0.4788 0.6788
+
+Network_20.h5
+
+	Architecture
+
+		seed = 6
+		np.random.seed (seed)
+
+		# ----- hyperparameter ----- #
+
+		_epoch = 250
+		_lr = 0.001
+		_momentum = 0.9
+		_decay = _lr/_epoch
+		_batch_size = 50
+		_loss = "mse"
+
+		# ----- Training ----- #
+
+		model = Sequential ()
+		model.add (Convolution2D (10, (3, 3), input_shape = (7, 13, 4), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.5))
+		# model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.5))
+		# model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.2))
+		model.add (Flatten())
+		# model.add (Dropout(0.3))
+		# model.add (Dense (512, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dense (16, activation = 'relu', kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.4))
+
+		# model.add (Dense (16))
+		model.add (Dense (1))
+		sgd = SGD(lr=_lr, momentum=_momentum, decay=_decay, nesterov=False)
+		model.compile(loss=_loss, optimizer=sgd)
+
+
+		early_stopping = EarlyStopping (monitor = "val_loss", patience = 5, min_delta = 0, restore_best_weights=True)
+		history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1, callbacks = [early_stopping])
+		# history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1)
+				
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+
+		../data/Networks/NT_by_N/Network_20.h5
+		../data/HandRecords/Shared/HandRecord_20000_0
+		0.32409808999634393 0.6212 0.9957 0.99785
+
+		../data/Networks/NT_by_N/Network_20.h5
+		../data/HandRecords/Shared/HandRecord_25000_0
+		7.0836338885155845 0.20012 0.44244 0.65456
+
+Network_21.h5
+
+	Architecture
+
+		seed = 6
+		np.random.seed (seed)
+
+		# ----- hyperparameter ----- #
+
+		_epoch = 250
+		_lr = 0.001
+		_momentum = 0.9
+		_decay = _lr/_epoch
+		_batch_size = 50
+		_loss = "mse"
+
+		# ----- Training ----- #
+
+		model = Sequential ()
+		model.add (Convolution2D (10, (3, 3), input_shape = (7, 13, 4), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.5))
+		# model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.5))
+		# model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.2))
+		model.add (Flatten())
+		# model.add (Dropout(0.3))
+		# model.add (Dense (512, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dense (16, activation = 'relu', kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.4))
+
+		# model.add (Dense (16))
+		model.add (Dense (1))
+		sgd = SGD(lr=_lr, momentum=_momentum, decay=_decay, nesterov=False)
+		model.compile(loss=_loss, optimizer=sgd)
+
+
+		early_stopping = EarlyStopping (monitor = "val_loss", patience = 5, min_delta = 0, restore_best_weights=True)
+		history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1, callbacks = [early_stopping])
+		# history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1)
+
+	Data Used:
+
+		Train:	HandRecord_700000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+
+		../data/Networks/NT_by_N/Network_21.h5
+		../data/HandRecords/Shared/HandRecord_20000_0
+		6.132607573706688 0.16655 0.45015 0.6623
+
+		../data/Networks/NT_by_N/Network_21.h5
+		../data/HandRecords/Shared/HandRecord_25000_0
+		6.293141300362756 0.12724 0.44252 0.69088
+
+Network_22.h5
+
+	Architecture
+
+		seed = 6
+		np.random.seed (seed)
+
+		# ----- hyperparameter ----- #
+
+		_epoch = 1
+		_lr = 0.001
+		_momentum = 0.9
+		_decay = _lr/_epoch
+		_batch_size = 50
+		_loss = "mse"
+
+		# ----- Training ----- #
+
+		model = Sequential ()
+		model.add (Convolution2D (4, (3, 3), input_shape = (7, 13, 4), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.5))
+		# model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.5))
+		# model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.2))
+		model.add (Flatten())
+		# model.add (Dropout(0.3))
+		# model.add (Dense (512, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dense (16, activation = 'relu', kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.4))
+		model.add (GaussianNoise (0.5))
+
+		# model.add (Dense (16))
+		model.add (Dense (1))
+		sgd = SGD(lr=_lr, momentum=_momentum, decay=_decay, nesterov=False)
+		model.compile(loss=_loss, optimizer=sgd)
+
+
+		early_stopping = EarlyStopping (monitor = "val_loss", patience = 5, min_delta = 0, restore_best_weights=True)
+		history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1, callbacks = [early_stopping])	
+
+	Data Used:
+
+		Train:	HandRecord_20000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+
+		../data/Networks/NT_by_N/Network_22.h5
+		../data/HandRecords/Shared/HandRecord_20000_0
+		2.530057002862304 0.25765 0.69075 0.88965
+
+		../data/Networks/NT_by_N/Network_22.h5
+		../data/HandRecords/Shared/HandRecord_25000_0
+		6.7858130421054 0.16972 0.45448 0.65456
+
+Network_23.h5
+
+	Architecture
+
+		seed = 6
+		np.random.seed (seed)
+
+		# ----- hyperparameter ----- #
+
+		_epoch = 1
+		_lr = 0.001
+		_momentum = 0.9
+		_decay = _lr/_epoch
+		_batch_size = 50
+		_loss = "mse"
+
+		# ----- Training ----- #
+
+		model = Sequential ()
+		model.add (Convolution2D (4, (3, 3), input_shape = (7, 13, 4), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.5))
+		# model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.5))
+		# model.add (Convolution2D (32, (3, 3), border_mode = "valid", activation = "relu", kernel_constraint = maxnorm (3)))
+		# model.add (Dropout(0.2))
+		model.add (Flatten())
+		# model.add (Dropout(0.3))
+		# model.add (Dense (512, activation = 'relu', kernel_regularizer = regularizers.l1_l2 (l1=0.02, l2=0.05)))
+		model.add (Dense (16, activation = 'relu', kernel_constraint = maxnorm (3)))
+		model.add (Dropout(0.4))
+		model.add (GaussianNoise (0.5))
+		# model.add (Dense (16))
+		model.add (Dense (1))
+		sgd = SGD(lr=_lr, momentum=_momentum, decay=_decay, nesterov=False)
+		model.compile(loss=_loss, optimizer=sgd)
+
+
+		early_stopping = EarlyStopping (monitor = "val_loss", patience = 5, min_delta = 0, restore_best_weights=True)
+		history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1, callbacks = [early_stopping])
+		# history = model.fit(X, Y, epochs = _epoch, batch_size=_batch_size, verbose = True, validation_split = 0.1)
+				
+
+	Data Used:
+
+		Train:	HandRecord_700000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+
+		../data/Networks/NT_by_N/Network_23.h5
+		../data/HandRecords/Shared/HandRecord_20000_0
+		4.599866085254452 0.20985 0.5388 0.7596
+
+		../data/Networks/NT_by_N/Network_23.h5
+		../data/HandRecords/Shared/HandRecord_25000_0
+		4.815330776779192 0.2424 0.50916 0.77572
+
+
+Network_X.h5
+
+	Architecture
+
+		
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+		HandRecord_20000
+			mse = 8.30116027697
+			accuracy (0, 1, 2) = 0.13865 0.39595 0.6255
+
+		HandRecord_25000
+			mse = 0.471849061562
+			accuracy (0, 1, 2) = 0.485 0.96968 1.0
+
+Network_X.h5
+
+	Architecture
+
+		
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+		HandRecord_20000
+			mse = 8.30116027697
+			accuracy (0, 1, 2) = 0.13865 0.39595 0.6255
+
+		HandRecord_25000
+			mse = 0.471849061562
+			accuracy (0, 1, 2) = 0.485 0.96968 1.0
+
+Network_X.h5
+
+	Architecture
+
+		
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+		HandRecord_20000
+			mse = 8.30116027697
+			accuracy (0, 1, 2) = 0.13865 0.39595 0.6255
+
+		HandRecord_25000
+			mse = 0.471849061562
+			accuracy (0, 1, 2) = 0.485 0.96968 1.0
+
+Network_X.h5
+
+	Architecture
+
+		
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+		HandRecord_20000
+			mse = 8.30116027697
+			accuracy (0, 1, 2) = 0.13865 0.39595 0.6255
+
+		HandRecord_25000
+			mse = 0.471849061562
+			accuracy (0, 1, 2) = 0.485 0.96968 1.0
+
+Network_X.h5
+
+	Architecture
+
+		
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+		HandRecord_20000
+			mse = 8.30116027697
+			accuracy (0, 1, 2) = 0.13865 0.39595 0.6255
+
+		HandRecord_25000
+			mse = 0.471849061562
+			accuracy (0, 1, 2) = 0.485 0.96968 1.0
+
+Network_X.h5
+
+	Architecture
+
+		
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+		HandRecord_20000
+			mse = 8.30116027697
+			accuracy (0, 1, 2) = 0.13865 0.39595 0.6255
+
+		HandRecord_25000
+			mse = 0.471849061562
+			accuracy (0, 1, 2) = 0.485 0.96968 1.0
+
+Network_X.h5
+
+	Architecture
+
+		
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+		HandRecord_20000
+			mse = 8.30116027697
+			accuracy (0, 1, 2) = 0.13865 0.39595 0.6255
+
+		HandRecord_25000
+			mse = 0.471849061562
+			accuracy (0, 1, 2) = 0.485 0.96968 1.0
+
+Network_X.h5
+
+	Architecture
+
+		
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+		HandRecord_20000
+			mse = 8.30116027697
+			accuracy (0, 1, 2) = 0.13865 0.39595 0.6255
+
+		HandRecord_25000
+			mse = 0.471849061562
+			accuracy (0, 1, 2) = 0.485 0.96968 1.0
+
+Network_X.h5
+
+	Architecture
+
+		
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+		HandRecord_20000
+			mse = 8.30116027697
+			accuracy (0, 1, 2) = 0.13865 0.39595 0.6255
+
+		HandRecord_25000
+			mse = 0.471849061562
+			accuracy (0, 1, 2) = 0.485 0.96968 1.0
+
+Network_X.h5
+
+	Architecture
+
+		
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+		HandRecord_20000
+			mse = 8.30116027697
+			accuracy (0, 1, 2) = 0.13865 0.39595 0.6255
+
+		HandRecord_25000
+			mse = 0.471849061562
+			accuracy (0, 1, 2) = 0.485 0.96968 1.0
+
+Network_X.h5
+
+	Architecture
+
+		
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+		HandRecord_20000
+			mse = 8.30116027697
+			accuracy (0, 1, 2) = 0.13865 0.39595 0.6255
+
+		HandRecord_25000
+			mse = 0.471849061562
+			accuracy (0, 1, 2) = 0.485 0.96968 1.0
+
+Network_X.h5
+
+	Architecture
+
+		
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+		HandRecord_20000
+			mse = 8.30116027697
+			accuracy (0, 1, 2) = 0.13865 0.39595 0.6255
+
+		HandRecord_25000
+			mse = 0.471849061562
+			accuracy (0, 1, 2) = 0.485 0.96968 1.0
+
+Network_X.h5
+
+	Architecture
+
+		
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+		HandRecord_20000
+			mse = 8.30116027697
+			accuracy (0, 1, 2) = 0.13865 0.39595 0.6255
+
+		HandRecord_25000
+			mse = 0.471849061562
+			accuracy (0, 1, 2) = 0.485 0.96968 1.0
+
+Network_X.h5
+
+	Architecture
+
+		
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+		HandRecord_20000
+			mse = 8.30116027697
+			accuracy (0, 1, 2) = 0.13865 0.39595 0.6255
+
+		HandRecord_25000
+			mse = 0.471849061562
+			accuracy (0, 1, 2) = 0.485 0.96968 1.0
+
+Network_X.h5
+
+	Architecture
+
+		
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+		HandRecord_20000
+			mse = 8.30116027697
+			accuracy (0, 1, 2) = 0.13865 0.39595 0.6255
+
+		HandRecord_25000
+			mse = 0.471849061562
+			accuracy (0, 1, 2) = 0.485 0.96968 1.0
+
+Network_X.h5
+
+	Architecture
+
+		
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+		HandRecord_20000
+			mse = 8.30116027697
+			accuracy (0, 1, 2) = 0.13865 0.39595 0.6255
+
+		HandRecord_25000
+			mse = 0.471849061562
+			accuracy (0, 1, 2) = 0.485 0.96968 1.0
+
+Network_X.h5
+
+	Architecture
+
+		
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+		HandRecord_20000
+			mse = 8.30116027697
+			accuracy (0, 1, 2) = 0.13865 0.39595 0.6255
+
+		HandRecord_25000
+			mse = 0.471849061562
+			accuracy (0, 1, 2) = 0.485 0.96968 1.0
+
+Network_X.h5
+
+	Architecture
+
+		
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+		HandRecord_20000
+			mse = 8.30116027697
+			accuracy (0, 1, 2) = 0.13865 0.39595 0.6255
+
+		HandRecord_25000
+			mse = 0.471849061562
+			accuracy (0, 1, 2) = 0.485 0.96968 1.0
+
+Network_X.h5
+
+	Architecture
+
+		
+
+	Data Used:
+
+		Train:	HandRecord_25000
+		Test:	HandRecord_20000, HandRecord_25000
+
+	Result:
+		HandRecord_20000
+			mse = 8.30116027697
+			accuracy (0, 1, 2) = 0.13865 0.39595 0.6255
+
+		HandRecord_25000
+			mse = 0.471849061562
+			accuracy (0, 1, 2) = 0.485 0.96968 1.0
+
+
