@@ -137,7 +137,10 @@ def decodeGameRecord (line, inputMode, outputMode):
 	if outputMode == "None":
 		res_ret == -1
 
-	if outputMode != "NT_by_N" and outputMode != "None":
+	if outputMode == "Par":
+		res_ret = -1
+
+	if outputMode != "NT_by_N" and outputMode != "None" and outputMode != "Par":
 		print ("Output Mode Error.")
 		return ([], -1)
 
@@ -233,3 +236,93 @@ def accuracy (Y_pred, Y, margin = 0):
 				s += 1
 
 	return s/c
+
+def calcScore (level, suit, double, result, vulnerable = True):
+
+	if level < 1 or level > 7:
+		return -1
+	if suit < 0 or suit > 4:
+		return -1
+	if double < 0 or double > 2:
+		return -1
+	if result < 0 or result > 13:
+		return -1
+
+	score = 0
+	suit_score = 0
+	if suit > 1:
+		suit_score = 30
+	else:
+		suit_score = 20
+
+	if result >= level + 6:
+		#-- Contract Score --#
+		score += level * suit_score
+		if suit == 4:
+			score += 10
+		if double == 1:
+			score *= 2
+		if double == 2:
+			score *= 4
+		#-- Game/Part Bonus --#
+		if score < 100:
+			score += 50
+		else:
+			if vulnerable:
+				score += 500
+			else:
+				score += 300
+		#-- Overtrick Bonus --#
+		if double == 0:
+			overtrick_bonus = (result - level - 6) * suit_score
+		else:
+			overtrick_bonus = (result - level - 6) * 100 * double
+			if vulnerable:
+				overtrick_bonus *= 2
+		score += overtrick_bonus
+		#-- Insult Bonus --#
+		if double == 1:
+			score += 50
+		if double == 2:
+			score += 100
+		#-- Slam Bonus --#
+		if level == 6:
+			if vulnerable:
+				score += 750
+			else:
+				score += 500
+		if level == 7:
+			if vulnerable:
+				score += 1500
+			else:
+				score += 1000
+		return score
+
+	penalty = 0
+	undertrick = level + 6 - result
+
+	if double == 0:
+		penalty = -50 * undertrick
+		if vulnerable:
+			penalty *= 2
+		return penalty
+
+	if not vulnerable:
+		if undertrick >= 1:
+			penalty -= 100
+		if undertrick >= 2:
+			penalty -= 200
+		if undertrick >= 3:
+			penalty -= 200
+		for i in range (4, undertrick + 1):
+			penalty -= 300
+
+	if vulnerable:
+		if undertrick >= 1:
+			penalty -= 200
+		for i in range (2, undertrick + 1):
+			penalty -= 300	
+
+	penalty *= double
+	return penalty	
+

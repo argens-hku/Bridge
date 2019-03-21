@@ -15,10 +15,10 @@ from keras.constraints import maxnorm
 from keras.callbacks import EarlyStopping
 from keras import regularizers
 
-_trainingFilename = "../data/HandRecords/Large/HandRecord_700000_0"
-_testingFilename = "../data/HandRecords/Shared/HandRecord_20000_0"
-# _trainingFilename = "../data/HandRecords/Shared/HandRecord_100_0"
-# _testingFilename = "../data/HandRecords/Shared/HandRecord_10_0"
+# _trainingFilename = "../data/HandRecords/Large/HandRecord_700000_0"
+# _testingFilename = "../data/HandRecords/Shared/HandRecord_20000_0"
+_trainingFilename = "../data/HandRecords/Shared/HandRecord_100_0"
+_testingFilename = "../data/HandRecords/Shared/HandRecord_10_0"
 _networkFoldername = "../data/Networks/Genetic/NT_by_N/Network"
 # _networkFilename = "../data/Networks/NT_by_N/Network_201.h5"
 
@@ -398,9 +398,9 @@ def combine_result (inputFilenames, outputFilename):
 
 	f.close ()
 
-var_list = get_var_list (_secondGenResult)
-var_list = selection (var_list = var_list, elitism = 0.1)
-cross_breed (var_list = var_list, subfoldername = "/Third_Gen", breed_size = -1, resultfilename = _thirdGenResult, mutation_chance = 0.05)
-# combine_result ([_familyTree, _secondGenResult], _familyTree)
+# var_list = get_var_list (_secondGenResult)
+# var_list = selection (var_list = var_list, elitism = 0.1)
+# cross_breed (var_list = var_list, subfoldername = "/Third_Gen", breed_size = -1, resultfilename = _thirdGenResult, mutation_chance = 0.05)
+combine_result ([_familyTree, _thirdGenResult], _familyTree)
 
 # init_Population (var_list = var_list, subfoldername = "/First_Gen", no_of_network = 5, resultfilename = _familyTree, mutation_chance = 0.01)
