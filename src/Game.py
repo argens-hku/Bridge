@@ -1,6 +1,7 @@
 import dds
 import GenDeal as gd
 from Agent import Agent, STAT_SIZE
+from Dummy import Dummy
 from Helper import unclash, toString, calcScore
 
 from keras.models import Sequential, load_model
@@ -126,10 +127,12 @@ def setTarget (outputHistory, moveHistory, par, score, position):
 	# reward = utility / abs (par)
 
 	target = []
+	display = []
 	for i in range (len (outputHistory)):
 		output = outputHistory [i]
 		(choice, legalBids) = moveHistory [i]
 		# penalty = 1 * reward / len (legalBids)
+		temp = []
 		for j in legalBids:
 			if j == choice:
 				if reward:
@@ -140,10 +143,13 @@ def setTarget (outputHistory, moveHistory, par, score, position):
 				if reward:
 					output [j] = 0
 				else:
-					output [j] = 1
+					output [j] = 1 / (len (legalBids) - 1)
 				# output [j] = output [j] * np.exp (penalty)
+			temp.append (str (output [j])[:4])
 		target.append (output)
+		display.append (temp)
 
+	print ("Target\n", display)
 	return target
 
 def getScore (bids, resTable):
@@ -208,7 +214,8 @@ def learn (network, results, par, score):
 		(position, feedback) = result
 		(inputHistory, outputHistory, moveHistory) = feedback
 		X = X + inputHistory
-		Y_true = Y_true + setTarget (outputHistory, moveHistory, par, score, position)
+		target = setTarget (outputHistory, moveHistory, par, score, position)
+		Y_true = Y_true + target
 
 	if K.backend () == "tensorflow":
 		x = np.asarray (X)
@@ -230,19 +237,23 @@ def main ():
 	BIDDING_3 = ""
 	BIDDING_4 = ""
 
-	network_1 = loadNetwork (NETWORK_1)
+	network_1 = loadNetwork ("")
 	biddingBase_1 = loadBiddingBase (BIDDING_1)
 
+
+
 	agent_1 = Agent (network_1, biddingBase_1)
-	agent_2 = Agent (network_1, biddingBase_1)
+	# agent_2 = Agent (network_1, biddingBase_1)
 	agent_3 = Agent (network_1, biddingBase_1)
-	agent_4 = Agent (network_1, biddingBase_1)
+	# agent_4 = Agent (network_1, biddingBase_1)
+	agent_2 = Dummy ()
+	agent_4 = Dummy ()
 
 	agents = [agent_1, agent_2, agent_3, agent_4]
 	for agent in agents:
 		agent.setCoefficient (BIDDING_ALPHA, EXPLORE_COEFFICIENT)
 
-	episodes = 1000
+	episodes = 10
 	deal = gd.genDeal ()
 	gd.printHand (deal)
 	(par, resTable) = gd.getPar (deal)
@@ -251,10 +262,12 @@ def main ():
 		giveHands (agents, gd.getHand(deal))
 		bids = play (agents)
 		results = []
-		counter = 0
+		counter = -1
 		for agent in agents:
-			results.append ((counter, agent.feedback ()))
 			counter += 1
+			if counter % 2 != 0:
+				continue
+			results.append ((counter, agent.feedback ()))
 
 		(par, resTable) = gd.getPar (deal)
 		score = getScore (bids, resTable)
@@ -263,6 +276,6 @@ def main ():
 		print (bids)
 		print (par, score)
 		print ("----")
-		saveNetwork (network_1, NETWORK_2)
+		saveNetwork (network_1, NETWORK_1)
 
 main ()

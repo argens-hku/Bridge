@@ -120,6 +120,7 @@ class Agent:
 			if not checkCompetitiveSequence (temp_list):
 				legal_bids.remove (i)
 		cumulative = []
+		display = []
 		total = 0
 		for index in legal_bids:
 			if y [index] == 0:
@@ -127,6 +128,8 @@ class Agent:
 			else:
 				total += y [index]
 			cumulative.append (total)
+			display.append (str (y[index])[:4])
+		print ("Output\n", display)
 		pick = random.uniform (0, total)
 		i = 0
 		while pick > cumulative [i]:
