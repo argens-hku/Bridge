@@ -1,5 +1,9 @@
 _debug_level = 0
 
+possible_bids = ["1C", "1D", "1H", "1S", "1N", "2C", "2D", "2H", "2S", "2N", "3C", "3D", "3H", "3S", "3N",
+"4C", "4D", "4H", "4S", "4N", "5C", "5D", "5H", "5S", "5N", "6C", "6D", "6H", "6S", "6N", "7C", "7D", "7H", "7S", "7N", "P", "X", "XX"]
+POSSIBLE_BID_COUNT = 38
+
 #--------- Low Tier Functions ----------#
 
 def clearScreen ():
@@ -230,7 +234,7 @@ def checkCompetitiveSequence (sequence):
 
 		if conversion:
 
-			if (level < prev_level) or (level == prev_level and suit < prev_suit):
+			if (level < prev_level) or (level == prev_level and suit <= prev_suit):
 				errorMessages += str(counter) + "-" + bid + ")	" + "Underbid; Previous bid: " + str(prev_level) + rev_suit_conv[prev_suit] + "\n"
 				illegal = True
 
@@ -258,7 +262,7 @@ def getLastBid (prevBids):
 
 	for bid in reversed (prevBids):
 		temp = bid.upper ()
-		if temp == "X" or temp == "X" or temp == "XX":
+		if temp == "X" or temp == "XX":
 			continue
 		if temp == "P":
 			pass_count += 1
@@ -1584,21 +1588,21 @@ def getMeaning (header, fullBid, mode):
 # outputFilename = "../data/Bidding/Responses_1NT"
 # outputFilename = "../data/Bidding/Responses_2NT"
 # outputFilename = "../data/Bidding/Responses_Preempt"
-outputFilename = "../data/Bidding/Competitive"
-mode = "Competitive"
-if mode == "Competitive" and outputFilename != "../data/Bidding/Competitive":
-	r = input ("Warn")
+		# outputFilename = "../data/Bidding/Competitive"
+		# mode = "Competitive"
+		# if mode == "Competitive" and outputFilename != "../data/Bidding/Competitive":
+		# 	r = input ("Warn")
 # mode = "Uncontested"
 # inputSystem = readSystem (inputFilename)
 # outputSystem = {}
-outputSystem = readSystem (outputFilename)
+		# outputSystem = readSystem (outputFilename)
 # for key in inputSystem.keys ():
 # 	prev_bid = key.split ("-")
 # for key in outputSystem.keys ():
 # 	prev_bid = key.split ("-")
 # 	fillMeaning (prev_bid [:-1], prev_bid [-1], outputSystem, mode)
-prev_bid = ["1S"]
-biddings = generateBiddings (prev_bid, mode)
-for bid in biddings:
-	fillMeaning (prev_bid, bid, outputSystem, mode)
-	writeSystem (outputFilename, outputSystem, True)
+		# prev_bid = ["1S"]
+		# biddings = generateBiddings (prev_bid, mode)
+		# for bid in biddings:
+		# 	fillMeaning (prev_bid, bid, outputSystem, mode)
+		# 	writeSystem (outputFilename, outputSystem, True)

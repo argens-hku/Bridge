@@ -6,6 +6,8 @@ import functions
 import ctypes
 import random
 
+dds.SetMaxThreads(0)
+
 # --- Static Definitions --- #
 
 S = 0
@@ -90,7 +92,7 @@ def getPar (dl):
 	trump = [0,1,2,3,4]
 	decl = [0,1,2,3]
 	first = [1,2,3,0]
-	vul = 0
+	vul = 1
 
 	fut2 = dds.futureTricks ()
 	# line = ctypes.create_string_buffer (80)
@@ -127,8 +129,8 @@ def getPar (dl):
 	except:
 		parValue = 0
 
-	print (parValue)
-	return parValue
+	# print (parValue)
+	return (parValue, result)
 
 def getHand (dl):
 	return_list = []
@@ -148,9 +150,3 @@ def printHand (dl):
 	line = ctypes.create_string_buffer(80)
 	functions.PrintHand (line, dl.remainCards)
 	return
-
-def genHand ():
-	d = genDeal ()
-	h = getHand (d)
-	p = getPar (d)
-	return (h, p)

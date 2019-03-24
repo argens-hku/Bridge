@@ -250,7 +250,7 @@ def calcScore (level, suit, double, result, vulnerable = True):
 
 	score = 0
 	suit_score = 0
-	if suit > 1:
+	if suit < 2 or suit == 4:
 		suit_score = 30
 	else:
 		suit_score = 20
@@ -326,3 +326,8 @@ def calcScore (level, suit, double, result, vulnerable = True):
 	penalty *= double
 	return penalty	
 
+def toString (bids):
+	output = ""
+	for bid in bids:
+		output += bid + "-"
+	return output [:-1]

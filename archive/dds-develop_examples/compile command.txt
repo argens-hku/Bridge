@@ -1,0 +1,26 @@
+g++ -o3 -flto -mtune=generic -c CalcDDTable.cpp -o CalcDDTable.o
+
+g++ -o3 -flto -mtune=generic -L. -l dds hands.o CalcDDtable.o -o CalcDDtable
+
+g++ -o3 -flto -mtune=generic -c MakeHands.cpp -o MakeHands.o
+
+g++ -o3 -flto -mtune=generic -L. -l dds MakeHands.o -o MakeHands
+
+g++ -o3 -flto -mtune=generic -L. -l dds MakeHands.cpp -o MakeHands
+
+
+g++ -o3 -flto -mtune=generic -L. -l dds MakeHands.cpp -o MakeHands
+
+
+-----
+
+g++ -o3 -flto -std=c++11 -c MakeHands.cpp -o MakeHands.o
+g++ -o3 -flto -mtune=generic -L. -l dds MakeHands.o -o MakeHands
+
+-----
+
+g++ -o3 -flto -std=c++11 -c -fPIC Generator.cpp -o Generator.o
+g++ -o3 -flto -mtune=generic -L. -l dds Generator.o -o Generator
+g++ -shared -Wl -L. -l dds -o generator.so  Generator.o
+
+
