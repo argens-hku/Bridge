@@ -238,7 +238,7 @@ def main ():
 	BIDDING_4 = ""
 
 	network_1 = loadNetwork ("")
-	biddingBase_1 = loadBiddingBase (BIDDING_1)
+	biddingBase_1 = loadBiddingBase ("")
 
 
 
@@ -253,12 +253,13 @@ def main ():
 	for agent in agents:
 		agent.setCoefficient (BIDDING_ALPHA, EXPLORE_COEFFICIENT)
 
-	episodes = 10
-	deal = gd.genDeal ()
-	gd.printHand (deal)
-	(par, resTable) = gd.getPar (deal)
-	print (resTable)
+	episodes = 10000
+	# deal = gd.genDeal ()
+	# gd.printHand (deal)
+	# (par, resTable) = gd.getPar (deal)
+	# print (resTable)
 	for i in range (episodes):
+		deal = gd.genDeal ()
 		giveHands (agents, gd.getHand(deal))
 		bids = play (agents)
 		results = []
