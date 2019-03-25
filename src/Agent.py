@@ -5,6 +5,7 @@ from Bidding import checkCompetitiveSequence, possible_bids, POSSIBLE_BID_COUNT
 from Helper import toString
 
 STAT_SIZE = 18
+_DEBUG = 3
 
 class Agent:
 
@@ -129,7 +130,8 @@ class Agent:
 				total += y [index]
 			cumulative.append (total)
 			display.append (str (y[index])[:4])
-		print ("Output\n", display)
+		if _DEBUG > 1:
+			print ("Output\n", display)
 		pick = random.uniform (0, total)
 		i = 0
 		while pick > cumulative [i]:

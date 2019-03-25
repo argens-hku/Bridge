@@ -24,13 +24,15 @@ L2_REGULARIZER = 0.01
 BIDDING_ALPHA = 0.1
 EXPLORE_COEFFICIENT = 0.001
 
+_DEBUG = 3
+
 
 def _loss ():
 	def custom_loss (y_pred, y_true):
 		y_pred = tf.convert_to_tensor (y_pred)
 		y_true = tf.convert_to_tensor (y_true)
 		cross_entropy_loss = - K.sum (y_pred * K.log (y_true), 1)
-		print (cross_entropy_loss)
+		# print (cross_entropy_loss)
 		return cross_entropy_loss
 	return custom_loss
 
@@ -131,6 +133,7 @@ def setTarget (outputHistory, moveHistory, par_NS, score_NS, position, resTable)
 
 	target = []
 	display = []
+	prevFeas = True
 	for i in range (len (outputHistory)):
 		output = outputHistory [i]
 		# for j in range (len (output)):
@@ -138,18 +141,25 @@ def setTarget (outputHistory, moveHistory, par_NS, score_NS, position, resTable)
 		# target.append (output)
 		# continue
 		(prev_bid, choice, legalBids) = moveHistory [i]
+		
 		# penalty = 1 * reward / len (legalBids)
 		temp = []
 		if utility < 0:
-			feasible = False
-			for j in legalBids:
-				prev_bid_copy = prev_bid.copy ()
-				prev_bid_copy.append (possible_bids [j])
-				if getScore (prev_bid_copy + ["P", "P", "P"], resTable) * posFactor >= par:
-					feasible = True
-					break
-			print ("Prev_bid, feasible:", prev_bid, feasible)
-			if feasible:
+			if i + 1 < len (outputHistory):
+				(if_bid, _, nextLegalBids) = moveHistory [i + 1]
+				feasible = False
+				for j in nextLegalBids:
+					if_bid_copy = if_bid.copy ()
+					if_bid_copy.append (possible_bids [j])
+					if getScore (if_bid_copy + ["P", "P", "P"], resTable) * posFactor >= par:
+						feasible = True
+						break
+			else:
+				feasible = True	
+
+			if _DEBUG > 2:
+				print ("Prev_bid, feasible:", prev_bid, feasible)
+			if not feasible and prevFeas:
 				for j in legalBids:
 					if j == choice:
 						output [j] = 0
@@ -159,6 +169,7 @@ def setTarget (outputHistory, moveHistory, par_NS, score_NS, position, resTable)
 			else:
 				for j in legalBids:
 					temp.append (str (output [j])[:4])
+			prevFeas = feasible
 		if utility > 0:
 			for j in legalBids:
 				if j == choice:
@@ -170,8 +181,8 @@ def setTarget (outputHistory, moveHistory, par_NS, score_NS, position, resTable)
 		
 		target.append (output)
 		display.append (temp)
-
-	print ("Target\n", display)
+	if _DEBUG > 2:
+		print ("Target\n", display)
 	return target
 
 def getScore (bids, resTable):
@@ -232,25 +243,57 @@ def learn (network, results, par, score, resTable):
 
 	Y_true = [] #target
 	X = []
+	inputHis = [[],[]]
+	outputHis = [[],[]]
+	moveHis = [[],[]]
 
+	max_counter = -1
 	for result in results:
-		(position, feedback) = result
+		(pos, feedback) = result
 		(inputHistory, outputHistory, moveHistory) = feedback
+		if len (inputHistory) > max_counter:
+			max_counter = len (inputHistory)
+
+	movecounter = 0
+	while movecounter < max_counter:
+		res_counter = 0
+		while res_counter < len (results):
+			(pos, feedback) = results [res_counter]
+			(inputHistory, outputHistory, moveHistory) = feedback
+			if movecounter < len (inputHistory):
+				inputHis [pos % 2].append (inputHistory [movecounter])
+				outputHis [pos % 2].append (outputHistory [movecounter])
+				moveHis [pos % 2].append (moveHistory [movecounter])
+			res_counter += 1
+		movecounter += 1
+
+
+	# print (inputHis)
+	# print (outputHis)
+	# print (moveHis)
+
+	for i in range (2):
+		inputHistory = inputHis [i]
+		outputHistory = outputHis [i]
+		moveHistory = moveHis [i]
 		X = X + inputHistory
-		target = setTarget (outputHistory, moveHistory, par, score, position, resTable)
-		# print ("Target: ", target)
+		target = setTarget (outputHistory, moveHistory, par, score, i, resTable)
 		Y_true = Y_true + target
 
 	if K.backend () == "tensorflow":
 		x = np.asarray (X)
 		y = np.asarray (Y_true)
-	print ("X_SHAPE", x.shape)
-	print ("Y_SHAPE", y.shape)
+
+
+	# print ("X_SHAPE", x.shape)
+	# print ("Y_SHAPE", y.shape)
 	# session = tf.Session()
 	# print (session.run (_loss ()(network.predict (x), y)))
 	# print (network.predict (x))
 	# print ("------")
-	network.fit (x, y, epochs = 1, verbose = 0)
+
+	network.fit (x, y, epochs = 1, verbose = 1)
+
 	# print (session.run (_loss ()(network.predict (x), y)))
 	# print (network.predict (x))
 	return
@@ -267,8 +310,10 @@ def main ():
 	BIDDING_3 = ""
 	BIDDING_4 = ""
 
-	network_1 = loadNetwork ("")
-	biddingBase_1 = loadBiddingBase ("")
+	network_1 = loadNetwork (NETWORK_1)
+	biddingBase_1 = loadBiddingBase (BIDDING_1)
+	# network_1 = loadNetwork ("")
+	# biddingBase_1 = loadBiddingBase ("")
 
 
 
@@ -283,13 +328,16 @@ def main ():
 	for agent in agents:
 		agent.setCoefficient (BIDDING_ALPHA, EXPLORE_COEFFICIENT)
 
-	episodes = 100
+	episodes = 10000
 	# deal = gd.genDeal ()
 	# gd.printHand (deal)
 	# (par, resTable) = gd.getPar (deal)
 	# print (resTable)
+
+	# deal = gd.genDeal ()
+	deal = gd.getDealFromPreset (0)
 	for i in range (episodes):
-		deal = gd.genDeal ()
+		# deal = gd.genDeal ()
 		giveHands (agents, gd.getHand(deal))
 		bids = play (agents)
 		results = []
@@ -310,3 +358,4 @@ def main ():
 		saveNetwork (network_1, NETWORK_1)
 
 main ()
+K.clear_session ()
