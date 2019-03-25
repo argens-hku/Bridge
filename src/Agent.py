@@ -134,7 +134,7 @@ class Agent:
 		i = 0
 		while pick > cumulative [i]:
 			i += 1
-		self.moveHistory.append ((legal_bids [i], legal_bids))
+		self.moveHistory.append ((prev_bid.copy(), legal_bids [i], legal_bids))
 		return possible_bids [legal_bids [i]]
 
 	def move (self, state):

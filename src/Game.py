@@ -3,10 +3,11 @@ import GenDeal as gd
 from Agent import Agent, STAT_SIZE
 from Dummy import Dummy
 from Helper import unclash, toString, calcScore
+from Bidding import POSSIBLE_BID_COUNT, possible_bids
 
 from keras.models import Sequential, load_model
 from keras.layers import Dense
-from keras import regularizers
+from keras import regularizers, optimizers
 import numpy as np
 import tensorflow as tf
 from keras import backend as K
@@ -17,6 +18,8 @@ import json
 LAYER0 = 128
 LAYER1 = 128
 LAYER2 = 128
+LAYER3 = 128
+LAYER4 = 128
 L2_REGULARIZER = 0.01
 BIDDING_ALPHA = 0.1
 EXPLORE_COEFFICIENT = 0.001
@@ -26,10 +29,8 @@ def _loss ():
 	def custom_loss (y_pred, y_true):
 		y_pred = tf.convert_to_tensor (y_pred)
 		y_true = tf.convert_to_tensor (y_true)
-
-		# val_loss = y_true[-1] - y_pred[-1]
 		cross_entropy_loss = - K.sum (y_pred * K.log (y_true), 1)
-		# return val_loss - cross_entropy_loss
+		print (cross_entropy_loss)
 		return cross_entropy_loss
 	return custom_loss
 
@@ -42,9 +43,12 @@ def loadNetwork (filename = ""):
 		model = Sequential ()
 		model.add (Dense (LAYER0, input_shape = (220,))) #52 + (SHDC + AKOJT9s + AKs = 4 + 6 + 8) * 3 + 38 * 3
 		model.add (Dense (LAYER1, activation = 'sigmoid', kernel_regularizer = regularizers.l2(L2_REGULARIZER)))
-		model.add (Dense (LAYER2, activation = 'linear', kernel_regularizer = regularizers.l2(L2_REGULARIZER)))
+		model.add (Dense (LAYER2, activation = 'sigmoid', kernel_regularizer = regularizers.l2(L2_REGULARIZER)))
+		model.add (Dense (LAYER3, activation = 'sigmoid', kernel_regularizer = regularizers.l2(L2_REGULARIZER)))
+		model.add (Dense (LAYER4, activation = 'sigmoid', kernel_regularizer = regularizers.l2(L2_REGULARIZER)))
 		model.add (Dense (38, activation = 'sigmoid'))
-		model.compile (loss = _loss(), optimizer = 'sgd')
+		sgd = optimizers.SGD (lr = 0.01)
+		model.compile (loss = 'mse', optimizer = sgd)
 		return model
 
 	model = load_model (filename, custom_objects={'custom_loss': _loss()})
@@ -109,43 +113,61 @@ def giveHands (agents, hands):
 	for i in range (4):
 		agents [i].setHand (hands [i])
 
-def setTarget (outputHistory, moveHistory, par, score, position):
+def setTarget (outputHistory, moveHistory, par_NS, score_NS, position, resTable):
+
+	if position % 2 == 1:
+		par = -par_NS
+		score = -score_NS
+		posFactor = -1
+	else:
+		par = par_NS
+		score = score_NS
+		posFactor = 1
 
 	utility = score - par
 
-	if position % 2 == 1:
-		utility *= -1
-
 	if utility == 0:
 		return outputHistory
-
-	if utility < 0:
-		reward = False
-	else:
-		reward = True
-
-	# reward = utility / abs (par)
 
 	target = []
 	display = []
 	for i in range (len (outputHistory)):
 		output = outputHistory [i]
-		(choice, legalBids) = moveHistory [i]
+		# for j in range (len (output)):
+		# 	output [j] = 0.
+		# target.append (output)
+		# continue
+		(prev_bid, choice, legalBids) = moveHistory [i]
 		# penalty = 1 * reward / len (legalBids)
 		temp = []
-		for j in legalBids:
-			if j == choice:
-				if reward:
+		if utility < 0:
+			feasible = False
+			for j in legalBids:
+				prev_bid_copy = prev_bid.copy ()
+				prev_bid_copy.append (possible_bids [j])
+				if getScore (prev_bid_copy + ["P", "P", "P"], resTable) * posFactor >= par:
+					feasible = True
+					break
+			print ("Prev_bid, feasible:", prev_bid, feasible)
+			if feasible:
+				for j in legalBids:
+					if j == choice:
+						output [j] = 0
+					else:
+						output [j] = output [j]
+					temp.append (str (output [j])[:4])
+			else:
+				for j in legalBids:
+					temp.append (str (output [j])[:4])
+		if utility > 0:
+			for j in legalBids:
+				if j == choice:
 					output [j] = 1
 				else:
-					output [j] = 0 #< ---------- !!!!! < -------- !!!!! ??? Maybe use relu at output neurons?
-			else:
-				if reward:
-					output [j] = 0
-				else:
-					output [j] = 1 / (len (legalBids) - 1)
-				# output [j] = output [j] * np.exp (penalty)
-			temp.append (str (output [j])[:4])
+					output [j] = output [j]
+				temp.append (str (output [j])[:4])
+			# output [j] = output [j] * np.exp (penalty)
+		
 		target.append (output)
 		display.append (temp)
 
@@ -180,6 +202,7 @@ def getScore (bids, resTable):
 			level = int (bid [0])
 			suit = suit_conv [bid [1]]
 		except:
+			print (bids)
 			print ("Bid Error -- getScore, Game.py, 129")
 		if player % 2 == 0:
 			if first_NS [suit] == -1:
@@ -202,7 +225,7 @@ def getScore (bids, resTable):
 		score *= -1
 	return score
 
-def learn (network, results, par, score):
+def learn (network, results, par, score, resTable):
 	# results = [(position, agent_feedback) NESW]
 	# agent_feedback = ([inputHistory],[outputHistory],[moveHistory])
 	# par = NS perspective
@@ -214,7 +237,8 @@ def learn (network, results, par, score):
 		(position, feedback) = result
 		(inputHistory, outputHistory, moveHistory) = feedback
 		X = X + inputHistory
-		target = setTarget (outputHistory, moveHistory, par, score, position)
+		target = setTarget (outputHistory, moveHistory, par, score, position, resTable)
+		# print ("Target: ", target)
 		Y_true = Y_true + target
 
 	if K.backend () == "tensorflow":
@@ -222,7 +246,13 @@ def learn (network, results, par, score):
 		y = np.asarray (Y_true)
 	print ("X_SHAPE", x.shape)
 	print ("Y_SHAPE", y.shape)
+	# session = tf.Session()
+	# print (session.run (_loss ()(network.predict (x), y)))
+	# print (network.predict (x))
+	# print ("------")
 	network.fit (x, y, epochs = 1, verbose = 0)
+	# print (session.run (_loss ()(network.predict (x), y)))
+	# print (network.predict (x))
 	return
 
 def main ():
@@ -253,7 +283,7 @@ def main ():
 	for agent in agents:
 		agent.setCoefficient (BIDDING_ALPHA, EXPLORE_COEFFICIENT)
 
-	episodes = 10000
+	episodes = 100
 	# deal = gd.genDeal ()
 	# gd.printHand (deal)
 	# (par, resTable) = gd.getPar (deal)
@@ -272,7 +302,7 @@ def main ():
 
 		(par, resTable) = gd.getPar (deal)
 		score = getScore (bids, resTable)
-		learn (network_1, results, par, score)
+		learn (network_1, results, par, score, resTable)
 		writeBiddingBase (biddingBase_1, BIDDING_1)
 		print (bids)
 		print (par, score)
