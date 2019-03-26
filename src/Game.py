@@ -186,6 +186,10 @@ def setTarget (outputHistory, moveHistory, par_NS, score_NS, position, resTable)
 	return target
 
 def getScore (bids, resTable):
+
+	if bids == ['P','P','P','P']:
+		return 0
+
 	double = 0
 	level = 0
 	suit = -1

@@ -5,7 +5,7 @@ from Bidding import checkCompetitiveSequence, possible_bids, POSSIBLE_BID_COUNT
 from Helper import toString
 
 STAT_SIZE = 18
-_DEBUG = 3
+_DEBUG = 0
 
 class Agent:
 
