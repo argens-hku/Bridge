@@ -27,14 +27,14 @@ EXPLORE_COEFFICIENT = 0.001
 _DEBUG = 3
 
 
-def _loss ():
-	def custom_loss (y_pred, y_true):
-		y_pred = tf.convert_to_tensor (y_pred)
-		y_true = tf.convert_to_tensor (y_true)
-		cross_entropy_loss = - K.sum (y_pred * K.log (y_true), 1)
-		# print (cross_entropy_loss)
-		return cross_entropy_loss
-	return custom_loss
+# def _loss ():
+def custom_loss (y_pred, y_true):
+	y_pred = tf.convert_to_tensor (y_pred)
+	y_true = tf.convert_to_tensor (y_true)
+	cross_entropy_loss = - 1 * K.sum (y_pred * K.log (y_true), 1)
+	# print (cross_entropy_loss)
+	return cross_entropy_loss
+	# return custom_loss
 
 def saveNetwork (model, filename):
 	model.save (filename)
@@ -288,13 +288,13 @@ def learn (network, results, par, score, resTable):
 	# print ("X_SHAPE", x.shape)
 	# print ("Y_SHAPE", y.shape)
 	# session = tf.Session()
-	# print (session.run (_loss ()(network.predict (x), y)))
+	# print (session.run (custom_loss(network.predict (x), y)))
 	# print (network.predict (x))
 	# print ("------")
 
 	network.fit (x, y, epochs = 1, verbose = 1)
 
-	# print (session.run (_loss ()(network.predict (x), y)))
+	# print (session.run (custom_loss(network.predict (x), y)))
 	# print (network.predict (x))
 	return
 
