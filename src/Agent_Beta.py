@@ -7,7 +7,7 @@ from Helper import toString
 STAT_SIZE = 18
 _DEBUG = 0
 
-class Agent_Open_Hand:
+class Agent_Beta:
 
 	def __init__ (self, network, bidding_base, explore_ratio):
 
@@ -60,10 +60,10 @@ class Agent_Open_Hand:
 
 	def one_hot_encode (self, bids):
 		indices = []
-		res = np.zeros (POSSIBLE_BID_COUNT * 3)
-		for bid in bids [-3:]:
+		res = np.zeros (POSSIBLE_BID_COUNT * 10)
+		for bid in bids [-10:]:
 			indices.append (possible_bids.index (bid))
-		base = 3 - len (indices)
+		base = 10 - len (indices)
 		for i in range (len (indices)):
 			res [indices [i] + POSSIBLE_BID_COUNT * (base + i)] = 1
 		return list (res)

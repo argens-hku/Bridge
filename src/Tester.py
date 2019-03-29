@@ -12,8 +12,9 @@ _testingFilename = _handRecordsDirectory + "/Shared/HandRecord_20000_0"
 
 # _networkDirectory = "../data/Networks/NT_by_N"
 # _networkFilename = _networkDirectory + "/Network_23.h5"
-_networkFilename = "../data/Networks/Genetic/NT_by_N/Network/Network_2.h5"
+# _networkFilename = "../data/Networks/Genetic/NT_by_N/Network/Network_2.h5"
 # _networkFilename = _networkDirectory + "/NT_by_N/Network_0.h5"
+_networkFilename = "../data/Networks/Genetic/NT_by_N/Network/Third_Gen/Network_0.h5"
 
 # Description: Clears the standard output screen
 

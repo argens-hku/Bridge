@@ -304,20 +304,20 @@ def learn (network, results, par, score, resTable):
 
 def main ():
 
-	NETWORK_1 = "../data/Networks/RL/Gen_1/network.h5"
-	NETWORK_2 = "../data/Networks/RL/Gen_1/network.h5"
+	NETWORK_1 = "../data/Networks/RL/Gen_1/network2.h5"
+	NETWORK_2 = "../data/Networks/RL/Gen_1/network2.h5"
 	NETWORK_3 = ""
 	NETWORK_4 = ""
 
-	BIDDING_1 = "../data/Networks/RL/Gen_1/bidding"
-	BIDDING_2 = "../data/Networks/RL/Gen_1/bidding"
+	BIDDING_1 = "../data/Networks/RL/Gen_1/bidding2"
+	BIDDING_2 = "../data/Networks/RL/Gen_1/bidding2"
 	BIDDING_3 = ""
 	BIDDING_4 = ""
 
-	network_1 = loadNetwork (NETWORK_1)
-	biddingBase_1 = loadBiddingBase (BIDDING_1)
-	# network_1 = loadNetwork ("")
-	# biddingBase_1 = loadBiddingBase ("")
+	# network_1 = loadNetwork (NETWORK_1)
+	# biddingBase_1 = loadBiddingBase (BIDDING_1)
+	network_1 = loadNetwork ("")
+	biddingBase_1 = loadBiddingBase ("")
 
 
 
@@ -339,9 +339,9 @@ def main ():
 	# print (resTable)
 
 	# deal = gd.genDeal ()
-	deal = gd.getDealFromPreset (0)
+	# deal = gd.getDealFromPreset (0)
 	for i in range (episodes):
-		# deal = gd.genDeal ()
+		deal = gd.genDeal ()
 		giveHands (agents, gd.getHand(deal))
 		bids = play (agents)
 		results = []

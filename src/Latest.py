@@ -1,7 +1,7 @@
 import dds
 import GenDeal as gd
-from Agent import Agent, STAT_SIZE
-from Agent_Open_Hand import Agent_Open_Hand
+from Agent_Alpha import Agent_Alpha, STAT_SIZE
+from Agent_Beta import Agent_Beta
 from Dummy import Dummy
 from Helper import unclash, toString, calcScore
 from Bidding import POSSIBLE_BID_COUNT, possible_bids
@@ -44,12 +44,12 @@ def saveNetwork (model, filename):
 def loadNetwork (filename = ""):
 	if filename == "":
 		model = Sequential ()
-		model.add (Dense (LAYER0, input_shape = (220,))) #52 + (SHDC + AKOJT9s + AKs = 4 + 6 + 8) * 3 + 38 * 3
+		model.add (Dense (LAYER0, input_shape = (486,))) #52 + (SHDC + AKOJT9s + AKs = 4 + 6 + 8) * 3 + 38 * 3
 		model.add (Dense (LAYER1, activation = 'linear', kernel_regularizer = regularizers.l2(L2_REGULARIZER)))
 		model.add (Dense (LAYER2, activation = 'linear', kernel_regularizer = regularizers.l2(L2_REGULARIZER)))
 		model.add (Dense (LAYER3, activation = 'linear', kernel_regularizer = regularizers.l2(L2_REGULARIZER)))
 		model.add (Dense (LAYER4, activation = 'linear', kernel_regularizer = regularizers.l2(L2_REGULARIZER)))
-		model.add (Dense (38, activation = 'sigmoid'))
+		model.add (Dense (38, activation = 'relu'))
 		sgd = optimizers.SGD (lr = 0.01)
 		model.compile (loss = 'mse', optimizer = sgd)
 		return model
@@ -290,7 +290,7 @@ def expReplay (network_1, par, hands, resTable, mode = 2):
 	counter = 0
 	stats = list (-1 for i in range (STAT_SIZE * 4))
 
-	temp_Agent = Agent ("", {})
+	temp_Agent = Agent_Alpha ("", {})
 	temp_Agent.setHand (hands [0])
 	for i in range (STAT_SIZE):
 		stats [i] = temp_Agent.stat [i]
@@ -298,7 +298,7 @@ def expReplay (network_1, par, hands, resTable, mode = 2):
 	for i in range (STAT_SIZE):
 		stats [i + STAT_SIZE * 2] = temp_Agent.stat [i]
 
-	while counter < 10000:
+	while counter < 2000:
 		ended = False
 		bids = []
 		player = 0
@@ -307,7 +307,7 @@ def expReplay (network_1, par, hands, resTable, mode = 2):
 		while not ended:
 			key = str (player) + "|" + toString (bids) 
 			if key not in agents.keys():
-				agents [key] = Agent_Open_Hand (network_1, {}, EXPLORE_COEFFICIENT)
+				agents [key] = Agent_Beta (network_1, {}, EXPLORE_COEFFICIENT)
 				agents [key].setState ((stats, bids.copy (), player), hands [player])
 			agent = agents [key]
 			related_agents.append (agent)
@@ -364,13 +364,13 @@ def expReplay (network_1, par, hands, resTable, mode = 2):
 
 def main ():
 
-	NETWORK_1 = "../data/Networks/RL/Gen_2/network.h5"
-	NETWORK_2 = "../data/Networks/RL/Gen_2/network.h5"
+	NETWORK_1 = "../data/Networks/RL/Gen_2/network2.h5"
+	NETWORK_2 = "../data/Networks/RL/Gen_2/network2.h5"
 	NETWORK_3 = ""
 	NETWORK_4 = ""
 
-	BIDDING_1 = "../data/Networks/RL/Gen_2/bidding"
-	BIDDING_2 = "../data/Networks/RL/Gen_2/bidding"
+	BIDDING_1 = "../data/Networks/RL/Gen_2/bidding2"
+	BIDDING_2 = "../data/Networks/RL/Gen_2/bidding2"
 	BIDDING_3 = ""
 	BIDDING_4 = ""
 
@@ -381,19 +381,19 @@ def main ():
 
 
 
-	agent_1 = Agent (network_1, biddingBase_1)
+	agent_1 = Agent_Alpha (network_1, biddingBase_1)
 	# agent_2 = Agent (network_1, biddingBase_1)
 	# agent_3 = Agent (network_1, biddingBase_1)
 	# agent_4 = Agent (network_1, biddingBase_1)
 	agent_2 = Dummy ()
-	agent_3 = Agent (network_1, biddingBase_1)
+	agent_3 = Agent_Alpha (network_1, biddingBase_1)
 	agent_4 = Dummy ()
 
 	agents = [agent_1, agent_2, agent_3, agent_4]
 	for agent in agents:
 		agent.setCoefficient (BIDDING_ALPHA, EXPLORE_COEFFICIENT)
 
-	episodes = 500
+	episodes = 1
 	# deal = gd.genDeal ()
 	# gd.printHand (deal)
 	# (par, resTable) = gd.getPar (deal)
