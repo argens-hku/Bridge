@@ -6,7 +6,6 @@ import numpy as np
 from Node import Node
 
 STAT_SIZE = 18
-PLAYER_COUNT = 2
 TEMP = 1
 
 def writeJson (item, filename):
@@ -107,13 +106,13 @@ _EPISODE = 100000
 # _EPISODE = 1000
 _SIMULATION = 800
 _EP_PER_PLAYER = 10
-_ACTIVE_PLAYER = 2
+_ACTIVE_PLAYER = 4
 
 RESULT = "../data/Networks/RL/Gen_4/result"
-NETWORK_1 = "../data/Networks/RL/Gen_4/network1.h5"
-# NETWORK_2 = "../data/Networks/RL/Gen_4/network2.h5"
+# NETWORK_1 = "../data/Networks/RL/Gen_4/network1.h5"
+NETWORK_1 = "../data/Networks/RL/Gen_4/network2.h5"
 
-# --- Train --- #
+# # --- Train --- #
 
 network_1 = loadNetwork ("")
 # network_1 = loadNetwork (NETWORK_1)
@@ -131,7 +130,7 @@ for i in range (_EPISODE):
 	raw_stats = []
 	for hand in hands:
 		raw_stats = raw_stats + getStat (hand)
-	if PLAYER_COUNT == 2:
+	if _ACTIVE_PLAYER == 2:
 		for a in [1 ,3]:
 			for b in range (STAT_SIZE):
 				raw_stats [a * STAT_SIZE + b] = -1

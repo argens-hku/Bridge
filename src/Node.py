@@ -3,6 +3,7 @@ import numpy as np
 
 _EXPLORE_RATIO_E = 0.25
 _DIR_CONSTANT = 0.03
+_C_PUCT = 0.5
 
 class Node:
 
@@ -25,11 +26,15 @@ class Node:
 
 		return ret
 
-	def __init__ (self, bidding, player, p):
+	def __init__ (self, bidding, player, p, learning_p, active_P_count):
 
 		self.player = player
-		if player != 0 and player != 2:
-			self.legal_bids = [possible_bids.index ("P")]
+		self.learning_p = learning_p
+		if active_P_count == 2:
+			if player != 0 and player != 2:
+				self.legal_bids = [possible_bids.index ("P")]
+			else:
+				self.legal_bids = self.getLegalBid (bidding)
 		else:
 			self.legal_bids = self.getLegalBid (bidding)
 
@@ -47,13 +52,17 @@ class Node:
 			self.P.append (0)
 			self.children.append (None)
 
-		if len (self.legal_bids) > 1:
+		if len (self.legal_bids) > 1 and self.player != learning_p:
 			self.P = self.addNoise (p [0])
 
-	def pickMove (self):
+	def pickMove (self, temp):
 
 		if len (self.legal_bids) == 1:
 			return 0
+
+		if self.player != self.learning_p:
+			index = self.P.index (max (self.P))
+			return index
 
 		sqrt_total = np.sqrt (sum (self.N))
 
@@ -61,10 +70,13 @@ class Node:
 		for i in range (self.width):
 			value = 0
 			value += self.Q [i]
-			value += sqrt_total * self.P [i] / (1 + self.N [i])
+			value += sqrt_total * self.P [i] / (1 + self.N [i]) * _C_PUCT
 			U.append (value)
 
-		return U.index (max (U))
+		if self.player == 0 or self.player == 2:
+			return U.index (max (U))
+
+		return U.index (min (U))
 
 	# def expand (self):
 
